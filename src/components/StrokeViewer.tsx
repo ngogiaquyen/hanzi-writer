@@ -10,6 +10,14 @@ const StrokeViewer: React.FC<StrokeViewerProps> = ({ character }) => {
   const writerRef = useRef<HanziWriter | null>(null);
   const targetRef = useRef<HTMLDivElement>(null);
   const [isQuizzing, setIsQuizzing] = useState(false);
+  const loopTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  const clearLoop = () => {
+    if (loopTimeoutRef.current) {
+      clearTimeout(loopTimeoutRef.current);
+      loopTimeoutRef.current = null;
+    }
+  };
 
   useEffect(() => {
     if (targetRef.current && character) {
@@ -27,19 +35,35 @@ const StrokeViewer: React.FC<StrokeViewerProps> = ({ character }) => {
         highlightColor: '#e5900d',
       });
     }
+    return () => clearLoop();
   }, [character]);
 
   const handleAnimate = () => {
     if (writerRef.current) {
       setIsQuizzing(false);
+      clearLoop();
       writerRef.current.cancelQuiz();
-      writerRef.current.animateCharacter();
+      
+      const animate = () => {
+        if (!writerRef.current) return;
+        writerRef.current.animateCharacter({
+          onComplete: () => {
+            if (localStorage.getItem('hanzi_auto_replay') === 'true') {
+              loopTimeoutRef.current = setTimeout(animate, 800);
+            }
+          }
+        });
+      };
+      
+      animate();
     }
   };
 
   const handleQuiz = () => {
     if (writerRef.current) {
       setIsQuizzing(true);
+      clearLoop();
+      writerRef.current.cancelQuiz();
       writerRef.current.quiz({
         onComplete: (summaryData) => {
           setIsQuizzing(false);

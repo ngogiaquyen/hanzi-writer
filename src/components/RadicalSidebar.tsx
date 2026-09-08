@@ -1,9 +1,27 @@
-import { useState } from 'react';
-import { X, Book } from 'lucide-react';
+import { useState, useEffect } from 'react';
+import { X, Book, Repeat } from 'lucide-react';
 import { radicalDict } from '../utils/radicals';
 
 const RadicalSidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [autoReplay, setAutoReplay] = useState(() => {
+    return localStorage.getItem('hanzi_auto_replay') === 'true';
+  });
+
+  const toggleAutoReplay = () => {
+    const newVal = !autoReplay;
+    setAutoReplay(newVal);
+    localStorage.setItem('hanzi_auto_replay', String(newVal));
+    window.dispatchEvent(new Event('hanzi_auto_replay_changed'));
+  };
+
+  useEffect(() => {
+    const handleStorageChange = () => {
+      setAutoReplay(localStorage.getItem('hanzi_auto_replay') === 'true');
+    };
+    window.addEventListener('hanzi_auto_replay_changed', handleStorageChange);
+    return () => window.removeEventListener('hanzi_auto_replay_changed', handleStorageChange);
+  }, []);
 
   return (
     <>
@@ -37,12 +55,21 @@ const RadicalSidebar = () => {
             <Book size={20} className="text-blue-600" />
             214 Bộ Thủ Khang Hy
           </h2>
-          <button 
-            onClick={() => setIsOpen(false)}
-            className="p-1.5 bg-gray-100 hover:bg-gray-200 rounded-full text-gray-600 transition-colors"
-          >
-            <X size={18} />
-          </button>
+          <div className="flex items-center gap-2">
+            <button 
+              onClick={toggleAutoReplay}
+              className={`p-1.5 rounded-full transition-colors ${autoReplay ? 'bg-blue-100 text-blue-600' : 'bg-gray-100 text-gray-400 hover:bg-gray-200 hover:text-gray-600'}`}
+              title={autoReplay ? "Tự động lặp lại: Bật" : "Tự động lặp lại: Tắt"}
+            >
+              <Repeat size={18} />
+            </button>
+            <button 
+              onClick={() => setIsOpen(false)}
+              className="p-1.5 bg-gray-100 hover:bg-gray-200 rounded-full text-gray-600 transition-colors"
+            >
+              <X size={18} />
+            </button>
+          </div>
         </div>
         
         {/* Content */}

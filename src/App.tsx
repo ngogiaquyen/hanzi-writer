@@ -4,6 +4,7 @@ import InputArea from './components/InputArea';
 import CharacterCard from './components/CharacterCard';
 import { BookOpen } from 'lucide-react';
 import RadicalSidebar from './components/RadicalSidebar';
+import HskSidebar from './components/HskSidebar';
 
 function App() {
   const [rawText, setRawText] = useState(() => localStorage.getItem('hanzi_raw_text') || '我爱学习汉字');
@@ -48,6 +49,7 @@ function App() {
   return (
     <div className="min-h-screen bg-slate-50 font-sans">
       <RadicalSidebar />
+      <HskSidebar onSelectWord={handleAnalyze} />
       {/* Main Content */}
       <main className="px-2 mt-4 mx-auto max-w-4xl">
         <InputArea initialText={rawText} onAnalyze={handleAnalyze} />

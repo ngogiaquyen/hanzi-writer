@@ -28,7 +28,7 @@ const RadicalSidebar = () => {
       {/* Floating Trigger Button */}
       <button 
         onClick={() => setIsOpen(true)}
-        className="fixed top-1/2 left-0 -translate-y-1/2 bg-blue-500 text-white py-6 w-[12px] flex items-center justify-center rounded-r-md shadow-md hover:bg-blue-600 transition-colors z-40 opacity-70 hover:opacity-100"
+        className="fixed top-[calc(50%-34px)] left-0 -translate-y-1/2 bg-blue-500 text-white py-6 w-[12px] flex items-center justify-center rounded-r-md shadow-md hover:bg-blue-600 transition-colors z-40 opacity-70 hover:opacity-100"
         title="Xem 214 Bộ Thủ"
       >
         {/* Tiny indicator icon */}

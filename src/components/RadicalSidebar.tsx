@@ -1,27 +1,16 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { X, Book, Repeat } from 'lucide-react';
 import { radicalDict } from '../utils/radicals';
 
 const RadicalSidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [autoReplay, setAutoReplay] = useState(() => {
-    return localStorage.getItem('hanzi_auto_replay') === 'true';
-  });
+  const [autoReplay, setAutoReplay] = useState(false);
 
   const toggleAutoReplay = () => {
     const newVal = !autoReplay;
     setAutoReplay(newVal);
-    localStorage.setItem('hanzi_auto_replay', String(newVal));
-    window.dispatchEvent(new Event('hanzi_auto_replay_changed'));
+    window.dispatchEvent(new CustomEvent('hanzi_auto_replay_changed', { detail: newVal }));
   };
-
-  useEffect(() => {
-    const handleStorageChange = () => {
-      setAutoReplay(localStorage.getItem('hanzi_auto_replay') === 'true');
-    };
-    window.addEventListener('hanzi_auto_replay_changed', handleStorageChange);
-    return () => window.removeEventListener('hanzi_auto_replay_changed', handleStorageChange);
-  }, []);
 
   return (
     <>

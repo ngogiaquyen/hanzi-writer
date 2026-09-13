@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
-import { BookMarked, Check, Copy, Search, X } from 'lucide-react';
+import { BookMarked, Check, Copy, Search, Volume2, X } from 'lucide-react';
+import { translateChineseToVietnamese } from '../utils/translation';
 
 interface HskWord {
   id: number;
@@ -16,21 +17,15 @@ const levels = [1, 2, 3, 4, 5, 6] as const;
 type HskLevel = (typeof levels)[number];
 
 interface VietnameseMeaningProps {
-  english: string;
+  chinese: string;
 }
 
-const VietnameseMeaning: React.FC<VietnameseMeaningProps> = ({ english }) => {
+const VietnameseMeaning: React.FC<VietnameseMeaningProps> = ({ chinese }) => {
   const [meaning, setMeaning] = useState('');
   const [shouldTranslate, setShouldTranslate] = useState(false);
   const containerRef = useRef<HTMLSpanElement>(null);
 
   useEffect(() => {
-    const cachedMeaning = localStorage.getItem(`hanzi_translation_${english}`);
-    if (cachedMeaning) {
-      setMeaning(cachedMeaning);
-      return;
-    }
-
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
@@ -43,21 +38,16 @@ const VietnameseMeaning: React.FC<VietnameseMeaningProps> = ({ english }) => {
 
     if (containerRef.current) observer.observe(containerRef.current);
     return () => observer.disconnect();
-  }, [english]);
+  }, [chinese]);
 
   useEffect(() => {
     if (!shouldTranslate || meaning) return;
 
     const translateMeaning = async () => {
       try {
-        const response = await fetch(
-          `https://api.mymemory.translated.net/get?q=${encodeURIComponent(english)}&langpair=en|vi`,
-        );
-        const data = await response.json();
-        const translatedText = data?.responseData?.translatedText?.trim();
+        const translatedText = await translateChineseToVietnamese(chinese);
         if (translatedText) {
           setMeaning(translatedText);
-          localStorage.setItem(`hanzi_translation_${english}`, translatedText);
         }
       } catch {
         // Keep the Vietnamese column empty if the translation service is unavailable.
@@ -65,7 +55,7 @@ const VietnameseMeaning: React.FC<VietnameseMeaningProps> = ({ english }) => {
     };
 
     translateMeaning();
-  }, [english, meaning, shouldTranslate]);
+  }, [chinese, meaning, shouldTranslate]);
 
   return (
     <span ref={containerRef} className="text-xs text-emerald-700 truncate" title={meaning}>
@@ -79,6 +69,7 @@ const HskSidebar: React.FC<HskSidebarProps> = ({ onSelectWord }) => {
   const [activeLevel, setActiveLevel] = useState<HskLevel>(1);
   const [query, setQuery] = useState('');
   const [copiedWordId, setCopiedWordId] = useState<number | null>(null);
+  const [speakingWordId, setSpeakingWordId] = useState<number | null>(null);
   const [wordsByLevel, setWordsByLevel] = useState<Partial<Record<HskLevel, HskWord[]>>>({});
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState('');
@@ -130,6 +121,25 @@ const HskSidebar: React.FC<HskSidebarProps> = ({ onSelectWord }) => {
     } catch {
       // Clipboard access can be unavailable outside a secure browser context.
     }
+  };
+
+  const handleSpeakWord = (event: React.MouseEvent, word: HskWord) => {
+    event.stopPropagation();
+    if (!('speechSynthesis' in window)) return;
+
+    window.speechSynthesis.cancel();
+    if (speakingWordId === word.id) {
+      setSpeakingWordId(null);
+      return;
+    }
+
+    const utterance = new SpeechSynthesisUtterance(word.hanzi);
+    utterance.lang = 'zh-CN';
+    utterance.rate = 0.8;
+    utterance.onend = () => setSpeakingWordId(null);
+    utterance.onerror = () => setSpeakingWordId(null);
+    setSpeakingWordId(word.id);
+    window.speechSynthesis.speak(utterance);
   };
 
   return (
@@ -220,7 +230,7 @@ const HskSidebar: React.FC<HskSidebarProps> = ({ onSelectWord }) => {
                   className="relative w-full text-left bg-white border border-gray-200 rounded-lg px-3 py-2.5 pb-6 hover:border-amber-400 hover:shadow-sm transition-all"
                   title={`Luyện viết ${word.hanzi}`}
                 >
-                  <span className="absolute top-2 right-2">
+                  <span className="absolute top-2 right-2 flex flex-col gap-1">
                     <button
                       type="button"
                       onClick={(event) => handleCopyWord(event, word)}
@@ -229,6 +239,15 @@ const HskSidebar: React.FC<HskSidebarProps> = ({ onSelectWord }) => {
                       aria-label={`Sao chép ${word.hanzi}`}
                     >
                       {copiedWordId === word.id ? <Check size={14} /> : <Copy size={14} />}
+                    </button>
+                    <button
+                      type="button"
+                      onClick={(event) => handleSpeakWord(event, word)}
+                      className={`rounded p-1 transition-colors ${speakingWordId === word.id ? 'bg-amber-50 text-amber-600' : 'text-gray-400 hover:bg-amber-50 hover:text-amber-600'}`}
+                      title={`Phát âm ${word.hanzi}`}
+                      aria-label={`Phát âm ${word.hanzi}`}
+                    >
+                      <Volume2 size={14} />
                     </button>
                   </span>
                   <div className="flex items-baseline gap-2">
@@ -240,7 +259,7 @@ const HskSidebar: React.FC<HskSidebarProps> = ({ onSelectWord }) => {
                       {word.translations[0] || 'Chưa có nghĩa'}
                     </span>
                     <span className="shrink-0 text-gray-300">-</span>
-                    <VietnameseMeaning english={word.translations[0] || ''} />
+                    <VietnameseMeaning chinese={word.hanzi} />
                   </div>
                   <span className="absolute right-3 bottom-2 text-[10px] font-medium text-gray-400">
                     #{(wordsByLevel[activeLevel] || []).findIndex((item) => item.id === word.id) + 1}

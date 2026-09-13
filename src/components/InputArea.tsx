@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { X, ClipboardPaste } from 'lucide-react';
+import { Check, ClipboardPaste, Copy, X } from 'lucide-react';
 
 interface InputAreaProps {
   initialText?: string;
@@ -8,6 +8,7 @@ interface InputAreaProps {
 
 const InputArea: React.FC<InputAreaProps> = ({ initialText = '', onAnalyze }) => {
   const [text, setText] = useState(initialText);
+  const [isCopied, setIsCopied] = useState(false);
 
   // Keep internal state in sync if initialText changes from parent
   useEffect(() => {
@@ -27,6 +28,18 @@ const InputArea: React.FC<InputAreaProps> = ({ initialText = '', onAnalyze }) =>
       setText(pastedText);
     } catch (err) {
       console.error('Failed to read clipboard: ', err);
+    }
+  };
+
+  const handleCopy = async () => {
+    if (!text) return;
+
+    try {
+      await navigator.clipboard.writeText(text);
+      setIsCopied(true);
+      window.setTimeout(() => setIsCopied(false), 1200);
+    } catch (err) {
+      console.error('Failed to copy text: ', err);
     }
   };
 
@@ -50,6 +63,17 @@ const InputArea: React.FC<InputAreaProps> = ({ initialText = '', onAnalyze }) =>
                 title="Xóa"
               >
                 <X size={16} />
+              </button>
+            )}
+            {text && (
+              <button
+                type="button"
+                onClick={handleCopy}
+                className="p-1.5 text-gray-400 hover:text-green-600 rounded-full hover:bg-green-50 transition-colors"
+                title={isCopied ? 'Đã sao chép' : 'Sao chép'}
+                aria-label={isCopied ? 'Đã sao chép' : 'Sao chép'}
+              >
+                {isCopied ? <Check size={16} /> : <Copy size={16} />}
               </button>
             )}
             <button

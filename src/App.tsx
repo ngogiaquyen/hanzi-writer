@@ -5,9 +5,11 @@ import CharacterCard from './components/CharacterCard';
 import { BookOpen } from 'lucide-react';
 import RadicalSidebar from './components/RadicalSidebar';
 import HskSidebar from './components/HskSidebar';
+import HskPractice from './components/HskPractice';
+import { translateChineseToVietnamese } from './utils/translation';
 
 function App() {
-  const [rawText, setRawText] = useState(() => localStorage.getItem('hanzi_raw_text') || '我爱学习汉字');
+  const [rawText, setRawText] = useState('我爱学习汉字');
   const [characters, setCharacters] = useState<string[]>([]);
   const [fullPinyin, setFullPinyin] = useState('');
   const [translation, setTranslation] = useState('');
@@ -21,7 +23,6 @@ function App() {
 
   const handleAnalyze = async (text: string) => {
     setRawText(text);
-    localStorage.setItem('hanzi_raw_text', text);
 
     const chineseChars = text.match(/[\u4e00-\u9fa5]/g) || [];
     setCharacters(chineseChars);
@@ -29,17 +30,12 @@ function App() {
     // Get Pinyin for full text
     setFullPinyin(pinyin(text, { type: 'string', toneType: 'symbol' }));
 
-    // Fetch Vietnamese translation from MyMemory API
+    // Fetch Vietnamese translation directly from Chinese.
     try {
       setIsTranslating(true);
-      const res = await fetch(`https://api.mymemory.translated.net/get?q=${encodeURIComponent(text)}&langpair=zh-CN|vi`);
-      const data = await res.json();
-      if (data?.responseData?.translatedText) {
-        setTranslation(data.responseData.translatedText);
-      } else {
-        setTranslation("Không thể dịch.");
-      }
-    } catch (e) {
+      const translatedText = await translateChineseToVietnamese(text);
+      setTranslation(translatedText || 'Không thể dịch.');
+    } catch {
       setTranslation("Lỗi kết nối dịch thuật.");
     } finally {
       setIsTranslating(false);
@@ -53,6 +49,7 @@ function App() {
       {/* Main Content */}
       <main className="px-2 mt-4 mx-auto max-w-4xl">
         <InputArea initialText={rawText} onAnalyze={handleAnalyze} />
+        <HskPractice />
 
         {/* Translation Banner */}
         {rawText && (

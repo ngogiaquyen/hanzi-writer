@@ -10,6 +10,7 @@ const StrokeViewer: React.FC<StrokeViewerProps> = ({ character }) => {
   const writerRef = useRef<HanziWriter | null>(null);
   const targetRef = useRef<HTMLDivElement>(null);
   const [isQuizzing, setIsQuizzing] = useState(false);
+  const [autoReplay, setAutoReplay] = useState(false);
   const loopTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   const clearLoop = () => {
@@ -38,6 +39,14 @@ const StrokeViewer: React.FC<StrokeViewerProps> = ({ character }) => {
     return () => clearLoop();
   }, [character]);
 
+  useEffect(() => {
+    const handleAutoReplayChange = (event: Event) => {
+      setAutoReplay((event as CustomEvent<boolean>).detail);
+    };
+    window.addEventListener('hanzi_auto_replay_changed', handleAutoReplayChange);
+    return () => window.removeEventListener('hanzi_auto_replay_changed', handleAutoReplayChange);
+  }, []);
+
   const handleAnimate = () => {
     if (writerRef.current) {
       setIsQuizzing(false);
@@ -48,7 +57,7 @@ const StrokeViewer: React.FC<StrokeViewerProps> = ({ character }) => {
         if (!writerRef.current) return;
         writerRef.current.animateCharacter({
           onComplete: () => {
-            if (localStorage.getItem('hanzi_auto_replay') === 'true') {
+            if (autoReplay) {
               loopTimeoutRef.current = setTimeout(animate, 800);
             }
           }

@@ -8,7 +8,8 @@
       "affection",
       "to be fond of",
       "to like"
-    ]
+    ],
+    "vietnamese": "để yêu; tình cảm"
   },
   {
     "id": 2,
@@ -17,7 +18,8 @@
     "translations": [
       "eight",
       "8"
-    ]
+    ],
+    "vietnamese": "tám; 8"
   },
   {
     "id": 3,
@@ -27,7 +29,8 @@
       "(informal) father",
       "CL:個|个",
       "位[wèi]"
-    ]
+    ],
+    "vietnamese": "người cha (không chính thức);"
   },
   {
     "id": 4,
@@ -39,7 +42,8 @@
       "CL:個|个",
       "支",
       "枝[zhī]"
-    ]
+    ],
+    "vietnamese": "cốc; ly"
   },
   {
     "id": 5,
@@ -50,7 +54,8 @@
       "capital of People's Republic of China",
       "Peking",
       "PRC government"
-    ]
+    ],
+    "vietnamese": "Bắc Kinh; thủ đô của Cộng hòa Nhân dân Trung Hoa"
   },
   {
     "id": 6,
@@ -69,7 +74,8 @@
       "periodicals",
       "files etc",
       "originally"
-    ]
+    ],
+    "vietnamese": "rễ hoặc thân cây; nguồn gốc"
   },
   {
     "id": 7,
@@ -81,7 +87,8 @@
       "rude",
       "blunt",
       "don't mention it"
-    ]
+    ],
+    "vietnamese": "bạn được chào đón; bất lịch sự"
   },
   {
     "id": 8,
@@ -91,7 +98,8 @@
       "(negative prefix)",
       "not",
       "no"
-    ]
+    ],
+    "vietnamese": "(tiền tố âm); không"
   },
   {
     "id": 9,
@@ -104,7 +112,8 @@
       "cuisine",
       "CL:盤|盘",
       "道[dào]"
-    ]
+    ],
+    "vietnamese": "món ăn (loại thực phẩm); rau"
   },
   {
     "id": 10,
@@ -115,7 +124,8 @@
       "tea plant",
       "CL:杯",
       "壺|壶[hú]"
-    ]
+    ],
+    "vietnamese": "chè; cây chè"
   },
   {
     "id": 11,
@@ -129,7 +139,8 @@
       "to destroy",
       "to absorb",
       "to suffer"
-    ]
+    ],
+    "vietnamese": "ăn; tiêu thụ"
   },
   {
     "id": 12,
@@ -138,7 +149,8 @@
     "translations": [
       "taxi",
       "(Taiwan) rental car"
-    ]
+    ],
+    "vietnamese": "taxi; (Đài Loan) cho thuê xe"
   },
   {
     "id": 13,
@@ -146,7 +158,8 @@
     "pinyin": "dǎ diàn huà",
     "translations": [
       "to make a telephone call"
-    ]
+    ],
+    "vietnamese": "Tôi cần gọi một cuộc điện thoại"
   },
   {
     "id": 14,
@@ -162,7 +175,8 @@
       "deep",
       "oldest",
       "eldest"
-    ]
+    ],
+    "vietnamese": "lớn; khổng lồ"
   },
   {
     "id": 15,
@@ -174,7 +188,8 @@
       "(used after an attribute)",
       "(used to form a nominal expression)",
       "(used at the end of a declarative sentence for emphasis)"
-    ]
+    ],
+    "vietnamese": "của; ~'s (hạt sở hữu)"
   },
   {
     "id": 16,
@@ -199,7 +214,8 @@
       "(old) one fifth of a two-hour watch 更[gēng]",
       "dot stroke in Chinese characters",
       "classifier for items"
-    ]
+    ],
+    "vietnamese": "điểm; chấm"
   },
   {
     "id": 17,
@@ -208,7 +224,8 @@
     "translations": [
       "computer",
       "CL:臺|台[tái]"
-    ]
+    ],
+    "vietnamese": "máy tính"
   },
   {
     "id": 18,
@@ -219,7 +236,8 @@
       "TV",
       "CL:臺|台",
       "個|个[gè]"
-    ]
+    ],
+    "vietnamese": "truyền hình; TV"
   },
   {
     "id": 19,
@@ -232,7 +250,8 @@
       "片",
       "幕",
       "場|场[chǎng]"
-    ]
+    ],
+    "vietnamese": "phim; phim"
   },
   {
     "id": 20,
@@ -244,7 +263,8 @@
       "person",
       "CL:個|个",
       "件[jiàn]"
-    ]
+    ],
+    "vietnamese": "điều; công cụ"
   },
   {
     "id": 21,
@@ -257,7 +277,8 @@
       "(used for emphasis) even",
       "already",
       "(not) at all"
-    ]
+    ],
+    "vietnamese": "tất cả; cả hai"
   },
   {
     "id": 22,
@@ -268,7 +289,8 @@
       "to study",
       "reading of word (i.e. pronunciation)",
       "similar to 拼音[pīn yīn]"
-    ]
+    ],
+    "vietnamese": "để đọc; để nghiên cứu"
   },
   {
     "id": 23,
@@ -282,7 +304,8 @@
       "pardon me",
       "if you please",
       "sorry? (please repeat)"
-    ]
+    ],
+    "vietnamese": "không xứng đáng; thất vọng"
   },
   {
     "id": 24,
@@ -298,7 +321,8 @@
       "how (to what extent)",
       "multi-",
       "Taiwan pr.  when it means \"how\""
-    ]
+    ],
+    "vietnamese": "nhiều; nhiều"
   },
   {
     "id": 25,
@@ -309,7 +333,8 @@
       "how many",
       "which (number)",
       "as much as"
-    ]
+    ],
+    "vietnamese": "bao nhiêu; bao nhiêu"
   },
   {
     "id": 26,
@@ -317,7 +342,8 @@
     "pinyin": "ér zi",
     "translations": [
       "son"
-    ]
+    ],
+    "vietnamese": "con trai"
   },
   {
     "id": 27,
@@ -327,7 +353,8 @@
       "two",
       "2",
       "stupid (Beijing dialect)"
-    ]
+    ],
+    "vietnamese": "hai; 2"
   },
   {
     "id": 28,
@@ -336,7 +363,8 @@
     "translations": [
       "restaurant",
       "CL:家[jiā]"
-    ]
+    ],
+    "vietnamese": "nhà hàng , hiệu ăn"
   },
   {
     "id": 29,
@@ -345,7 +373,8 @@
     "translations": [
       "airplane",
       "CL:架[jià]"
-    ]
+    ],
+    "vietnamese": "máy bay"
   },
   {
     "id": 30,
@@ -353,7 +382,8 @@
     "pinyin": "fēn zhōng",
     "translations": [
       "minute"
-    ]
+    ],
+    "vietnamese": "phút"
   },
   {
     "id": 31,
@@ -364,7 +394,8 @@
       "glad",
       "willing (to do sth)",
       "in a cheerful mood"
-    ]
+    ],
+    "vietnamese": "hạnh phúc; vui mừng"
   },
   {
     "id": 32,
@@ -372,7 +403,8 @@
     "pinyin": "gè",
     "translations": [
       "variant of 個|个[gè]"
-    ]
+    ],
+    "vietnamese": "biến thể của 個|个"
   },
   {
     "id": 33,
@@ -387,7 +419,8 @@
       "CL:個|个",
       "份",
       "項|项[xiàng]"
-    ]
+    ],
+    "vietnamese": "làm việc; (của một máy) để vận hành"
   },
   {
     "id": 34,
@@ -397,7 +430,8 @@
       "dog",
       "CL:隻|只",
       "條|条[tiáo]"
-    ]
+    ],
+    "vietnamese": "con chó"
   },
   {
     "id": 35,
@@ -406,7 +440,8 @@
     "translations": [
       "Chinese language",
       "CL:門|门[mén]"
-    ]
+    ],
+    "vietnamese": "Tiếng Trung Quốc"
   },
   {
     "id": 36,
@@ -421,7 +456,8 @@
       "very",
       "so",
       "(suffix indicating completion or readiness)"
-    ]
+    ],
+    "vietnamese": "Dạ."
   },
   {
     "id": 37,
@@ -430,7 +466,8 @@
     "translations": [
       "to drink",
       "My goodness!"
-    ]
+    ],
+    "vietnamese": "uống đi; Trời ơi!"
   },
   {
     "id": 38,
@@ -446,7 +483,8 @@
       "harmony",
       "Japanese related",
       "Taiwan pr. [hàn]"
-    ]
+    ],
+    "vietnamese": "và; cùng với"
   },
   {
     "id": 39,
@@ -457,7 +495,8 @@
       "quite",
       "very",
       "awfully"
-    ]
+    ],
+    "vietnamese": "(trạng từ chỉ mức độ); khá"
   },
   {
     "id": 40,
@@ -469,7 +508,8 @@
       "behind",
       "later",
       "afterwards"
-    ]
+    ],
+    "vietnamese": "phía sau; phía sau"
   },
   {
     "id": 41,
@@ -479,7 +519,8 @@
       "to curve",
       "to return",
       "to revolve"
-    ]
+    ],
+    "vietnamese": "cong; quay trở lại"
   },
   {
     "id": 42,
@@ -501,7 +542,8 @@
       "association",
       "CL:個|个[gè]",
       "a moment (Taiwan pr. for this sense is )"
-    ]
+    ],
+    "vietnamese": "có thể; có thể"
   },
   {
     "id": 43,
@@ -509,7 +551,8 @@
     "pinyin": "huǒ chē zhàn",
     "translations": [
       "train station"
-    ]
+    ],
+    "vietnamese": "Ga đường sắt"
   },
   {
     "id": 44,
@@ -520,7 +563,8 @@
       "how many",
       "several",
       "a few"
-    ]
+    ],
+    "vietnamese": "bao nhiêu; bao nhiêu"
   },
   {
     "id": 45,
@@ -536,7 +580,8 @@
       "-er",
       "-ary or -ian",
       "CL:個|个[gè]"
-    ]
+    ],
+    "vietnamese": "Một mái ấm, một gia đình."
   },
   {
     "id": 46,
@@ -549,7 +594,8 @@
       "to ask",
       "to be called",
       "by (indicates agent in the passive mood)"
-    ]
+    ],
+    "vietnamese": "la hét; gọi điện"
   },
   {
     "id": 47,
@@ -559,7 +605,8 @@
       "today",
       "at the present",
       "now"
-    ]
+    ],
+    "vietnamese": "hôm nay; hiện tại"
   },
   {
     "id": 48,
@@ -568,7 +615,8 @@
     "translations": [
       "nine",
       "9"
-    ]
+    ],
+    "vietnamese": "chín; 9"
   },
   {
     "id": 49,
@@ -582,7 +630,8 @@
       "to write out (a medical prescription)",
       "to operate (vehicle)",
       "abbr. for 開爾文|开尔文 degrees Kelvin"
-    ]
+    ],
+    "vietnamese": "để mở; để bắt đầu"
   },
   {
     "id": 50,
@@ -605,7 +654,8 @@
       "to treat (an illness)",
       "to look after",
       "Watch out! (for a danger)"
-    ]
+    ],
+    "vietnamese": "để xem; để nhìn vào"
   },
   {
     "id": 51,
@@ -614,7 +664,8 @@
     "translations": [
       "to see",
       "to catch sight of"
-    ]
+    ],
+    "vietnamese": "để nhìn; để bắt gặp"
   },
   {
     "id": 52,
@@ -629,7 +680,8 @@
       "soap etc",
       "colloquial word for yuan (or other unit of currency such as Hong Kong or US dollar etc)",
       "usually as 塊錢|块钱"
-    ]
+    ],
+    "vietnamese": "cục (đất); khúc"
   },
   {
     "id": 53,
@@ -641,7 +693,8 @@
       "to come round",
       "ever since",
       "next"
-    ]
+    ],
+    "vietnamese": "đến; đến nơi"
   },
   {
     "id": 54,
@@ -651,7 +704,8 @@
       "teacher",
       "CL:個|个",
       "位[wèi]"
-    ]
+    ],
+    "vietnamese": "giáo viên"
   },
   {
     "id": 55,
@@ -660,7 +714,8 @@
     "translations": [
       "(modal particle intensifying preceding clause)",
       "(completed action marker)"
-    ]
+    ],
+    "vietnamese": "(hạt phương thức tăng cường khoản trên); (điểm đánh dấu hành động đã hoàn thành)"
   },
   {
     "id": 56,
@@ -668,7 +723,8 @@
     "pinyin": "lěng",
     "translations": [
       "cold"
-    ]
+    ],
+    "vietnamese": "lạnh lẽo, lạnh nhạt"
   },
   {
     "id": 57,
@@ -682,7 +738,8 @@
       "village",
       "neighborhood",
       "administrative unit"
-    ]
+    ],
+    "vietnamese": "li (dặm Trung Quốc); 500 mét (hiện đại)"
   },
   {
     "id": 58,
@@ -701,7 +758,8 @@
       "extra",
       "to wither and fall",
       "to wither"
-    ]
+    ],
+    "vietnamese": "không; không"
   },
   {
     "id": 59,
@@ -710,7 +768,8 @@
     "translations": [
       "six",
       "6"
-    ]
+    ],
+    "vietnamese": "sáu; 6"
   },
   {
     "id": 60,
@@ -722,7 +781,8 @@
       "mother",
       "CL:個|个",
       "位[wèi]"
-    ]
+    ],
+    "vietnamese": "mẹ; mẹ"
   },
   {
     "id": 61,
@@ -730,7 +790,8 @@
     "pinyin": "ma",
     "translations": [
       "(question tag)"
-    ]
+    ],
+    "vietnamese": "Tag câu hỏi"
   },
   {
     "id": 62,
@@ -739,7 +800,8 @@
     "translations": [
       "to buy",
       "to purchase"
-    ]
+    ],
+    "vietnamese": "mua; mua"
   },
   {
     "id": 63,
@@ -748,7 +810,8 @@
     "translations": [
       "cat",
       "CL:隻|只[zhī]"
-    ]
+    ],
+    "vietnamese": "con mèo"
   },
   {
     "id": 64,
@@ -758,7 +821,8 @@
       "(negative prefix for verbs)",
       "have not",
       "not"
-    ]
+    ],
+    "vietnamese": "(tiền tố phủ định cho động từ); chưa"
   },
   {
     "id": 65,
@@ -766,7 +830,8 @@
     "pinyin": "méi guān xi",
     "translations": [
       "it doesn't matter"
-    ]
+    ],
+    "vietnamese": "Không quan trọng."
   },
   {
     "id": 66,
@@ -774,7 +839,8 @@
     "pinyin": "mǐ fàn",
     "translations": [
       "(cooked) rice"
-    ]
+    ],
+    "vietnamese": "Tiền cơm:"
   },
   {
     "id": 67,
@@ -782,7 +848,8 @@
     "pinyin": "míng tiān",
     "translations": [
       "tomorrow"
-    ]
+    ],
+    "vietnamese": "ngày mai"
   },
   {
     "id": 68,
@@ -791,7 +858,8 @@
     "translations": [
       "name (of a person or thing)",
       "CL:個|个[gè]"
-    ]
+    ],
+    "vietnamese": "tên (của một người hoặc vật);"
   },
   {
     "id": 69,
@@ -800,7 +868,8 @@
     "translations": [
       "how",
       "which"
-    ]
+    ],
+    "vietnamese": "như thế nào; trong đó"
   },
   {
     "id": 70,
@@ -812,7 +881,8 @@
       "then (in that case)",
       "commonly pr.  before a classifier",
       "esp. in Beijing"
-    ]
+    ],
+    "vietnamese": "rằng; những"
   },
   {
     "id": 71,
@@ -827,7 +897,8 @@
       "\"are you with me?\")",
       "(at the end of a declarative sentence) particle indicating continuation of a state or action",
       "particle indicating strong affirmation"
-    ]
+    ],
+    "vietnamese": "hạt chỉ ra rằng một câu hỏi được hỏi trước đó sẽ được áp dụng cho từ trước đó (\"Còn ... thì sao?\"; \"Và ...?\")"
   },
   {
     "id": 72,
@@ -842,7 +913,8 @@
       "capable",
       "can possibly",
       "(usually used in the negative) to have the possibility of"
-    ]
+    ],
+    "vietnamese": "có khả năng; có khả năng"
   },
   {
     "id": 73,
@@ -851,7 +923,8 @@
     "translations": [
       "you (informal",
       "as opposed to courteous 您)"
-    ]
+    ],
+    "vietnamese": "bạn (không chính thức; trái ngược với lịch sự您)"
   },
   {
     "id": 74,
@@ -860,7 +933,8 @@
     "translations": [
       "year",
       "CL:個|个[gè]"
-    ]
+    ],
+    "vietnamese": "năm"
   },
   {
     "id": 75,
@@ -868,7 +942,8 @@
     "pinyin": "nǚ ér",
     "translations": [
       "daughter"
-    ]
+    ],
+    "vietnamese": "con gái"
   },
   {
     "id": 76,
@@ -878,7 +953,8 @@
       "friend",
       "CL:個|个",
       "位[wèi]"
-    ]
+    ],
+    "vietnamese": "người bạn"
   },
   {
     "id": 77,
@@ -887,7 +963,8 @@
     "translations": [
       "pretty",
       "beautiful"
-    ]
+    ],
+    "vietnamese": "đẹp; đẹp"
   },
   {
     "id": 78,
@@ -897,7 +974,8 @@
       "apple",
       "CL:個|个",
       "顆|颗[kē]"
-    ]
+    ],
+    "vietnamese": "táo"
   },
   {
     "id": 79,
@@ -906,7 +984,8 @@
     "translations": [
       "seven",
       "7"
-    ]
+    ],
+    "vietnamese": "bảy; 7"
   },
   {
     "id": 80,
@@ -918,7 +997,8 @@
       "CL:筆|笔[bǐ]",
       "unit of weight",
       "one tenth of a tael 兩|两[liǎng]"
-    ]
+    ],
+    "vietnamese": "hái ra tiền"
   },
   {
     "id": 81,
@@ -929,7 +1009,8 @@
       "in front",
       "preceding",
       "above"
-    ]
+    ],
+    "vietnamese": "phía trước; phía trước"
   },
   {
     "id": 82,
@@ -941,7 +1022,8 @@
       "please (do sth)",
       "to treat (to a meal etc)",
       "to request"
-    ]
+    ],
+    "vietnamese": "hỏi; mời"
   },
   {
     "id": 83,
@@ -958,7 +1040,8 @@
       "(after a verb of motion indicates movement away from the speaker)",
       "(used after certain verbs to indicate detachment or separation)",
       "(of a time or an event etc) just passed or elapsed"
-    ]
+    ],
+    "vietnamese": "đi; đi đến (một nơi)"
   },
   {
     "id": 84,
@@ -970,7 +1053,8 @@
       "hot (of weather)",
       "heat",
       "fervent"
-    ]
+    ],
+    "vietnamese": "để làm nóng; để làm nóng"
   },
   {
     "id": 85,
@@ -982,7 +1066,8 @@
       "people",
       "CL:個|个",
       "位[wèi]"
-    ]
+    ],
+    "vietnamese": "người đàn ông; người"
   },
   {
     "id": 86,
@@ -997,7 +1082,8 @@
       "understanding",
       "awareness",
       "cognition"
-    ]
+    ],
+    "vietnamese": "để biết; để nhận ra"
   },
   {
     "id": 87,
@@ -1009,7 +1095,8 @@
       "date",
       "day of the month",
       "abbr. for 日本 Japan"
-    ]
+    ],
+    "vietnamese": "mặt trời; ngày"
   },
   {
     "id": 88,
@@ -1018,7 +1105,8 @@
     "translations": [
       "three",
       "3"
-    ]
+    ],
+    "vietnamese": "<x id=\"1\"/>BA(3)"
   },
   {
     "id": 89,
@@ -1029,7 +1117,8 @@
       "shop",
       "CL:家",
       "個|个[gè]"
-    ]
+    ],
+    "vietnamese": "cửa hàng; cửa hàng"
   },
   {
     "id": 90,
@@ -1046,7 +1135,8 @@
       "to get onto",
       "to go up",
       "to attend (class or university)"
-    ]
+    ],
+    "vietnamese": "trên đầu; trên"
   },
   {
     "id": 91,
@@ -1055,7 +1145,8 @@
     "translations": [
       "morning",
       "CL:個|个[gè]"
-    ]
+    ],
+    "vietnamese": "buổi sáng"
   },
   {
     "id": 92,
@@ -1065,7 +1156,8 @@
       "few",
       "little",
       "lack"
-    ]
+    ],
+    "vietnamese": "ít; ít"
   },
   {
     "id": 93,
@@ -1074,7 +1166,8 @@
     "translations": [
       "who",
       "also pr. [shuí]"
-    ]
+    ],
+    "vietnamese": "ai; cũng pr."
   },
   {
     "id": 94,
@@ -1085,7 +1178,8 @@
       "who?",
       "something",
       "anything"
-    ]
+    ],
+    "vietnamese": "Ai cơ?"
   },
   {
     "id": 95,
@@ -1094,7 +1188,8 @@
     "translations": [
       "ten",
       "10"
-    ]
+    ],
+    "vietnamese": "mười; 10"
   },
   {
     "id": 96,
@@ -1105,7 +1200,8 @@
       "length of time",
       "moment",
       "period"
-    ]
+    ],
+    "vietnamese": "thời gian; khoảng thời gian"
   },
   {
     "id": 97,
@@ -1117,7 +1213,8 @@
       "am",
       "yes",
       "to be"
-    ]
+    ],
+    "vietnamese": "là,à"
   },
   {
     "id": 98,
@@ -1130,7 +1227,8 @@
       "冊|册",
       "部[bù]",
       "see also 書經|书经 Book of History"
-    ]
+    ],
+    "vietnamese": "book; letter"
   },
   {
     "id": 99,
@@ -1143,7 +1241,8 @@
       "beverage",
       "additional charges or income",
       "(of clothes) classifier for number of washes"
-    ]
+    ],
+    "vietnamese": "nước; sông"
   },
   {
     "id": 100,
@@ -1152,7 +1251,8 @@
     "translations": [
       "fruit",
       "CL:個|个[gè]"
-    ]
+    ],
+    "vietnamese": "quả, trái cây"
   },
   {
     "id": 101,
@@ -1161,7 +1261,8 @@
     "translations": [
       "to go to bed",
       "to sleep"
-    ]
+    ],
+    "vietnamese": "đi ngủ; đi ngủ"
   },
   {
     "id": 102,
@@ -1175,7 +1276,8 @@
       "to tell stories",
       "talk",
       "word"
-    ]
+    ],
+    "vietnamese": "để nói; để nói"
   },
   {
     "id": 103,
@@ -1184,7 +1286,8 @@
     "translations": [
       "four",
       "4"
-    ]
+    ],
+    "vietnamese": "Bốn (4)"
   },
   {
     "id": 104,
@@ -1194,7 +1297,8 @@
       "classifier for years (of age)",
       "year",
       "year (of crop harvests)"
-    ]
+    ],
+    "vietnamese": "bộ phân loại cho năm (tuổi); năm"
   },
   {
     "id": 105,
@@ -1207,7 +1311,8 @@
       "(used as a meaningless mock object)",
       "other",
       "another"
-    ]
+    ],
+    "vietnamese": "anh ta hoặc anh ta; (được sử dụng cho cả hai giới khi giới tính không xác định hoặc không quan trọng)"
   },
   {
     "id": 106,
@@ -1215,7 +1320,8 @@
     "pinyin": "tā",
     "translations": [
       "she"
-    ]
+    ],
+    "vietnamese": "cô ấy"
   },
   {
     "id": 107,
@@ -1227,7 +1333,8 @@
       "too (much)",
       "very",
       "extremely"
-    ]
+    ],
+    "vietnamese": "cao nhất; vĩ đại nhất"
   },
   {
     "id": 108,
@@ -1235,7 +1342,8 @@
     "pinyin": "tiān qì",
     "translations": [
       "weather"
-    ]
+    ],
+    "vietnamese": "thời tiết"
   },
   {
     "id": 109,
@@ -1247,7 +1355,8 @@
       "to obey",
       "a can (loanword from English \"tin\")",
       "classifier for canned beverages"
-    ]
+    ],
+    "vietnamese": "lắng nghe; lắng nghe"
   },
   {
     "id": 110,
@@ -1259,7 +1368,8 @@
       "classmate",
       "CL:位",
       "個|个[gè]"
-    ]
+    ],
+    "vietnamese": "để học tại cùng một trường; bạn học"
   },
   {
     "id": 111,
@@ -1267,7 +1377,8 @@
     "pinyin": "wèi",
     "translations": [
       "to feed"
-    ]
+    ],
+    "vietnamese": "để cho ăn"
   },
   {
     "id": 112,
@@ -1277,7 +1388,8 @@
       "I",
       "me",
       "my"
-    ]
+    ],
+    "vietnamese": "Tôi... tôi sao?"
   },
   {
     "id": 113,
@@ -1288,7 +1400,8 @@
       "us",
       "ourselves",
       "our"
-    ]
+    ],
+    "vietnamese": "chúng tôi; chúng tôi"
   },
   {
     "id": 114,
@@ -1297,7 +1410,8 @@
     "translations": [
       "five",
       "5"
-    ]
+    ],
+    "vietnamese": "năm; 5"
   },
   {
     "id": 115,
@@ -1306,7 +1420,8 @@
     "translations": [
       "to like",
       "to be fond of"
-    ]
+    ],
+    "vietnamese": "thích; thích"
   },
   {
     "id": 116,
@@ -1322,7 +1437,8 @@
       "second (of two parts)",
       "to decline",
       "to go down"
-    ]
+    ],
+    "vietnamese": "xuống; xuống dưới"
   },
   {
     "id": 117,
@@ -1332,7 +1448,8 @@
       "afternoon",
       "CL:個|个[gè]",
       "p.m."
-    ]
+    ],
+    "vietnamese": "buổi chiểu"
   },
   {
     "id": 118,
@@ -1341,7 +1458,8 @@
     "translations": [
       "to rain",
       "rainy"
-    ]
+    ],
+    "vietnamese": "trời mưa; trời mưa"
   },
   {
     "id": 119,
@@ -1352,7 +1470,8 @@
       "husband",
       "doctor (topolect)",
       "CL:位[wèi]"
-    ]
+    ],
+    "vietnamese": "giáo viên; chồng"
   },
   {
     "id": 120,
@@ -1365,7 +1484,8 @@
       "modern",
       "current",
       "nowadays"
-    ]
+    ],
+    "vietnamese": "bây giờ; hiện tại"
   },
   {
     "id": 121,
@@ -1378,7 +1498,8 @@
       "to wish",
       "to want",
       "to miss"
-    ]
+    ],
+    "vietnamese": "suy nghĩ; tin tưởng"
   },
   {
     "id": 122,
@@ -1389,7 +1510,8 @@
       "tiny",
       "few",
       "young"
-    ]
+    ],
+    "vietnamese": "nhỏ; nhỏ xíu"
   },
   {
     "id": 123,
@@ -1401,7 +1523,8 @@
       "(slang) prostitute",
       "CL:個|个",
       "位[wèi]"
-    ]
+    ],
+    "vietnamese": "thiếu nữ; thiếu nữ"
   },
   {
     "id": 124,
@@ -1412,7 +1535,8 @@
       "few",
       "several",
       "measure word indicating a small amount or small number (greater than 1)"
-    ]
+    ],
+    "vietnamese": "một số; ít"
   },
   {
     "id": 125,
@@ -1420,7 +1544,8 @@
     "pinyin": "xiě",
     "translations": [
       "to write"
-    ]
+    ],
+    "vietnamese": "cách viết"
   },
   {
     "id": 126,
@@ -1429,7 +1554,8 @@
     "translations": [
       "to thank",
       "thanks"
-    ]
+    ],
+    "vietnamese": "để cảm ơn; cảm ơn"
   },
   {
     "id": 127,
@@ -1440,7 +1566,8 @@
       "CL:個|个[gè]",
       "day of the week",
       "Sunday"
-    ]
+    ],
+    "vietnamese": "thứ hai"
   },
   {
     "id": 128,
@@ -1449,7 +1576,8 @@
     "translations": [
       "student",
       "schoolchild"
-    ]
+    ],
+    "vietnamese": "học sinh; học sinh"
   },
   {
     "id": 129,
@@ -1458,7 +1586,8 @@
     "translations": [
       "to learn",
       "to study"
-    ]
+    ],
+    "vietnamese": "để học; để nghiên cứu"
   },
   {
     "id": 130,
@@ -1467,7 +1596,8 @@
     "translations": [
       "school",
       "CL:所[suǒ]"
-    ]
+    ],
+    "vietnamese": "đàn cá"
   },
   {
     "id": 131,
@@ -1484,7 +1614,8 @@
       "all",
       "throughout",
       "\"one\" radical in Chinese characters (Kangxi radical 1)"
-    ]
+    ],
+    "vietnamese": "MỘT (1)"
   },
   {
     "id": 132,
@@ -1494,7 +1625,8 @@
       "clothes",
       "CL:件",
       "套[tào]"
-    ]
+    ],
+    "vietnamese": "quần áo"
   },
   {
     "id": 133,
@@ -1505,7 +1637,8 @@
       "CL:個|个",
       "位",
       "名[míng]"
-    ]
+    ],
+    "vietnamese": "bác sĩ"
   },
   {
     "id": 134,
@@ -1516,7 +1649,8 @@
       "CL:所",
       "家",
       "座[zuò]"
-    ]
+    ],
+    "vietnamese": "bệnh viện"
   },
   {
     "id": 135,
@@ -1526,7 +1660,8 @@
       "chair",
       "CL:把",
       "套[tào]"
-    ]
+    ],
+    "vietnamese": "ghế"
   },
   {
     "id": 136,
@@ -1538,7 +1673,8 @@
       "there are",
       "to exist",
       "to be"
-    ]
+    ],
+    "vietnamese": "có; có"
   },
   {
     "id": 137,
@@ -1549,7 +1685,8 @@
       "month",
       "CL:個|个",
       "輪|轮[lún]"
-    ]
+    ],
+    "vietnamese": "trăng; tháng"
   },
   {
     "id": 138,
@@ -1561,7 +1698,8 @@
       "to exist",
       "in the middle of doing sth",
       "(indicating an action in progress)"
-    ]
+    ],
+    "vietnamese": "(nằm) tại; (sẽ) trong"
   },
   {
     "id": 139,
@@ -1570,7 +1708,8 @@
     "translations": [
       "goodbye",
       "see you again later"
-    ]
+    ],
+    "vietnamese": "tạm biệt; hẹn gặp lại sau"
   },
   {
     "id": 140,
@@ -1578,7 +1717,8 @@
     "pinyin": "zěn me",
     "translations": [
       "variant of 怎麼|怎么[zěn me]"
-    ]
+    ],
+    "vietnamese": "biến thể của 怎麼|怎么"
   },
   {
     "id": 141,
@@ -1589,7 +1729,8 @@
       "how about?",
       "how was it?",
       "how are things?"
-    ]
+    ],
+    "vietnamese": "how?; how about?"
   },
   {
     "id": 142,
@@ -1600,7 +1741,8 @@
       "these",
       "(commonly pr.  before a classifier",
       "esp. in Beijing)"
-    ]
+    ],
+    "vietnamese": "này; những"
   },
   {
     "id": 143,
@@ -1609,7 +1751,8 @@
     "translations": [
       "China",
       "Middle Kingdom"
-    ]
+    ],
+    "vietnamese": "Trung Quốc; Trung Quốc"
   },
   {
     "id": 144,
@@ -1619,7 +1762,8 @@
       "noon",
       "midday",
       "CL:個|个[gè]"
-    ]
+    ],
+    "vietnamese": "trưa; trưa"
   },
   {
     "id": 145,
@@ -1634,7 +1778,8 @@
       "(suffix indicating firmness",
       "steadiness",
       "or coming to a halt)"
-    ]
+    ],
+    "vietnamese": "sống; sống"
   },
   {
     "id": 146,
@@ -1645,7 +1790,8 @@
       "desk",
       "CL:張|张",
       "套[tào]"
-    ]
+    ],
+    "vietnamese": "Bàn"
   },
   {
     "id": 147,
@@ -1658,7 +1804,8 @@
       "word",
       "CL:個|个[gè]",
       "courtesy or style name traditionally given to males aged 20 in dynastic China"
-    ]
+    ],
+    "vietnamese": "Chữ cái/Ký hiệu"
   },
   {
     "id": 148,
@@ -1666,7 +1813,8 @@
     "pinyin": "zuó tiān",
     "translations": [
       "yesterday"
-    ]
+    ],
+    "vietnamese": "hôm qua"
   },
   {
     "id": 149,
@@ -1679,7 +1827,8 @@
       "airplane etc)",
       "to bear fruit",
       "variant of 座[zuò]"
-    ]
+    ],
+    "vietnamese": "ngồi; ngồi"
   },
   {
     "id": 150,
@@ -1704,6 +1853,7 @@
       "to feign",
       "to act a part",
       "to put on appearance"
-    ]
+    ],
+    "vietnamese": "làm; thực hiện"
   }
 ]

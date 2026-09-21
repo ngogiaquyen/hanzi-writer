@@ -1,12 +1,12 @@
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { BookMarked, Check, Copy, Search, Volume2, X } from 'lucide-react';
-import { translateChineseToVietnamese } from '../utils/translation';
 
 interface HskWord {
   id: number;
   hanzi: string;
   pinyin: string;
   translations: string[];
+  vietnamese?: string;
 }
 
 interface HskSidebarProps {
@@ -17,49 +17,13 @@ const levels = [1, 2, 3, 4, 5, 6] as const;
 type HskLevel = (typeof levels)[number];
 
 interface VietnameseMeaningProps {
-  chinese: string;
+  vietnamese?: string;
 }
 
-const VietnameseMeaning: React.FC<VietnameseMeaningProps> = ({ chinese }) => {
-  const [meaning, setMeaning] = useState('');
-  const [shouldTranslate, setShouldTranslate] = useState(false);
-  const containerRef = useRef<HTMLSpanElement>(null);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setShouldTranslate(true);
-          observer.disconnect();
-        }
-      },
-      { rootMargin: '120px' },
-    );
-
-    if (containerRef.current) observer.observe(containerRef.current);
-    return () => observer.disconnect();
-  }, [chinese]);
-
-  useEffect(() => {
-    if (!shouldTranslate || meaning) return;
-
-    const translateMeaning = async () => {
-      try {
-        const translatedText = await translateChineseToVietnamese(chinese);
-        if (translatedText) {
-          setMeaning(translatedText);
-        }
-      } catch {
-        // Keep the Vietnamese column empty if the translation service is unavailable.
-      }
-    };
-
-    translateMeaning();
-  }, [chinese, meaning, shouldTranslate]);
-
+const VietnameseMeaning: React.FC<VietnameseMeaningProps> = ({ vietnamese }) => {
   return (
-    <span ref={containerRef} className="text-xs text-emerald-700 truncate" title={meaning}>
-      {meaning || 'Đang dịch...'}
+    <span className="text-xs text-emerald-700 truncate" title={vietnamese}>
+      {vietnamese || 'Chưa có nghĩa'}
     </span>
   );
 };
@@ -167,11 +131,21 @@ const HskSidebar: React.FC<HskSidebarProps> = ({ onSelectWord }) => {
         aria-label="Từ vựng HSK"
       >
         <div className="p-4 border-b border-gray-100">
-          <div className="flex items-center justify-between mb-3">
-            <h2 className="text-lg font-bold text-gray-800 flex items-center gap-2">
+          <div className="flex min-w-0 items-center gap-2">
+            <h2 className="flex shrink-0 items-center gap-2 text-lg font-bold text-gray-800">
               <BookMarked size={20} className="text-amber-600" />
               Từ vựng HSK
             </h2>
+            <div className="relative min-w-0 flex-1">
+              <Search size={16} className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" />
+              <input
+                value={query}
+                onChange={(event) => setQuery(event.target.value)}
+                placeholder="Tìm từ..."
+                className="w-full rounded-lg border border-gray-200 bg-gray-50 py-2 pl-9 pr-3 text-sm focus:border-amber-500 focus:outline-none focus:ring-2 focus:ring-amber-500/40"
+                aria-label="Tìm từ vựng HSK"
+              />
+            </div>
             <button
               onClick={() => setIsOpen(false)}
               className="p-1.5 bg-gray-100 hover:bg-gray-200 rounded-full text-gray-600 transition-colors"
@@ -180,17 +154,6 @@ const HskSidebar: React.FC<HskSidebarProps> = ({ onSelectWord }) => {
             >
               <X size={18} />
             </button>
-          </div>
-
-          <div className="relative">
-            <Search size={16} className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" />
-            <input
-              value={query}
-              onChange={(event) => setQuery(event.target.value)}
-              placeholder="Tìm chữ, pinyin hoặc nghĩa..."
-              className="w-full pl-9 pr-3 py-2 bg-gray-50 border border-gray-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-amber-500/40 focus:border-amber-500"
-              aria-label="Tìm từ vựng HSK"
-            />
           </div>
         </div>
 
@@ -259,7 +222,7 @@ const HskSidebar: React.FC<HskSidebarProps> = ({ onSelectWord }) => {
                       {word.translations[0] || 'Chưa có nghĩa'}
                     </span>
                     <span className="shrink-0 text-gray-300">-</span>
-                    <VietnameseMeaning chinese={word.hanzi} />
+                    <VietnameseMeaning vietnamese={word.vietnamese} />
                   </div>
                   <span className="absolute right-3 bottom-2 text-[10px] font-medium text-gray-400">
                     #{(wordsByLevel[activeLevel] || []).findIndex((item) => item.id === word.id) + 1}

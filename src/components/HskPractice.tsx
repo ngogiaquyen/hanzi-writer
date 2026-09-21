@@ -3,13 +3,13 @@ import { Check, Lightbulb, RotateCcw, Sparkles, X } from 'lucide-react';
 import cnchar from 'cnchar';
 import 'cnchar-radical';
 import { radicalDict } from '../utils/radicals';
-import { translateChineseToVietnamese } from '../utils/translation';
 
 interface HskWord {
   id: number;
   hanzi: string;
   pinyin: string;
   translations: string[];
+  vietnamese?: string;
 }
 
 type PracticeMode = 'recall' | 'choice';
@@ -90,22 +90,7 @@ const HskPractice: React.FC = () => {
   }, [words]);
 
   useEffect(() => {
-    if (!currentWord) return;
-
-    const sourceMeaning = currentWord.translations[0] || '';
-    setMeaning(sourceMeaning);
-    const translateMeaning = async () => {
-      try {
-        const translatedText = await translateChineseToVietnamese(currentWord.hanzi);
-        if (translatedText) {
-          setMeaning(translatedText);
-        }
-      } catch {
-        // Keep the source meaning when the translation service is unavailable.
-      }
-    };
-
-    translateMeaning();
+    setMeaning(currentWord?.vietnamese || 'Chưa có nghĩa tiếng Việt');
   }, [currentWord]);
 
   const isCorrect = useMemo(() => {
@@ -225,7 +210,7 @@ const HskPractice: React.FC = () => {
               <div className="mx-auto max-w-md space-y-2 text-left">
                 <div className="grid grid-cols-[8rem_1fr] items-baseline gap-2">
                   <p className="text-xs font-semibold tracking-wide text-gray-500">Nghĩa tiếng Việt:</p>
-                  <p className="text-lg font-semibold text-gray-800">{meaning || 'Đang dịch...'}</p>
+                  <p className="text-lg font-semibold text-gray-800">{meaning || 'Chưa có nghĩa tiếng Việt'}</p>
                 </div>
                 <div className="grid grid-cols-[8rem_1fr] items-baseline gap-2">
                   <p className="text-xs font-semibold tracking-wide text-gray-500">Nghĩa tiếng Anh:</p>

@@ -4,7 +4,7 @@ import cnchar from 'cnchar';
 import 'cnchar-radical';
 import { radicalDict } from '../utils/radicals';
 import StrokeViewer from './StrokeViewer';
-import { Play, X } from 'lucide-react';
+import { Play, Volume2, X } from 'lucide-react';
 
 interface CharacterCardProps {
   character: string;
@@ -12,6 +12,25 @@ interface CharacterCardProps {
 
 const CharacterCard: React.FC<CharacterCardProps> = ({ character }) => {
   const [showRadicalAnim, setShowRadicalAnim] = useState(false);
+  const [isSpeaking, setIsSpeaking] = useState(false);
+
+  const handleSpeak = () => {
+    if (!('speechSynthesis' in window)) return;
+
+    window.speechSynthesis.cancel();
+    if (isSpeaking) {
+      setIsSpeaking(false);
+      return;
+    }
+
+    const utterance = new SpeechSynthesisUtterance(character);
+    utterance.lang = 'zh-CN';
+    utterance.rate = 0.8;
+    utterance.onend = () => setIsSpeaking(false);
+    utterance.onerror = () => setIsSpeaking(false);
+    setIsSpeaking(true);
+    window.speechSynthesis.speak(utterance);
+  };
 
   // Get pinyin with tone marks
   const charPinyin = pinyin(character, { toneType: 'symbol', type: 'string' });
@@ -52,7 +71,16 @@ const CharacterCard: React.FC<CharacterCardProps> = ({ character }) => {
   }
 
   return (
-    <div className="bg-white p-3 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow flex flex-col items-center">
+    <div className="relative bg-white p-3 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow flex flex-col items-center">
+      <button
+        type="button"
+        onClick={handleSpeak}
+        className={`absolute right-2 top-2 rounded-full p-1.5 transition-colors ${isSpeaking ? 'bg-blue-100 text-blue-700' : 'bg-gray-100 text-gray-500 hover:bg-blue-50 hover:text-blue-600'}`}
+        title={isSpeaking ? 'Dừng phát âm' : 'Phát âm tiếng Trung'}
+        aria-label={isSpeaking ? `Dừng phát âm ${character}` : `Phát âm ${character}`}
+      >
+        <Volume2 size={16} />
+      </button>
       <div className="mb-2 text-center flex flex-col items-center justify-end w-full min-h-[3rem]">
         <span className="text-lg font-medium text-blue-600 leading-tight">{charPinyin}</span>
         {meaning && <span className="text-xs text-gray-500 line-clamp-1 truncate w-full mt-1" title={meaning}>{meaning}</span>}

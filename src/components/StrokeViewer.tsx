@@ -2,6 +2,8 @@ import { useEffect, useRef, useState } from 'react';
 import HanziWriter from 'hanzi-writer';
 import { Play, PenTool, XCircle } from 'lucide-react';
 
+const AUTO_REPLAY_STORAGE_KEY = 'hanzi_auto_replay';
+
 interface StrokeViewerProps {
   character: string;
 }
@@ -10,14 +12,33 @@ const StrokeViewer: React.FC<StrokeViewerProps> = ({ character }) => {
   const writerRef = useRef<HanziWriter | null>(null);
   const targetRef = useRef<HTMLDivElement>(null);
   const [isQuizzing, setIsQuizzing] = useState(false);
-  const [autoReplay, setAutoReplay] = useState(false);
+  const [autoReplay, setAutoReplay] = useState(() => {
+    try {
+      return localStorage.getItem(AUTO_REPLAY_STORAGE_KEY) === 'true';
+    } catch {
+      return false;
+    }
+  });
   const loopTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const autoReplayRef = useRef(autoReplay);
 
   const clearLoop = () => {
     if (loopTimeoutRef.current) {
       clearTimeout(loopTimeoutRef.current);
       loopTimeoutRef.current = null;
     }
+  };
+
+  const animateCharacter = () => {
+    if (!writerRef.current) return;
+
+    writerRef.current.animateCharacter({
+      onComplete: () => {
+        if (autoReplayRef.current) {
+          loopTimeoutRef.current = setTimeout(animateCharacter, 800);
+        }
+      },
+    });
   };
 
   useEffect(() => {
@@ -40,6 +61,10 @@ const StrokeViewer: React.FC<StrokeViewerProps> = ({ character }) => {
   }, [character]);
 
   useEffect(() => {
+    autoReplayRef.current = autoReplay;
+  }, [autoReplay]);
+
+  useEffect(() => {
     const handleAutoReplayChange = (event: Event) => {
       setAutoReplay((event as CustomEvent<boolean>).detail);
     };
@@ -47,24 +72,20 @@ const StrokeViewer: React.FC<StrokeViewerProps> = ({ character }) => {
     return () => window.removeEventListener('hanzi_auto_replay_changed', handleAutoReplayChange);
   }, []);
 
+  useEffect(() => {
+    if (!autoReplay || !writerRef.current) return;
+
+    clearLoop();
+    writerRef.current.cancelQuiz();
+    animateCharacter();
+  }, [character, autoReplay]);
+
   const handleAnimate = () => {
     if (writerRef.current) {
       setIsQuizzing(false);
       clearLoop();
       writerRef.current.cancelQuiz();
-      
-      const animate = () => {
-        if (!writerRef.current) return;
-        writerRef.current.animateCharacter({
-          onComplete: () => {
-            if (autoReplay) {
-              loopTimeoutRef.current = setTimeout(animate, 800);
-            }
-          }
-        });
-      };
-      
-      animate();
+      animateCharacter();
     }
   };
 

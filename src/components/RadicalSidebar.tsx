@@ -2,13 +2,26 @@ import { useState } from 'react';
 import { X, Book, Repeat } from 'lucide-react';
 import { radicalDict } from '../utils/radicals';
 
+const AUTO_REPLAY_STORAGE_KEY = 'hanzi_auto_replay';
+
 const RadicalSidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [autoReplay, setAutoReplay] = useState(false);
+  const [autoReplay, setAutoReplay] = useState(() => {
+    try {
+      return localStorage.getItem(AUTO_REPLAY_STORAGE_KEY) === 'true';
+    } catch {
+      return false;
+    }
+  });
 
   const toggleAutoReplay = () => {
     const newVal = !autoReplay;
     setAutoReplay(newVal);
+    try {
+      localStorage.setItem(AUTO_REPLAY_STORAGE_KEY, String(newVal));
+    } catch {
+      // Storage may be unavailable in private or restricted browser contexts.
+    }
     window.dispatchEvent(new CustomEvent('hanzi_auto_replay_changed', { detail: newVal }));
   };
 
@@ -48,7 +61,7 @@ const RadicalSidebar = () => {
             <button 
               onClick={toggleAutoReplay}
               className={`p-1.5 rounded-full transition-colors ${autoReplay ? 'bg-blue-100 text-blue-600' : 'bg-gray-100 text-gray-400 hover:bg-gray-200 hover:text-gray-600'}`}
-              title={autoReplay ? "Tự động lặp lại: Bật" : "Tự động lặp lại: Tắt"}
+              title={autoReplay ? "Tự động phát nét viết: Bật" : "Tự động phát nét viết: Tắt"}
             >
               <Repeat size={18} />
             </button>

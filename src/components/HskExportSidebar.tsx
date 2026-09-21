@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import { Download, FileSpreadsheet, X } from 'lucide-react';
+import { useEffect, useState } from 'react';
+import { Download, FileSpreadsheet, Moon, Sun, X } from 'lucide-react';
 import * as XLSX from 'xlsx';
 
 interface HskWord {
@@ -14,10 +14,28 @@ const levels = [1, 2, 3, 4, 5, 6] as const;
 
 type HskLevel = (typeof levels)[number];
 
+const DARK_MODE_STORAGE_KEY = 'hanzi-dark-mode';
+
 const HskExportSidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(() => {
+    try {
+      return localStorage.getItem(DARK_MODE_STORAGE_KEY) === 'true';
+    } catch {
+      return false;
+    }
+  });
   const [exportingLevel, setExportingLevel] = useState<HskLevel | null>(null);
   const [error, setError] = useState('');
+
+  useEffect(() => {
+    document.documentElement.classList.toggle('dark', isDarkMode);
+    try {
+      localStorage.setItem(DARK_MODE_STORAGE_KEY, String(isDarkMode));
+    } catch {
+      // Storage may be unavailable in restricted browser contexts.
+    }
+  }, [isDarkMode]);
 
   const getTimestamp = () => {
     const now = new Date();
@@ -81,15 +99,26 @@ const HskExportSidebar = () => {
             <FileSpreadsheet size={19} className="text-sky-600" />
             Xuất từ vựng
           </h2>
-          <button
-            type="button"
-            onClick={() => setIsOpen(false)}
-            className="rounded-full bg-gray-100 p-1.5 text-gray-600 transition-colors hover:bg-gray-200"
-            title="Đóng"
-            aria-label="Đóng xuất từ vựng"
-          >
-            <X size={18} />
-          </button>
+          <div className="flex items-center gap-1.5">
+            <button
+              type="button"
+              onClick={() => setIsDarkMode((current) => !current)}
+              className="rounded-full bg-gray-100 p-1.5 text-gray-600 transition-colors hover:bg-gray-200"
+              title={isDarkMode ? 'Chuyển sang giao diện sáng' : 'Chuyển sang giao diện tối'}
+              aria-label={isDarkMode ? 'Chuyển sang giao diện sáng' : 'Chuyển sang giao diện tối'}
+            >
+              {isDarkMode ? <Sun size={17} /> : <Moon size={17} />}
+            </button>
+            <button
+              type="button"
+              onClick={() => setIsOpen(false)}
+              className="rounded-full bg-gray-100 p-1.5 text-gray-600 transition-colors hover:bg-gray-200"
+              title="Đóng"
+              aria-label="Đóng xuất từ vựng"
+            >
+              <X size={18} />
+            </button>
+          </div>
         </div>
 
         <div className="space-y-2 p-4">

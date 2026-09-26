@@ -8,13 +8,16 @@ import { Play, Volume2, X } from 'lucide-react';
 
 interface CharacterCardProps {
   character: string;
+  onClick?: () => void;
+  isSelected?: boolean;
 }
 
-const CharacterCard: React.FC<CharacterCardProps> = ({ character }) => {
-  const [showRadicalAnim, setShowRadicalAnim] = useState(false);
+const CharacterCard: React.FC<CharacterCardProps> = ({ character, onClick, isSelected }) => {
+  const [showAnim, setShowAnim] = useState<'radical' | 'character' | null>(null);
   const [isSpeaking, setIsSpeaking] = useState(false);
 
-  const handleSpeak = () => {
+  const handleSpeak = (e: React.MouseEvent) => {
+    e.stopPropagation();
     if (!('speechSynthesis' in window)) return;
 
     window.speechSynthesis.cancel();
@@ -71,11 +74,14 @@ const CharacterCard: React.FC<CharacterCardProps> = ({ character }) => {
   }
 
   return (
-    <div className="relative bg-white p-3 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow flex flex-col items-center">
+    <div 
+      className={`relative bg-white p-3 rounded-xl shadow-sm border transition-shadow flex flex-col items-center cursor-pointer ${isSelected ? 'border-violet-500 shadow-md ring-1 ring-violet-500' : 'border-gray-100 hover:shadow-md hover:border-violet-200'}`}
+      onClick={onClick}
+    >
       <button
         type="button"
         onClick={handleSpeak}
-        className={`absolute right-2 top-2 rounded-full p-1.5 transition-colors ${isSpeaking ? 'bg-blue-100 text-blue-700' : 'bg-gray-100 text-gray-500 hover:bg-blue-50 hover:text-blue-600'}`}
+        className={`absolute right-2 top-2 rounded-full p-1.5 transition-colors z-10 ${isSpeaking ? 'bg-blue-100 text-blue-700' : 'bg-gray-100 text-gray-500 hover:bg-blue-50 hover:text-blue-600'}`}
         title={isSpeaking ? 'Dừng phát âm' : 'Phát âm tiếng Trung'}
         aria-label={isSpeaking ? `Dừng phát âm ${character}` : `Phát âm ${character}`}
       >
@@ -86,8 +92,11 @@ const CharacterCard: React.FC<CharacterCardProps> = ({ character }) => {
         {meaning && <span className="text-xs text-gray-500 line-clamp-1 truncate w-full mt-1" title={meaning}>{meaning}</span>}
         {radicalChar && (
           <button 
-            onClick={() => setShowRadicalAnim(true)}
-            className="text-[10px] text-blue-600 bg-blue-50 hover:bg-blue-100 rounded px-1.5 py-0.5 mt-1 transition-colors border border-blue-100 flex items-center gap-1 cursor-pointer max-w-full"
+            onClick={(e) => {
+              e.stopPropagation();
+              setShowAnim('radical');
+            }}
+            className="text-[10px] text-blue-600 bg-blue-50 hover:bg-blue-100 rounded px-1.5 py-0.5 mt-1 transition-colors border border-blue-100 flex items-center gap-1 cursor-pointer max-w-full z-10"
             title={`Xem nét viết Bộ ${radicalChar}`}
           >
             <span className="truncate">Bộ {radicalChar}{radicalMeaning ? `: ${radicalMeaning}` : ''}</span>
@@ -96,13 +105,18 @@ const CharacterCard: React.FC<CharacterCardProps> = ({ character }) => {
         )}
       </div>
       
-      <StrokeViewer character={character} />
+      <div className="py-2 my-1 z-10" onClick={(e) => e.stopPropagation()}>
+        <StrokeViewer character={character} />
+      </div>
 
-      {/* Radical Animation Modal */}
-      {showRadicalAnim && (
+      {/* Animation Modal */}
+      {showAnim === 'radical' && (
         <div 
           className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center p-4 transition-opacity"
-          onClick={() => setShowRadicalAnim(false)}
+          onClick={(e) => {
+            e.stopPropagation();
+            setShowAnim(null);
+          }}
         >
           <div 
             className="bg-white p-6 rounded-2xl max-w-[280px] w-full flex flex-col items-center relative shadow-2xl" 
@@ -110,14 +124,16 @@ const CharacterCard: React.FC<CharacterCardProps> = ({ character }) => {
           >
             <button 
               className="absolute top-3 right-3 text-gray-400 hover:text-gray-600 bg-gray-50 hover:bg-gray-100 rounded-full p-1 transition-colors" 
-              onClick={() => setShowRadicalAnim(false)}
+              onClick={(e) => {
+                e.stopPropagation();
+                setShowAnim(null);
+              }}
             >
               <X size={18} />
             </button>
             
             <h3 className="text-xl font-bold mb-1 text-blue-600">Bộ {radicalChar}</h3>
             <p className="text-xs text-gray-500 mb-6 text-center">{radicalMeaning}</p>
-            
             <StrokeViewer character={radicalChar} />
           </div>
         </div>

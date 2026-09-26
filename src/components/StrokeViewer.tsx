@@ -1,6 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
 import HanziWriter from 'hanzi-writer';
-import { Play, PenTool, XCircle } from 'lucide-react';
 
 const AUTO_REPLAY_STORAGE_KEY = 'hanzi_auto_replay';
 
@@ -11,7 +10,6 @@ interface StrokeViewerProps {
 const StrokeViewer: React.FC<StrokeViewerProps> = ({ character }) => {
   const writerRef = useRef<HanziWriter | null>(null);
   const targetRef = useRef<HTMLDivElement>(null);
-  const [isQuizzing, setIsQuizzing] = useState(false);
   const [autoReplay, setAutoReplay] = useState(() => {
     try {
       return localStorage.getItem(AUTO_REPLAY_STORAGE_KEY) === 'true';
@@ -29,13 +27,14 @@ const StrokeViewer: React.FC<StrokeViewerProps> = ({ character }) => {
     }
   };
 
-  const animateCharacter = () => {
-    if (!writerRef.current) return;
+  const animateCharacter = (writerInstance: HanziWriter | null) => {
+    if (!writerInstance) return;
 
-    writerRef.current.animateCharacter({
+    writerInstance.animateCharacter({
       onComplete: () => {
-        if (autoReplayRef.current) {
-          loopTimeoutRef.current = setTimeout(animateCharacter, 800);
+        // Ensure we only loop if this is still the active writer
+        if (autoReplayRef.current && writerRef.current === writerInstance) {
+          loopTimeoutRef.current = setTimeout(() => animateCharacter(writerInstance), 800);
         }
       },
     });
@@ -46,7 +45,7 @@ const StrokeViewer: React.FC<StrokeViewerProps> = ({ character }) => {
       // Clear the target div before creating a new writer to prevent duplicates
       targetRef.current.innerHTML = '';
       
-      writerRef.current = HanziWriter.create(targetRef.current, character, {
+      const newWriter = HanziWriter.create(targetRef.current, character, {
         width: 90,
         height: 90,
         padding: 4,
@@ -55,7 +54,16 @@ const StrokeViewer: React.FC<StrokeViewerProps> = ({ character }) => {
         delayBetweenStrokes: 50,
         radicalColor: '#337ab7',
         highlightColor: '#e5900d',
+        // @ts-ignore: onLoad is supported by the library but missing in type definitions
+        onLoad: () => {
+          if (autoReplayRef.current) {
+            clearLoop();
+            newWriter.cancelQuiz();
+            animateCharacter(newWriter);
+          }
+        }
       });
+      writerRef.current = newWriter;
     }
     return () => clearLoop();
   }, [character]);
@@ -75,42 +83,11 @@ const StrokeViewer: React.FC<StrokeViewerProps> = ({ character }) => {
   useEffect(() => {
     if (!autoReplay || !writerRef.current) return;
 
+    // This handles when autoReplay is toggled while the character is already loaded
     clearLoop();
     writerRef.current.cancelQuiz();
-    animateCharacter();
-  }, [character, autoReplay]);
-
-  const handleAnimate = () => {
-    if (writerRef.current) {
-      setIsQuizzing(false);
-      clearLoop();
-      writerRef.current.cancelQuiz();
-      animateCharacter();
-    }
-  };
-
-  const handleQuiz = () => {
-    if (writerRef.current) {
-      setIsQuizzing(true);
-      clearLoop();
-      writerRef.current.cancelQuiz();
-      writerRef.current.quiz({
-        onComplete: (summaryData) => {
-          setIsQuizzing(false);
-          // Optional: Add some success animation or feedback here
-          console.log('Quiz completed!', summaryData);
-        }
-      });
-    }
-  };
-  
-  const handleCancelQuiz = () => {
-    if (writerRef.current) {
-      setIsQuizzing(false);
-      writerRef.current.cancelQuiz();
-      writerRef.current.showCharacter();
-    }
-  };
+    animateCharacter(writerRef.current);
+  }, [autoReplay]); // Removed character from dependencies to prevent double animation trigger
 
   return (
     <div className="flex flex-col items-center w-full">
@@ -124,37 +101,6 @@ const StrokeViewer: React.FC<StrokeViewerProps> = ({ character }) => {
         
         {/* The target for HanziWriter */}
         <div ref={targetRef} className="relative z-10 w-full h-full cursor-pointer" />
-      </div>
-
-      <div className="flex space-x-1 w-full justify-center">
-        <button
-          onClick={handleAnimate}
-          className="flex flex-1 items-center justify-center px-1 py-1.5 bg-blue-50 text-blue-600 rounded-md hover:bg-blue-100 transition-colors shadow-sm text-xs font-medium"
-          title="Chạy lại"
-          disabled={isQuizzing}
-        >
-          <Play size={14} className="mr-1" />
-          Replay
-        </button>
-        {isQuizzing ? (
-          <button
-            onClick={handleCancelQuiz}
-            className="flex flex-1 items-center justify-center px-1 py-1.5 bg-red-50 text-red-600 rounded-md hover:bg-red-100 transition-colors shadow-sm text-xs font-medium"
-            title="Hủy"
-          >
-            <XCircle size={14} className="mr-1" />
-            Hủy
-          </button>
-        ) : (
-          <button
-            onClick={handleQuiz}
-            className="flex flex-1 items-center justify-center px-1 py-1.5 bg-green-50 text-green-600 rounded-md hover:bg-green-100 transition-colors shadow-sm text-xs font-medium"
-            title="Tập viết"
-          >
-            <PenTool size={14} className="mr-1" />
-            Viết
-          </button>
-        )}
       </div>
     </div>
   );

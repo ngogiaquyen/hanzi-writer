@@ -1,7 +1,5 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef } from 'react';
 import HanziWriter from 'hanzi-writer';
-
-const AUTO_REPLAY_STORAGE_KEY = 'hanzi_auto_replay';
 
 interface StrokeViewerProps {
   character: string;
@@ -10,15 +8,7 @@ interface StrokeViewerProps {
 const StrokeViewer: React.FC<StrokeViewerProps> = ({ character }) => {
   const writerRef = useRef<HanziWriter | null>(null);
   const targetRef = useRef<HTMLDivElement>(null);
-  const [autoReplay, setAutoReplay] = useState(() => {
-    try {
-      return localStorage.getItem(AUTO_REPLAY_STORAGE_KEY) === 'true';
-    } catch {
-      return false;
-    }
-  });
   const loopTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
-  const autoReplayRef = useRef(autoReplay);
 
   const clearLoop = () => {
     if (loopTimeoutRef.current) {
@@ -33,7 +23,7 @@ const StrokeViewer: React.FC<StrokeViewerProps> = ({ character }) => {
     writerInstance.animateCharacter({
       onComplete: () => {
         // Ensure we only loop if this is still the active writer
-        if (autoReplayRef.current && writerRef.current === writerInstance) {
+        if (writerRef.current === writerInstance) {
           loopTimeoutRef.current = setTimeout(() => animateCharacter(writerInstance), 800);
         }
       },
@@ -42,6 +32,12 @@ const StrokeViewer: React.FC<StrokeViewerProps> = ({ character }) => {
 
   useEffect(() => {
     if (targetRef.current && character) {
+      // Clean up previous writer if any
+      if (writerRef.current) {
+        writerRef.current.cancelQuiz();
+      }
+      clearLoop();
+      
       // Clear the target div before creating a new writer to prevent duplicates
       targetRef.current.innerHTML = '';
       
@@ -54,40 +50,21 @@ const StrokeViewer: React.FC<StrokeViewerProps> = ({ character }) => {
         delayBetweenStrokes: 50,
         radicalColor: '#337ab7',
         highlightColor: '#e5900d',
-        // @ts-ignore: onLoad is supported by the library but missing in type definitions
-        onLoad: () => {
-          if (autoReplayRef.current) {
-            clearLoop();
-            newWriter.cancelQuiz();
-            animateCharacter(newWriter);
-          }
-        }
       });
+      
       writerRef.current = newWriter;
+      
+      // Start animation immediately (HanziWriter queues it if data isn't loaded yet)
+      animateCharacter(newWriter);
     }
-    return () => clearLoop();
-  }, [character]);
-
-  useEffect(() => {
-    autoReplayRef.current = autoReplay;
-  }, [autoReplay]);
-
-  useEffect(() => {
-    const handleAutoReplayChange = (event: Event) => {
-      setAutoReplay((event as CustomEvent<boolean>).detail);
+    
+    return () => {
+      if (writerRef.current) {
+        writerRef.current.cancelQuiz();
+      }
+      clearLoop();
     };
-    window.addEventListener('hanzi_auto_replay_changed', handleAutoReplayChange);
-    return () => window.removeEventListener('hanzi_auto_replay_changed', handleAutoReplayChange);
-  }, []);
-
-  useEffect(() => {
-    if (!autoReplay || !writerRef.current) return;
-
-    // This handles when autoReplay is toggled while the character is already loaded
-    clearLoop();
-    writerRef.current.cancelQuiz();
-    animateCharacter(writerRef.current);
-  }, [autoReplay]); // Removed character from dependencies to prevent double animation trigger
+  }, [character]);
 
   return (
     <div className="flex flex-col items-center w-full">

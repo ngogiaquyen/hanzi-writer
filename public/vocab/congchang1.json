@@ -1,0 +1,702 @@
+[
+    {
+        "id": 1,
+        "chinese": "公司",
+        "pinyin": "gōngsī",
+        "vietnamese": "Công ty",
+        "checked": true
+    },
+    {
+        "id": 2,
+        "chinese": "工厂",
+        "pinyin": "gōngchǎng",
+        "vietnamese": "Nhà máy",
+        "checked": true
+    },
+    {
+        "id": 3,
+        "chinese": "办公室",
+        "pinyin": "bàngōngshì",
+        "vietnamese": "Văn phòng",
+        "checked": true
+    },
+    {
+        "id": 4,
+        "chinese": "老板",
+        "pinyin": "lǎobǎn",
+        "vietnamese": "Sếp",
+        "checked": true
+    },
+    {
+        "id": 5,
+        "chinese": "经理",
+        "pinyin": "jīnglǐ",
+        "vietnamese": "Quản lý",
+        "checked": true
+    },
+    {
+        "id": 6,
+        "chinese": "主任",
+        "pinyin": "zhǔrèn",
+        "vietnamese": "Chủ nhiệm",
+        "checked": true
+    },
+    {
+        "id": 7,
+        "chinese": "主管",
+        "pinyin": "zhǔguǎn",
+        "vietnamese": "Giám sát",
+        "checked": true
+    },
+    {
+        "id": 8,
+        "chinese": "组长",
+        "pinyin": "zǔzhǎng",
+        "vietnamese": "Tổ trưởng",
+        "checked": true
+    },
+    {
+        "id": 9,
+        "chinese": "员工",
+        "pinyin": "yuángōng",
+        "vietnamese": "Nhân viên",
+        "checked": true
+    },
+    {
+        "id": 10,
+        "chinese": "同事",
+        "pinyin": "tóngshì",
+        "vietnamese": "Đồng nghiệp",
+        "checked": true
+    },
+    {
+        "id": 11,
+        "chinese": "客户",
+        "pinyin": "kèhù",
+        "vietnamese": "Khách hàng",
+        "checked": true
+    },
+    {
+        "id": 12,
+        "chinese": "工程师",
+        "pinyin": "gōngchéngshī",
+        "vietnamese": "Kỹ sư",
+        "checked": true
+    },
+    {
+        "id": 13,
+        "chinese": "技术员",
+        "pinyin": "jìshùyuán",
+        "vietnamese": "Kỹ thuật viên",
+        "checked": true
+    },
+    {
+        "id": 14,
+        "chinese": "操作员",
+        "pinyin": "cāozuòyuán",
+        "vietnamese": "Nhân viên vận hành",
+        "checked": true
+    },
+    {
+        "id": 15,
+        "chinese": "工作",
+        "pinyin": "gōngzuò",
+        "vietnamese": "Công việc",
+        "checked": true
+    },
+    {
+        "id": 16,
+        "chinese": "上班",
+        "pinyin": "shàngbān",
+        "vietnamese": "Đi làm",
+        "checked": true
+    },
+    {
+        "id": 17,
+        "chinese": "下班",
+        "pinyin": "xiàbān",
+        "vietnamese": "Tan làm",
+        "checked": true
+    },
+    {
+        "id": 18,
+        "chinese": "加班",
+        "pinyin": "jiābān",
+        "vietnamese": "Tăng ca",
+        "checked": true
+    },
+    {
+        "id": 19,
+        "chinese": "请假",
+        "pinyin": "qǐngjià",
+        "vietnamese": "Xin nghỉ phép",
+        "checked": true
+    },
+    {
+        "id": 20,
+        "chinese": "出差",
+        "pinyin": "chūchāi",
+        "vietnamese": "Đi công tác",
+        "checked": true
+    },
+    {
+        "id": 21,
+        "chinese": "开会",
+        "pinyin": "kāihuì",
+        "vietnamese": "Họp",
+        "checked": true
+    },
+    {
+        "id": 22,
+        "chinese": "培训",
+        "pinyin": "péixùn",
+        "vietnamese": "Đào tạo",
+        "checked": true
+    },
+    {
+        "id": 23,
+        "chinese": "学习",
+        "pinyin": "xuéxí",
+        "vietnamese": "Học tập",
+        "checked": true
+    },
+    {
+        "id": 24,
+        "chinese": "检查",
+        "pinyin": "jiǎnchá",
+        "vietnamese": "Kiểm tra",
+        "checked": true
+    },
+    {
+        "id": 25,
+        "chinese": "确认",
+        "pinyin": "quèrèn",
+        "vietnamese": "Xác nhận",
+        "checked": true
+    },
+    {
+        "id": 26,
+        "chinese": "修改",
+        "pinyin": "xiūgǎi",
+        "vietnamese": "Sửa đổi",
+        "checked": true
+    },
+    {
+        "id": 27,
+        "chinese": "调整",
+        "pinyin": "tiáozhěng",
+        "vietnamese": "Điều chỉnh",
+        "checked": true
+    },
+    {
+        "id": 28,
+        "chinese": "完成",
+        "pinyin": "wánchéng",
+        "vietnamese": "Hoàn thành",
+        "checked": true
+    },
+    {
+        "id": 29,
+        "chinese": "开始",
+        "pinyin": "kāishǐ",
+        "vietnamese": "Bắt đầu",
+        "checked": true
+    },
+    {
+        "id": 30,
+        "chinese": "结束",
+        "pinyin": "jiéshù",
+        "vietnamese": "Kết thúc",
+        "checked": true
+    },
+    {
+        "id": 31,
+        "chinese": "计划",
+        "pinyin": "jìhuà",
+        "vietnamese": "Kế hoạch",
+        "checked": true
+    },
+    {
+        "id": 32,
+        "chinese": "安排",
+        "pinyin": "ānpái",
+        "vietnamese": "Sắp xếp",
+        "checked": true
+    },
+    {
+        "id": 33,
+        "chinese": "负责",
+        "pinyin": "fùzé",
+        "vietnamese": "Phụ trách",
+        "checked": true
+    },
+    {
+        "id": 34,
+        "chinese": "协助",
+        "pinyin": "xiézhù",
+        "vietnamese": "Hỗ trợ",
+        "checked": true
+    },
+    {
+        "id": 35,
+        "chinese": "联系",
+        "pinyin": "liánxì",
+        "vietnamese": "Liên hệ",
+        "checked": true
+    },
+    {
+        "id": 36,
+        "chinese": "回复",
+        "pinyin": "huífù",
+        "vietnamese": "Phản hồi",
+        "checked": false
+    },
+    {
+        "id": 37,
+        "chinese": "汇报",
+        "pinyin": "huìbào",
+        "vietnamese": "Báo cáo",
+        "checked": false
+    },
+    {
+        "id": 38,
+        "chinese": "申请",
+        "pinyin": "shēnqǐng",
+        "vietnamese": "Đăng ký, xin phép",
+        "checked": false
+    },
+    {
+        "id": 39,
+        "chinese": "批准",
+        "pinyin": "pīzhǔn",
+        "vietnamese": "Phê duyệt",
+        "checked": true
+    },
+    {
+        "id": 40,
+        "chinese": "签字",
+        "pinyin": "qiānzì",
+        "vietnamese": "Ký tên",
+        "checked": false
+    },
+    {
+        "id": 41,
+        "chinese": "文件",
+        "pinyin": "wénjiàn",
+        "vietnamese": "Tài liệu",
+        "checked": false
+    },
+    {
+        "id": 42,
+        "chinese": "图纸",
+        "pinyin": "túzhǐ",
+        "vietnamese": "Bản vẽ",
+        "checked": true
+    },
+    {
+        "id": 43,
+        "chinese": "合同",
+        "pinyin": "hétong",
+        "vietnamese": "Hợp đồng",
+        "checked": true
+    },
+    {
+        "id": 44,
+        "chinese": "邮件",
+        "pinyin": "yóujiàn",
+        "vietnamese": "Email",
+        "checked": true
+    },
+    {
+        "id": 45,
+        "chinese": "数据",
+        "pinyin": "shùjù",
+        "vietnamese": "Dữ liệu",
+        "checked": false
+    },
+    {
+        "id": 46,
+        "chinese": "报表",
+        "pinyin": "bàobiǎo",
+        "vietnamese": "Báo cáo",
+        "checked": true
+    },
+    {
+        "id": 47,
+        "chinese": "系统",
+        "pinyin": "xìtǒng",
+        "vietnamese": "Hệ thống",
+        "checked": false
+    },
+    {
+        "id": 48,
+        "chinese": "软件",
+        "pinyin": "ruǎnjiàn",
+        "vietnamese": "Phần mềm",
+        "checked": false
+    },
+    {
+        "id": 49,
+        "chinese": "硬件",
+        "pinyin": "yìngjiàn",
+        "vietnamese": "Phần cứng",
+        "checked": false
+    },
+    {
+        "id": 50,
+        "chinese": "电脑",
+        "pinyin": "diànnǎo",
+        "vietnamese": "Máy tính",
+        "checked": true
+    },
+    {
+        "id": 51,
+        "chinese": "打印机",
+        "pinyin": "dǎyìnjī",
+        "vietnamese": "Máy in",
+        "checked": true
+    },
+    {
+        "id": 52,
+        "chinese": "扫描枪",
+        "pinyin": "sǎomiáoqiāng",
+        "vietnamese": "Máy quét mã vạch",
+        "checked": true
+    },
+    {
+        "id": 53,
+        "chinese": "相机",
+        "pinyin": "xiàngjī",
+        "vietnamese": "Camera",
+        "checked": false
+    },
+    {
+        "id": 54,
+        "chinese": "设备",
+        "pinyin": "shèbèi",
+        "vietnamese": "Thiết bị",
+        "checked": true
+    },
+    {
+        "id": 55,
+        "chinese": "机器",
+        "pinyin": "jīqì",
+        "vietnamese": "Máy móc",
+        "checked": false
+    },
+    {
+        "id": 56,
+        "chinese": "生产",
+        "pinyin": "shēngchǎn",
+        "vietnamese": "Sản xuất",
+        "checked": false
+    },
+    {
+        "id": 57,
+        "chinese": "产品",
+        "pinyin": "chǎnpǐn",
+        "vietnamese": "Sản phẩm",
+        "checked": false
+    },
+    {
+        "id": 58,
+        "chinese": "样品",
+        "pinyin": "yàngpǐn",
+        "vietnamese": "Mẫu thử",
+        "checked": false
+    },
+    {
+        "id": 59,
+        "chinese": "材料",
+        "pinyin": "cáiliào",
+        "vietnamese": "Vật liệu",
+        "checked": false
+    },
+    {
+        "id": 60,
+        "chinese": "零件",
+        "pinyin": "língjiàn",
+        "vietnamese": "Linh kiện",
+        "checked": false
+    },
+    {
+        "id": 61,
+        "chinese": "模具",
+        "pinyin": "mújù",
+        "vietnamese": "Khuôn",
+        "checked": false
+    },
+    {
+        "id": 62,
+        "chinese": "工艺",
+        "pinyin": "gōngyì",
+        "vietnamese": "Quy trình công nghệ",
+        "checked": false
+    },
+    {
+        "id": 63,
+        "chinese": "流程",
+        "pinyin": "liúchéng",
+        "vietnamese": "Quy trình",
+        "checked": false
+    },
+    {
+        "id": 64,
+        "chinese": "品质",
+        "pinyin": "pǐnzhì",
+        "vietnamese": "Chất lượng",
+        "checked": false
+    },
+    {
+        "id": 65,
+        "chinese": "检验",
+        "pinyin": "jiǎnyàn",
+        "vietnamese": "Kiểm tra chất lượng",
+        "checked": false
+    },
+    {
+        "id": 66,
+        "chinese": "测试",
+        "pinyin": "cèshì",
+        "vietnamese": "Kiểm thử",
+        "checked": false
+    },
+    {
+        "id": 67,
+        "chinese": "调试",
+        "pinyin": "tiáoshì",
+        "vietnamese": "Chạy thử, debug",
+        "checked": false
+    },
+    {
+        "id": 68,
+        "chinese": "故障",
+        "pinyin": "gùzhàng",
+        "vietnamese": "Sự cố",
+        "checked": false
+    },
+    {
+        "id": 69,
+        "chinese": "维修",
+        "pinyin": "wéixiū",
+        "vietnamese": "Sửa chữa",
+        "checked": false
+    },
+    {
+        "id": 70,
+        "chinese": "保养",
+        "pinyin": "bǎoyǎng",
+        "vietnamese": "Bảo dưỡng",
+        "checked": false
+    },
+    {
+        "id": 71,
+        "chinese": "安装",
+        "pinyin": "ānzhuāng",
+        "vietnamese": "Lắp đặt",
+        "checked": true
+    },
+    {
+        "id": 72,
+        "chinese": "拆卸",
+        "pinyin": "chāixiè",
+        "vietnamese": "Tháo dỡ",
+        "checked": false
+    },
+    {
+        "id": 73,
+        "chinese": "参数",
+        "pinyin": "cānshù",
+        "vietnamese": "Tham số",
+        "checked": false
+    },
+    {
+        "id": 74,
+        "chinese": "设置",
+        "pinyin": "shèzhì",
+        "vietnamese": "Cài đặt",
+        "checked": false
+    },
+    {
+        "id": 75,
+        "chinese": "权限",
+        "pinyin": "quánxiàn",
+        "vietnamese": "Quyền hạn",
+        "checked": false
+    },
+    {
+        "id": 76,
+        "chinese": "账号",
+        "pinyin": "zhànghào",
+        "vietnamese": "Tài khoản",
+        "checked": false
+    },
+    {
+        "id": 77,
+        "chinese": "密码",
+        "pinyin": "mìmǎ",
+        "vietnamese": "Mật khẩu",
+        "checked": true
+    },
+    {
+        "id": 78,
+        "chinese": "网络",
+        "pinyin": "wǎngluò",
+        "vietnamese": "Mạng",
+        "checked": true
+    },
+    {
+        "id": 79,
+        "chinese": "数据库",
+        "pinyin": "shùjùkù",
+        "vietnamese": "Cơ sở dữ liệu",
+        "checked": false
+    },
+    {
+        "id": 80,
+        "chinese": "程序",
+        "pinyin": "chéngxù",
+        "vietnamese": "Chương trình",
+        "checked": false
+    },
+    {
+        "id": 81,
+        "chinese": "订单",
+        "pinyin": "dìngdān",
+        "vietnamese": "Đơn hàng",
+        "checked": false
+    },
+    {
+        "id": 82,
+        "chinese": "交期",
+        "pinyin": "jiāoqī",
+        "vietnamese": "Thời hạn giao hàng",
+        "checked": false
+    },
+    {
+        "id": 83,
+        "chinese": "发货",
+        "pinyin": "fāhuò",
+        "vietnamese": "Giao hàng",
+        "checked": true
+    },
+    {
+        "id": 84,
+        "chinese": "收货",
+        "pinyin": "shōuhuò",
+        "vietnamese": "Nhận hàng",
+        "checked": true
+    },
+    {
+        "id": 85,
+        "chinese": "库存",
+        "pinyin": "kùcún",
+        "vietnamese": "Tồn kho",
+        "checked": true
+    },
+    {
+        "id": 86,
+        "chinese": "包装",
+        "pinyin": "bāozhuāng",
+        "vietnamese": "Đóng gói",
+        "checked": true
+    },
+    {
+        "id": 87,
+        "chinese": "标签",
+        "pinyin": "biāoqiān",
+        "vietnamese": "Nhãn",
+        "checked": false
+    },
+    {
+        "id": 88,
+        "chinese": "条码",
+        "pinyin": "tiáomǎ",
+        "vietnamese": "Mã vạch",
+        "checked": true
+    },
+    {
+        "id": 89,
+        "chinese": "成本",
+        "pinyin": "chéngběn",
+        "vietnamese": "Chi phí",
+        "checked": false
+    },
+    {
+        "id": 90,
+        "chinese": "利润",
+        "pinyin": "lìrùn",
+        "vietnamese": "Lợi nhuận",
+        "checked": false
+    },
+    {
+        "id": 91,
+        "chinese": "工资",
+        "pinyin": "gōngzī",
+        "vietnamese": "Tiền lương",
+        "checked": true
+    },
+    {
+        "id": 92,
+        "chinese": "奖金",
+        "pinyin": "jiǎngjīn",
+        "vietnamese": "Tiền thưởng",
+        "checked": false
+    },
+    {
+        "id": 93,
+        "chinese": "报销",
+        "pinyin": "bàoxiāo",
+        "vietnamese": "Thanh toán chi phí",
+        "checked": false
+    },
+    {
+        "id": 94,
+        "chinese": "发票",
+        "pinyin": "fāpiào",
+        "vietnamese": "Hóa đơn GTGT",
+        "checked": false
+    },
+    {
+        "id": 95,
+        "chinese": "税",
+        "pinyin": "shuì",
+        "vietnamese": "Thuế",
+        "checked": false
+    },
+    {
+        "id": 96,
+        "chinese": "安全",
+        "pinyin": "ānquán",
+        "vietnamese": "An toàn",
+        "checked": true
+    },
+    {
+        "id": 97,
+        "chinese": "风险",
+        "pinyin": "fēngxiǎn",
+        "vietnamese": "Rủi ro",
+        "checked": false
+    },
+    {
+        "id": 98,
+        "chinese": "问题",
+        "pinyin": "wèntí",
+        "vietnamese": "Vấn đề",
+        "checked": true
+    },
+    {
+        "id": 99,
+        "chinese": "原因",
+        "pinyin": "yuányīn",
+        "vietnamese": "Nguyên nhân",
+        "checked": false
+    },
+    {
+        "id": 100,
+        "chinese": "解决",
+        "pinyin": "jiějué",
+        "vietnamese": "Giải quyết",
+        "checked": false
+    }
+]

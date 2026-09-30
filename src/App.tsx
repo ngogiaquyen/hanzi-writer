@@ -10,6 +10,8 @@ import HskExportSidebar from './components/HskExportSidebar';
 import CharacterDictionarySidebar from './components/CharacterDictionarySidebar';
 import type { CharacterEntry } from './components/CharacterDictionarySidebar';
 import StrokeViewer from './components/StrokeViewer';
+import ParagraphSidebar from './components/ParagraphSidebar';
+import ParagraphReader from './components/ParagraphReader';
 import { translateChineseToVietnamese } from './utils/translation';
 
 function App() {
@@ -22,6 +24,7 @@ function App() {
   const [isSpeakingSelectedCharacter, setIsSpeakingSelectedCharacter] = useState(false);
   const [dictionary, setDictionary] = useState<Record<string, CharacterEntry>>({});
   const [dictionaryList, setDictionaryList] = useState<CharacterEntry[]>([]);
+  const [activeParagraphUrl, setActiveParagraphUrl] = useState<string | null>(null);
 
   // Touch swipe state
   const touchStartX = useRef<number | null>(null);
@@ -175,14 +178,24 @@ function App() {
 
   return (
     <div className="min-h-screen bg-slate-50 font-sans">
-      <RadicalSidebar />
-      <HskSidebar onSelectWord={handleAnalyze} />
-      <HskExportSidebar />
-      <CharacterDictionarySidebar onSelectCharacter={handleSelectCharacter} />
+      <div onClickCapture={() => setActiveParagraphUrl(null)}>
+        <RadicalSidebar />
+        <HskSidebar onSelectWord={handleAnalyze} />
+        <HskPractice />
+        <HskExportSidebar />
+        <CharacterDictionarySidebar onSelectCharacter={handleSelectCharacter} />
+      </div>
+      <ParagraphSidebar onSelectFile={setActiveParagraphUrl} />
       {/* Main Content */}
       <main className="px-2 mt-4 mx-auto max-w-4xl">
-        <InputArea initialText={rawText} onAnalyze={handleAnalyze} />
-        <HskPractice />
+        {activeParagraphUrl ? (
+          <ParagraphReader 
+            fileUrl={activeParagraphUrl} 
+            onClose={() => setActiveParagraphUrl(null)} 
+          />
+        ) : (
+          <>
+            <InputArea initialText={rawText} onAnalyze={handleAnalyze} />
 
         {/* Translation Banner */}
         {rawText && (
@@ -286,6 +299,8 @@ function App() {
             <p className="text-gray-500 mt-2">Vui lòng nhập văn bản tiếng Trung vào ô tìm kiếm ở trên.</p>
           </div>
         ) : null}
+          </>
+        )}
       </main>
     </div>
   );

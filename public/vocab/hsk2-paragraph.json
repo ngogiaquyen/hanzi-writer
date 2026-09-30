@@ -1,0 +1,2208 @@
+[
+    [
+        {
+            "word": "今天",
+            "pinyin": "jīn tiān",
+            "meaning": "hôm nay; hiện tại",
+            "isPunctuation": false
+        },
+        {
+            "word": "早上",
+            "pinyin": "zǎo shang",
+            "meaning": "Sáng",
+            "isPunctuation": false
+        },
+        {
+            "word": "我",
+            "pinyin": "wǒ",
+            "meaning": "Tôi... tôi sao?",
+            "isPunctuation": false
+        },
+        {
+            "word": "六",
+            "pinyin": "liù",
+            "meaning": "sáu; 6",
+            "isPunctuation": false
+        },
+        {
+            "word": "点",
+            "pinyin": "diǎn",
+            "meaning": "điểm; chấm",
+            "isPunctuation": false
+        },
+        {
+            "word": "起床",
+            "pinyin": "qǐ chuáng",
+            "meaning": "ra khỏi giường; đứng dậy",
+            "isPunctuation": false
+        },
+        {
+            "word": "，",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        },
+        {
+            "word": "洗",
+            "pinyin": "xǐ",
+            "meaning": "tắm rửa; tắm rửa",
+            "isPunctuation": false
+        },
+        {
+            "word": "了",
+            "pinyin": "le",
+            "meaning": "(hạt phương thức tăng cường khoản trên); (điểm đánh dấu hành động đã hoàn thành)",
+            "isPunctuation": false
+        },
+        {
+            "word": "脸",
+            "pinyin": "liǎn",
+            "meaning": "mặt, khuôn mặt",
+            "isPunctuation": false
+        },
+        {
+            "word": "，",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        },
+        {
+            "word": "吃",
+            "pinyin": "chī",
+            "meaning": "ăn; tiêu thụ",
+            "isPunctuation": false
+        },
+        {
+            "word": "了",
+            "pinyin": "le",
+            "meaning": "(hạt phương thức tăng cường khoản trên); (điểm đánh dấu hành động đã hoàn thành)",
+            "isPunctuation": false
+        },
+        {
+            "word": "一",
+            "pinyin": "yī",
+            "meaning": "MỘT (1)",
+            "isPunctuation": false
+        },
+        {
+            "word": "个",
+            "pinyin": "gè",
+            "meaning": "biến thể của 個|个",
+            "isPunctuation": false
+        },
+        {
+            "word": "鸡蛋",
+            "pinyin": "jī dàn",
+            "meaning": "(gà) trứng; trứng gà mái",
+            "isPunctuation": false
+        },
+        {
+            "word": "，",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        },
+        {
+            "word": "喝",
+            "pinyin": "hē",
+            "meaning": "uống đi; Trời ơi!",
+            "isPunctuation": false
+        },
+        {
+            "word": "了",
+            "pinyin": "le",
+            "meaning": "(hạt phương thức tăng cường khoản trên); (điểm đánh dấu hành động đã hoàn thành)",
+            "isPunctuation": false
+        },
+        {
+            "word": "一",
+            "pinyin": "yī",
+            "meaning": "MỘT (1)",
+            "isPunctuation": false
+        },
+        {
+            "word": "杯",
+            "pinyin": "bēi",
+            "meaning": "cái chén, cái cốc",
+            "isPunctuation": false
+        },
+        {
+            "word": "牛奶",
+            "pinyin": "niú nǎi",
+            "meaning": "Sữa bò",
+            "isPunctuation": false
+        },
+        {
+            "word": "。",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        }
+    ],
+    [
+        {
+            "word": "因为",
+            "pinyin": "yīn wèi",
+            "meaning": "bởi vì",
+            "isPunctuation": false
+        },
+        {
+            "word": "天气",
+            "pinyin": "tiān qì",
+            "meaning": "thời tiết",
+            "isPunctuation": false
+        },
+        {
+            "word": "不",
+            "pinyin": "bù",
+            "meaning": "(tiền tố âm); không",
+            "isPunctuation": false
+        },
+        {
+            "word": "太",
+            "pinyin": "tài",
+            "meaning": "cao nhất; vĩ đại nhất",
+            "isPunctuation": false
+        },
+        {
+            "word": "好",
+            "pinyin": "hǎo",
+            "meaning": "Dạ.",
+            "isPunctuation": false
+        },
+        {
+            "word": "，",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        },
+        {
+            "word": "天",
+            "pinyin": "tiān",
+            "meaning": "trời, bầu trời; ngày",
+            "isPunctuation": false
+        },
+        {
+            "word": "阴",
+            "pinyin": "yīn",
+            "meaning": "âm",
+            "isPunctuation": false
+        },
+        {
+            "word": "了",
+            "pinyin": "le",
+            "meaning": "(hạt phương thức tăng cường khoản trên); (điểm đánh dấu hành động đã hoàn thành)",
+            "isPunctuation": false
+        },
+        {
+            "word": "，",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        },
+        {
+            "word": "可能",
+            "pinyin": "kě néng",
+            "meaning": "có thể (xảy ra); có thể",
+            "isPunctuation": false
+        },
+        {
+            "word": "要",
+            "pinyin": "yào",
+            "meaning": "tắt",
+            "isPunctuation": false
+        },
+        {
+            "word": "下雨",
+            "pinyin": "xià yǔ",
+            "meaning": "trời mưa; trời mưa",
+            "isPunctuation": false
+        },
+        {
+            "word": "。",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        },
+        {
+            "word": "所以",
+            "pinyin": "suǒ yǐ",
+            "meaning": "do đó; kết quả là",
+            "isPunctuation": false
+        },
+        {
+            "word": "我",
+            "pinyin": "wǒ",
+            "meaning": "Tôi... tôi sao?",
+            "isPunctuation": false
+        },
+        {
+            "word": "没",
+            "pinyin": "méi",
+            "meaning": "(tiền tố phủ định cho động từ); chưa",
+            "isPunctuation": false
+        },
+        {
+            "word": "有",
+            "pinyin": "yǒu",
+            "meaning": "có; có",
+            "isPunctuation": false
+        },
+        {
+            "word": "去",
+            "pinyin": "qù",
+            "meaning": "đi; đi đến (một nơi)",
+            "isPunctuation": false
+        },
+        {
+            "word": "跑步",
+            "pinyin": "pǎo bù",
+            "meaning": "đi nhanh; hành quân",
+            "isPunctuation": false
+        },
+        {
+            "word": "。",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        }
+    ],
+    [
+        {
+            "word": "我",
+            "pinyin": "wǒ",
+            "meaning": "Tôi... tôi sao?",
+            "isPunctuation": false
+        },
+        {
+            "word": "对",
+            "pinyin": "duì",
+            "meaning": "đúng; đối với, đối diện",
+            "isPunctuation": false
+        },
+        {
+            "word": "弟弟",
+            "pinyin": "dì di",
+            "meaning": "em trai út",
+            "isPunctuation": false
+        },
+        {
+            "word": "说",
+            "pinyin": "shuō",
+            "meaning": "nói, nói chuyện",
+            "isPunctuation": false
+        },
+        {
+            "word": "：",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        },
+        {
+            "word": "“",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        },
+        {
+            "word": "你",
+            "pinyin": "nǐ",
+            "meaning": "bạn (không chính thức; trái ngược với lịch sự您)",
+            "isPunctuation": false
+        },
+        {
+            "word": "生病",
+            "pinyin": "shēng bìng",
+            "meaning": "bị ốm",
+            "isPunctuation": false
+        },
+        {
+            "word": "了",
+            "pinyin": "le",
+            "meaning": "(hạt phương thức tăng cường khoản trên); (điểm đánh dấu hành động đã hoàn thành)",
+            "isPunctuation": false
+        },
+        {
+            "word": "吗",
+            "pinyin": "ma",
+            "meaning": "Tag câu hỏi",
+            "isPunctuation": false
+        },
+        {
+            "word": "？",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        },
+        {
+            "word": "为",
+            "pinyin": "wèi",
+            "meaning": "biến thể của 為|为; vì",
+            "isPunctuation": false
+        },
+        {
+            "word": "什么",
+            "pinyin": "shén me",
+            "meaning": "Ai cơ?",
+            "isPunctuation": false
+        },
+        {
+            "word": "你",
+            "pinyin": "nǐ",
+            "meaning": "bạn (không chính thức; trái ngược với lịch sự您)",
+            "isPunctuation": false
+        },
+        {
+            "word": "的",
+            "pinyin": "de",
+            "meaning": "của; ~'s (hạt sở hữu)",
+            "isPunctuation": false
+        },
+        {
+            "word": "脸",
+            "pinyin": "liǎn",
+            "meaning": "mặt, khuôn mặt",
+            "isPunctuation": false
+        },
+        {
+            "word": "色",
+            "pinyin": "sè",
+            "meaning": "màu, sắc; sắc thái",
+            "isPunctuation": false
+        },
+        {
+            "word": "这",
+            "pinyin": "zhè",
+            "meaning": "này; những",
+            "isPunctuation": false
+        },
+        {
+            "word": "么",
+            "pinyin": "me",
+            "meaning": "trợ từ (trong 怎么, 什么)",
+            "isPunctuation": false
+        },
+        {
+            "word": "红",
+            "pinyin": "hóng",
+            "meaning": "đỏ; phổ biến",
+            "isPunctuation": false
+        },
+        {
+            "word": "？",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        },
+        {
+            "word": "”",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        }
+    ],
+    [
+        {
+            "word": "弟弟",
+            "pinyin": "dì di",
+            "meaning": "em trai út",
+            "isPunctuation": false
+        },
+        {
+            "word": "说",
+            "pinyin": "shuō",
+            "meaning": "nói, nói chuyện",
+            "isPunctuation": false
+        },
+        {
+            "word": "：",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        },
+        {
+            "word": "“",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        },
+        {
+            "word": "我",
+            "pinyin": "wǒ",
+            "meaning": "Tôi... tôi sao?",
+            "isPunctuation": false
+        },
+        {
+            "word": "觉得",
+            "pinyin": "jué de",
+            "meaning": "suy nghĩ; cảm nhận",
+            "isPunctuation": false
+        },
+        {
+            "word": "有",
+            "pinyin": "yǒu",
+            "meaning": "có; có",
+            "isPunctuation": false
+        },
+        {
+            "word": "点",
+            "pinyin": "diǎn",
+            "meaning": "điểm; chấm",
+            "isPunctuation": false
+        },
+        {
+            "word": "儿",
+            "pinyin": "ér",
+            "meaning": "con trẻ; âm đuôi 'r'",
+            "isPunctuation": false
+        },
+        {
+            "word": "累",
+            "pinyin": "lèi",
+            "meaning": "mệt mỏi; mệt mỏi",
+            "isPunctuation": false
+        },
+        {
+            "word": "，",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        },
+        {
+            "word": "可能",
+            "pinyin": "kě néng",
+            "meaning": "có thể (xảy ra); có thể",
+            "isPunctuation": false
+        },
+        {
+            "word": "感",
+            "pinyin": "gǎn",
+            "meaning": "cảm thấy, cảm động",
+            "isPunctuation": false
+        },
+        {
+            "word": "冒",
+            "pinyin": "mào",
+            "meaning": "xông ra, bốc lên; liều",
+            "isPunctuation": false
+        },
+        {
+            "word": "了",
+            "pinyin": "le",
+            "meaning": "(hạt phương thức tăng cường khoản trên); (điểm đánh dấu hành động đã hoàn thành)",
+            "isPunctuation": false
+        },
+        {
+            "word": "。",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        },
+        {
+            "word": "”",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        }
+    ],
+    [
+        {
+            "word": "妈妈",
+            "pinyin": "mā ma",
+            "meaning": "mẹ; mẹ",
+            "isPunctuation": false
+        },
+        {
+            "word": "让",
+            "pinyin": "ràng",
+            "meaning": "nhường; cho phép",
+            "isPunctuation": false
+        },
+        {
+            "word": "弟弟",
+            "pinyin": "dì di",
+            "meaning": "em trai út",
+            "isPunctuation": false
+        },
+        {
+            "word": "休息",
+            "pinyin": "xiū xi",
+            "meaning": "nghỉ ngơi; nghỉ ngơi",
+            "isPunctuation": false
+        },
+        {
+            "word": "，",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        },
+        {
+            "word": "不",
+            "pinyin": "bù",
+            "meaning": "(tiền tố âm); không",
+            "isPunctuation": false
+        },
+        {
+            "word": "要",
+            "pinyin": "yào",
+            "meaning": "tắt",
+            "isPunctuation": false
+        },
+        {
+            "word": "去",
+            "pinyin": "qù",
+            "meaning": "đi; đi đến (một nơi)",
+            "isPunctuation": false
+        },
+        {
+            "word": "上",
+            "pinyin": "shàng",
+            "meaning": "trên đầu; trên",
+            "isPunctuation": false
+        },
+        {
+            "word": "课",
+            "pinyin": "kè",
+            "meaning": "môn học; khóa học",
+            "isPunctuation": false
+        },
+        {
+            "word": "了",
+            "pinyin": "le",
+            "meaning": "(hạt phương thức tăng cường khoản trên); (điểm đánh dấu hành động đã hoàn thành)",
+            "isPunctuation": false
+        },
+        {
+            "word": "。",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        },
+        {
+            "word": "她",
+            "pinyin": "tā",
+            "meaning": "cô ấy",
+            "isPunctuation": false
+        },
+        {
+            "word": "给",
+            "pinyin": "gěi",
+            "meaning": "đến; cho",
+            "isPunctuation": false
+        },
+        {
+            "word": "弟弟",
+            "pinyin": "dì di",
+            "meaning": "em trai út",
+            "isPunctuation": false
+        },
+        {
+            "word": "吃",
+            "pinyin": "chī",
+            "meaning": "ăn; tiêu thụ",
+            "isPunctuation": false
+        },
+        {
+            "word": "药",
+            "pinyin": "yào",
+            "meaning": "thuốc",
+            "isPunctuation": false
+        },
+        {
+            "word": "，",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        },
+        {
+            "word": "希望",
+            "pinyin": "xī wàng",
+            "meaning": "ao ước; ao ước",
+            "isPunctuation": false
+        },
+        {
+            "word": "他",
+            "pinyin": "tā",
+            "meaning": "anh ta hoặc anh ta; (được sử dụng cho cả hai giới khi giới tính không xác định hoặc không quan trọng)",
+            "isPunctuation": false
+        },
+        {
+            "word": "快",
+            "pinyin": "kuài",
+            "meaning": "nhanh; nhanh",
+            "isPunctuation": false
+        },
+        {
+            "word": "点",
+            "pinyin": "diǎn",
+            "meaning": "điểm; chấm",
+            "isPunctuation": false
+        },
+        {
+            "word": "儿",
+            "pinyin": "ér",
+            "meaning": "con trẻ; âm đuôi 'r'",
+            "isPunctuation": false
+        },
+        {
+            "word": "好",
+            "pinyin": "hǎo",
+            "meaning": "Dạ.",
+            "isPunctuation": false
+        },
+        {
+            "word": "。",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        }
+    ],
+    [
+        {
+            "word": "上午",
+            "pinyin": "shàng wǔ",
+            "meaning": "buổi sáng",
+            "isPunctuation": false
+        },
+        {
+            "word": "九",
+            "pinyin": "jiǔ",
+            "meaning": "chín; 9",
+            "isPunctuation": false
+        },
+        {
+            "word": "点",
+            "pinyin": "diǎn",
+            "meaning": "điểm; chấm",
+            "isPunctuation": false
+        },
+        {
+            "word": "，",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        },
+        {
+            "word": "我",
+            "pinyin": "wǒ",
+            "meaning": "Tôi... tôi sao?",
+            "isPunctuation": false
+        },
+        {
+            "word": "坐",
+            "pinyin": "zuò",
+            "meaning": "ngồi; ngồi",
+            "isPunctuation": false
+        },
+        {
+            "word": "公共汽车",
+            "pinyin": "gōng gòng qì chē",
+            "meaning": "xe buýt",
+            "isPunctuation": false
+        },
+        {
+            "word": "去",
+            "pinyin": "qù",
+            "meaning": "đi; đi đến (một nơi)",
+            "isPunctuation": false
+        },
+        {
+            "word": "学校",
+            "pinyin": "xué xiào",
+            "meaning": "đàn cá",
+            "isPunctuation": false
+        },
+        {
+            "word": "。",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        },
+        {
+            "word": "路",
+            "pinyin": "lù",
+            "meaning": "đường bộ",
+            "isPunctuation": false
+        },
+        {
+            "word": "上",
+            "pinyin": "shàng",
+            "meaning": "trên đầu; trên",
+            "isPunctuation": false
+        },
+        {
+            "word": "的",
+            "pinyin": "de",
+            "meaning": "của; ~'s (hạt sở hữu)",
+            "isPunctuation": false
+        },
+        {
+            "word": "车",
+            "pinyin": "chē",
+            "meaning": "xe, xe cộ",
+            "isPunctuation": false
+        },
+        {
+            "word": "非常",
+            "pinyin": "fēi cháng",
+            "meaning": "bất thường; khác thường",
+            "isPunctuation": false
+        },
+        {
+            "word": "多",
+            "pinyin": "duō",
+            "meaning": "nhiều; nhiều",
+            "isPunctuation": false
+        },
+        {
+            "word": "，",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        },
+        {
+            "word": "所以",
+            "pinyin": "suǒ yǐ",
+            "meaning": "do đó; kết quả là",
+            "isPunctuation": false
+        },
+        {
+            "word": "我",
+            "pinyin": "wǒ",
+            "meaning": "Tôi... tôi sao?",
+            "isPunctuation": false
+        },
+        {
+            "word": "迟",
+            "pinyin": "chí",
+            "meaning": "chậm, trễ",
+            "isPunctuation": false
+        },
+        {
+            "word": "到",
+            "pinyin": "dào",
+            "meaning": "đến (một địa điểm); cho đến (một thời điểm)",
+            "isPunctuation": false
+        },
+        {
+            "word": "了",
+            "pinyin": "le",
+            "meaning": "(hạt phương thức tăng cường khoản trên); (điểm đánh dấu hành động đã hoàn thành)",
+            "isPunctuation": false
+        },
+        {
+            "word": "。",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        }
+    ],
+    [
+        {
+            "word": "老师",
+            "pinyin": "lǎo shī",
+            "meaning": "giáo viên",
+            "isPunctuation": false
+        },
+        {
+            "word": "问",
+            "pinyin": "wèn",
+            "meaning": "để hỏi",
+            "isPunctuation": false
+        },
+        {
+            "word": "我",
+            "pinyin": "wǒ",
+            "meaning": "Tôi... tôi sao?",
+            "isPunctuation": false
+        },
+        {
+            "word": "：",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        },
+        {
+            "word": "“",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        },
+        {
+            "word": "你",
+            "pinyin": "nǐ",
+            "meaning": "bạn (không chính thức; trái ngược với lịch sự您)",
+            "isPunctuation": false
+        },
+        {
+            "word": "为",
+            "pinyin": "wèi",
+            "meaning": "biến thể của 為|为; vì",
+            "isPunctuation": false
+        },
+        {
+            "word": "什么",
+            "pinyin": "shén me",
+            "meaning": "Ai cơ?",
+            "isPunctuation": false
+        },
+        {
+            "word": "现在",
+            "pinyin": "xiàn zài",
+            "meaning": "bây giờ; hiện tại",
+            "isPunctuation": false
+        },
+        {
+            "word": "才",
+            "pinyin": "cái",
+            "meaning": "vừa mới; tài năng",
+            "isPunctuation": false
+        },
+        {
+            "word": "来",
+            "pinyin": "lái",
+            "meaning": "đến; đến nơi",
+            "isPunctuation": false
+        },
+        {
+            "word": "？",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        },
+        {
+            "word": "”",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        },
+        {
+            "word": "我",
+            "pinyin": "wǒ",
+            "meaning": "Tôi... tôi sao?",
+            "isPunctuation": false
+        },
+        {
+            "word": "说",
+            "pinyin": "shuō",
+            "meaning": "nói, nói chuyện",
+            "isPunctuation": false
+        },
+        {
+            "word": "：",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        },
+        {
+            "word": "“",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        },
+        {
+            "word": "对不起",
+            "pinyin": "duì bu qǐ",
+            "meaning": "không xứng đáng; thất vọng",
+            "isPunctuation": false
+        },
+        {
+            "word": "，",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        },
+        {
+            "word": "路",
+            "pinyin": "lù",
+            "meaning": "đường bộ",
+            "isPunctuation": false
+        },
+        {
+            "word": "上",
+            "pinyin": "shàng",
+            "meaning": "trên đầu; trên",
+            "isPunctuation": false
+        },
+        {
+            "word": "太",
+            "pinyin": "tài",
+            "meaning": "cao nhất; vĩ đại nhất",
+            "isPunctuation": false
+        },
+        {
+            "word": "忙",
+            "pinyin": "máng",
+            "meaning": "bận rộn; vội vàng",
+            "isPunctuation": false
+        },
+        {
+            "word": "了",
+            "pinyin": "le",
+            "meaning": "(hạt phương thức tăng cường khoản trên); (điểm đánh dấu hành động đã hoàn thành)",
+            "isPunctuation": false
+        },
+        {
+            "word": "。",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        },
+        {
+            "word": "”",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        }
+    ],
+    [
+        {
+            "word": "中午",
+            "pinyin": "zhōng wǔ",
+            "meaning": "trưa; trưa",
+            "isPunctuation": false
+        },
+        {
+            "word": "，",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        },
+        {
+            "word": "我",
+            "pinyin": "wǒ",
+            "meaning": "Tôi... tôi sao?",
+            "isPunctuation": false
+        },
+        {
+            "word": "和",
+            "pinyin": "hé",
+            "meaning": "và; cùng với",
+            "isPunctuation": false
+        },
+        {
+            "word": "朋友",
+            "pinyin": "péng you",
+            "meaning": "người bạn",
+            "isPunctuation": false
+        },
+        {
+            "word": "一起",
+            "pinyin": "yī qǐ",
+            "meaning": "với nhau.",
+            "isPunctuation": false
+        },
+        {
+            "word": "去",
+            "pinyin": "qù",
+            "meaning": "đi; đi đến (một nơi)",
+            "isPunctuation": false
+        },
+        {
+            "word": "饭馆",
+            "pinyin": "fàn guǎn",
+            "meaning": "nhà hàng , hiệu ăn",
+            "isPunctuation": false
+        },
+        {
+            "word": "吃",
+            "pinyin": "chī",
+            "meaning": "ăn; tiêu thụ",
+            "isPunctuation": false
+        },
+        {
+            "word": "午",
+            "pinyin": "wǔ",
+            "meaning": "giờ Ngọ, buổi trưa",
+            "isPunctuation": false
+        },
+        {
+            "word": "饭",
+            "pinyin": "fàn",
+            "meaning": "cơm, bữa cơm",
+            "isPunctuation": false
+        },
+        {
+            "word": "。",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        },
+        {
+            "word": "我们",
+            "pinyin": "wǒ men",
+            "meaning": "chúng tôi; chúng tôi",
+            "isPunctuation": false
+        },
+        {
+            "word": "吃",
+            "pinyin": "chī",
+            "meaning": "ăn; tiêu thụ",
+            "isPunctuation": false
+        },
+        {
+            "word": "得",
+            "pinyin": "děi",
+            "meaning": "phải; phải",
+            "isPunctuation": false
+        },
+        {
+            "word": "非常",
+            "pinyin": "fēi cháng",
+            "meaning": "bất thường; khác thường",
+            "isPunctuation": false
+        },
+        {
+            "word": "高兴",
+            "pinyin": "gāo xìng",
+            "meaning": "hạnh phúc; vui mừng",
+            "isPunctuation": false
+        },
+        {
+            "word": "。",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        }
+    ],
+    [
+        {
+            "word": "下午",
+            "pinyin": "xià wǔ",
+            "meaning": "buổi chiểu",
+            "isPunctuation": false
+        },
+        {
+            "word": "，",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        },
+        {
+            "word": "我们",
+            "pinyin": "wǒ men",
+            "meaning": "chúng tôi; chúng tôi",
+            "isPunctuation": false
+        },
+        {
+            "word": "去",
+            "pinyin": "qù",
+            "meaning": "đi; đi đến (một nơi)",
+            "isPunctuation": false
+        },
+        {
+            "word": "商店",
+            "pinyin": "shāng diàn",
+            "meaning": "cửa hàng; cửa hàng",
+            "isPunctuation": false
+        },
+        {
+            "word": "买",
+            "pinyin": "mǎi",
+            "meaning": "mua; mua",
+            "isPunctuation": false
+        },
+        {
+            "word": "衣服",
+            "pinyin": "yī fu",
+            "meaning": "quần áo",
+            "isPunctuation": false
+        },
+        {
+            "word": "。",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        },
+        {
+            "word": "我",
+            "pinyin": "wǒ",
+            "meaning": "Tôi... tôi sao?",
+            "isPunctuation": false
+        },
+        {
+            "word": "看",
+            "pinyin": "kàn",
+            "meaning": "để xem; để nhìn vào",
+            "isPunctuation": false
+        },
+        {
+            "word": "中",
+            "pinyin": "zhōng",
+            "meaning": "giữa, trung tâm; trung học",
+            "isPunctuation": false
+        },
+        {
+            "word": "了",
+            "pinyin": "le",
+            "meaning": "(hạt phương thức tăng cường khoản trên); (điểm đánh dấu hành động đã hoàn thành)",
+            "isPunctuation": false
+        },
+        {
+            "word": "一",
+            "pinyin": "yī",
+            "meaning": "MỘT (1)",
+            "isPunctuation": false
+        },
+        {
+            "word": "件",
+            "pinyin": "jiàn",
+            "meaning": "mục; thành phần",
+            "isPunctuation": false
+        },
+        {
+            "word": "黑",
+            "pinyin": "hēi",
+            "meaning": "đen; tối",
+            "isPunctuation": false
+        },
+        {
+            "word": "色",
+            "pinyin": "sè",
+            "meaning": "màu, sắc; sắc thái",
+            "isPunctuation": false
+        },
+        {
+            "word": "的",
+            "pinyin": "de",
+            "meaning": "của; ~'s (hạt sở hữu)",
+            "isPunctuation": false
+        },
+        {
+            "word": "衣服",
+            "pinyin": "yī fu",
+            "meaning": "quần áo",
+            "isPunctuation": false
+        },
+        {
+            "word": "，",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        },
+        {
+            "word": "但是",
+            "pinyin": "dàn shì",
+            "meaning": "nhưng; tuy nhiên",
+            "isPunctuation": false
+        },
+        {
+            "word": "有",
+            "pinyin": "yǒu",
+            "meaning": "có; có",
+            "isPunctuation": false
+        },
+        {
+            "word": "点",
+            "pinyin": "diǎn",
+            "meaning": "điểm; chấm",
+            "isPunctuation": false
+        },
+        {
+            "word": "儿",
+            "pinyin": "ér",
+            "meaning": "con trẻ; âm đuôi 'r'",
+            "isPunctuation": false
+        },
+        {
+            "word": "贵",
+            "pinyin": "guì",
+            "meaning": "đắt tiền; cao quý",
+            "isPunctuation": false
+        },
+        {
+            "word": "。",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        }
+    ],
+    [
+        {
+            "word": "朋友",
+            "pinyin": "péng you",
+            "meaning": "người bạn",
+            "isPunctuation": false
+        },
+        {
+            "word": "说",
+            "pinyin": "shuō",
+            "meaning": "nói, nói chuyện",
+            "isPunctuation": false
+        },
+        {
+            "word": "：",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        },
+        {
+            "word": "“",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        },
+        {
+            "word": "这",
+            "pinyin": "zhè",
+            "meaning": "này; những",
+            "isPunctuation": false
+        },
+        {
+            "word": "件",
+            "pinyin": "jiàn",
+            "meaning": "mục; thành phần",
+            "isPunctuation": false
+        },
+        {
+            "word": "白",
+            "pinyin": "bái",
+            "meaning": "trắng; tuyết",
+            "isPunctuation": false
+        },
+        {
+            "word": "色",
+            "pinyin": "sè",
+            "meaning": "màu, sắc; sắc thái",
+            "isPunctuation": false
+        },
+        {
+            "word": "的",
+            "pinyin": "de",
+            "meaning": "của; ~'s (hạt sở hữu)",
+            "isPunctuation": false
+        },
+        {
+            "word": "比",
+            "pinyin": "bǐ",
+            "meaning": "(hạt được sử dụng để so sánh và \"-er than\"); để so sánh",
+            "isPunctuation": false
+        },
+        {
+            "word": "那",
+            "pinyin": "nà",
+            "meaning": "rằng; những",
+            "isPunctuation": false
+        },
+        {
+            "word": "件",
+            "pinyin": "jiàn",
+            "meaning": "mục; thành phần",
+            "isPunctuation": false
+        },
+        {
+            "word": "便宜",
+            "pinyin": "pián yi",
+            "meaning": "lợi thế nhỏ; để cho sb ra nhẹ",
+            "isPunctuation": false
+        },
+        {
+            "word": "，",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        },
+        {
+            "word": "而",
+            "pinyin": "ér",
+            "meaning": "mà, và (nối ý)",
+            "isPunctuation": false
+        },
+        {
+            "word": "且",
+            "pinyin": "qiě",
+            "meaning": "vả lại, hơn nữa",
+            "isPunctuation": false
+        },
+        {
+            "word": "很",
+            "pinyin": "hěn",
+            "meaning": "(trạng từ chỉ mức độ); khá",
+            "isPunctuation": false
+        },
+        {
+            "word": "漂亮",
+            "pinyin": "piào liang",
+            "meaning": "đẹp; đẹp",
+            "isPunctuation": false
+        },
+        {
+            "word": "。",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        },
+        {
+            "word": "”",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        },
+        {
+            "word": "所以",
+            "pinyin": "suǒ yǐ",
+            "meaning": "do đó; kết quả là",
+            "isPunctuation": false
+        },
+        {
+            "word": "，",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        },
+        {
+            "word": "我",
+            "pinyin": "wǒ",
+            "meaning": "Tôi... tôi sao?",
+            "isPunctuation": false
+        },
+        {
+            "word": "买",
+            "pinyin": "mǎi",
+            "meaning": "mua; mua",
+            "isPunctuation": false
+        },
+        {
+            "word": "了",
+            "pinyin": "le",
+            "meaning": "(hạt phương thức tăng cường khoản trên); (điểm đánh dấu hành động đã hoàn thành)",
+            "isPunctuation": false
+        },
+        {
+            "word": "白",
+            "pinyin": "bái",
+            "meaning": "trắng; tuyết",
+            "isPunctuation": false
+        },
+        {
+            "word": "色",
+            "pinyin": "sè",
+            "meaning": "màu, sắc; sắc thái",
+            "isPunctuation": false
+        },
+        {
+            "word": "的",
+            "pinyin": "de",
+            "meaning": "của; ~'s (hạt sở hữu)",
+            "isPunctuation": false
+        },
+        {
+            "word": "。",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        }
+    ],
+    [
+        {
+            "word": "买",
+            "pinyin": "mǎi",
+            "meaning": "mua; mua",
+            "isPunctuation": false
+        },
+        {
+            "word": "完",
+            "pinyin": "wán",
+            "meaning": "kết thúc; kết thúc",
+            "isPunctuation": false
+        },
+        {
+            "word": "东西",
+            "pinyin": "dōng xi",
+            "meaning": "điều; công cụ",
+            "isPunctuation": false
+        },
+        {
+            "word": "，",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        },
+        {
+            "word": "我们",
+            "pinyin": "wǒ men",
+            "meaning": "chúng tôi; chúng tôi",
+            "isPunctuation": false
+        },
+        {
+            "word": "去",
+            "pinyin": "qù",
+            "meaning": "đi; đi đến (một nơi)",
+            "isPunctuation": false
+        },
+        {
+            "word": "了",
+            "pinyin": "le",
+            "meaning": "(hạt phương thức tăng cường khoản trên); (điểm đánh dấu hành động đã hoàn thành)",
+            "isPunctuation": false
+        },
+        {
+            "word": "旁边",
+            "pinyin": "páng biān",
+            "meaning": "bên; bên",
+            "isPunctuation": false
+        },
+        {
+            "word": "的",
+            "pinyin": "de",
+            "meaning": "của; ~'s (hạt sở hữu)",
+            "isPunctuation": false
+        },
+        {
+            "word": "咖啡",
+            "pinyin": "kā fēi",
+            "meaning": "cà phê",
+            "isPunctuation": false
+        },
+        {
+            "word": "馆",
+            "pinyin": "guǎn",
+            "meaning": "toà nhà lớn (quán, viện, sảnh)",
+            "isPunctuation": false
+        },
+        {
+            "word": "。",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        },
+        {
+            "word": "咖啡",
+            "pinyin": "kā fēi",
+            "meaning": "cà phê",
+            "isPunctuation": false
+        },
+        {
+            "word": "非常",
+            "pinyin": "fēi cháng",
+            "meaning": "bất thường; khác thường",
+            "isPunctuation": false
+        },
+        {
+            "word": "好",
+            "pinyin": "hǎo",
+            "meaning": "Dạ.",
+            "isPunctuation": false
+        },
+        {
+            "word": "喝",
+            "pinyin": "hē",
+            "meaning": "uống đi; Trời ơi!",
+            "isPunctuation": false
+        },
+        {
+            "word": "。",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        }
+    ],
+    [
+        {
+            "word": "从",
+            "pinyin": "cóng",
+            "meaning": "từ; qua",
+            "isPunctuation": false
+        },
+        {
+            "word": "咖啡",
+            "pinyin": "kā fēi",
+            "meaning": "cà phê",
+            "isPunctuation": false
+        },
+        {
+            "word": "馆",
+            "pinyin": "guǎn",
+            "meaning": "toà nhà lớn (quán, viện, sảnh)",
+            "isPunctuation": false
+        },
+        {
+            "word": "出",
+            "pinyin": "chū",
+            "meaning": "đi ra ngoài; đi ra ngoài",
+            "isPunctuation": false
+        },
+        {
+            "word": "来",
+            "pinyin": "lái",
+            "meaning": "đến; đến nơi",
+            "isPunctuation": false
+        },
+        {
+            "word": "，",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        },
+        {
+            "word": "我们",
+            "pinyin": "wǒ men",
+            "meaning": "chúng tôi; chúng tôi",
+            "isPunctuation": false
+        },
+        {
+            "word": "往",
+            "pinyin": "wǎng",
+            "meaning": "về phía, hướng tới; đã qua",
+            "isPunctuation": false
+        },
+        {
+            "word": "右",
+            "pinyin": "yòu",
+            "meaning": "bên phải, phía phải",
+            "isPunctuation": false
+        },
+        {
+            "word": "走",
+            "pinyin": "zǒu",
+            "meaning": "đi",
+            "isPunctuation": false
+        },
+        {
+            "word": "，",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        },
+        {
+            "word": "到",
+            "pinyin": "dào",
+            "meaning": "đến (một địa điểm); cho đến (một thời điểm)",
+            "isPunctuation": false
+        },
+        {
+            "word": "了",
+            "pinyin": "le",
+            "meaning": "(hạt phương thức tăng cường khoản trên); (điểm đánh dấu hành động đã hoàn thành)",
+            "isPunctuation": false
+        },
+        {
+            "word": "一",
+            "pinyin": "yī",
+            "meaning": "MỘT (1)",
+            "isPunctuation": false
+        },
+        {
+            "word": "个",
+            "pinyin": "gè",
+            "meaning": "biến thể của 個|个",
+            "isPunctuation": false
+        },
+        {
+            "word": "大",
+            "pinyin": "dà",
+            "meaning": "lớn; khổng lồ",
+            "isPunctuation": false
+        },
+        {
+            "word": "公",
+            "pinyin": "gōng",
+            "meaning": "chung, công cộng",
+            "isPunctuation": false
+        },
+        {
+            "word": "园",
+            "pinyin": "yuán",
+            "meaning": "vườn, khu vườn",
+            "isPunctuation": false
+        },
+        {
+            "word": "。",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        },
+        {
+            "word": "我们",
+            "pinyin": "wǒ men",
+            "meaning": "chúng tôi; chúng tôi",
+            "isPunctuation": false
+        },
+        {
+            "word": "在",
+            "pinyin": "zài",
+            "meaning": "(nằm) tại; (sẽ) trong",
+            "isPunctuation": false
+        },
+        {
+            "word": "那",
+            "pinyin": "nà",
+            "meaning": "rằng; những",
+            "isPunctuation": false
+        },
+        {
+            "word": "里",
+            "pinyin": "lǐ",
+            "meaning": "li (dặm Trung Quốc); 500 mét (hiện đại)",
+            "isPunctuation": false
+        },
+        {
+            "word": "打篮球",
+            "pinyin": "dá lán qiú",
+            "meaning": "Chơi bóng rổ",
+            "isPunctuation": false
+        },
+        {
+            "word": "。",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        }
+    ],
+    [
+        {
+            "word": "虽",
+            "pinyin": "suī",
+            "meaning": "tuy, mặc dù",
+            "isPunctuation": false
+        },
+        {
+            "word": "然",
+            "pinyin": "rán",
+            "meaning": "như vậy; đúng vậy",
+            "isPunctuation": false
+        },
+        {
+            "word": "我们",
+            "pinyin": "wǒ men",
+            "meaning": "chúng tôi; chúng tôi",
+            "isPunctuation": false
+        },
+        {
+            "word": "觉得",
+            "pinyin": "jué de",
+            "meaning": "suy nghĩ; cảm nhận",
+            "isPunctuation": false
+        },
+        {
+            "word": "很",
+            "pinyin": "hěn",
+            "meaning": "(trạng từ chỉ mức độ); khá",
+            "isPunctuation": false
+        },
+        {
+            "word": "累",
+            "pinyin": "lèi",
+            "meaning": "mệt mỏi; mệt mỏi",
+            "isPunctuation": false
+        },
+        {
+            "word": "，",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        },
+        {
+            "word": "但是",
+            "pinyin": "dàn shì",
+            "meaning": "nhưng; tuy nhiên",
+            "isPunctuation": false
+        },
+        {
+            "word": "很",
+            "pinyin": "hěn",
+            "meaning": "(trạng từ chỉ mức độ); khá",
+            "isPunctuation": false
+        },
+        {
+            "word": "开",
+            "pinyin": "kāi",
+            "meaning": "để mở; để bắt đầu",
+            "isPunctuation": false
+        },
+        {
+            "word": "心",
+            "pinyin": "xīn",
+            "meaning": "tim, lòng, tâm",
+            "isPunctuation": false
+        },
+        {
+            "word": "。",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        }
+    ],
+    [
+        {
+            "word": "晚上",
+            "pinyin": "wǎn shang",
+            "meaning": "buổi tối; đêm",
+            "isPunctuation": false
+        },
+        {
+            "word": "，",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        },
+        {
+            "word": "我",
+            "pinyin": "wǒ",
+            "meaning": "Tôi... tôi sao?",
+            "isPunctuation": false
+        },
+        {
+            "word": "回",
+            "pinyin": "huí",
+            "meaning": "cong; quay trở lại",
+            "isPunctuation": false
+        },
+        {
+            "word": "到",
+            "pinyin": "dào",
+            "meaning": "đến (một địa điểm); cho đến (một thời điểm)",
+            "isPunctuation": false
+        },
+        {
+            "word": "家",
+            "pinyin": "jiā",
+            "meaning": "Một mái ấm, một gia đình.",
+            "isPunctuation": false
+        },
+        {
+            "word": "，",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        },
+        {
+            "word": "爸爸",
+            "pinyin": "bà ba",
+            "meaning": "người cha (không chính thức);",
+            "isPunctuation": false
+        },
+        {
+            "word": "正在",
+            "pinyin": "zhèng zài",
+            "meaning": "đang",
+            "isPunctuation": false
+        },
+        {
+            "word": "看",
+            "pinyin": "kàn",
+            "meaning": "để xem; để nhìn vào",
+            "isPunctuation": false
+        },
+        {
+            "word": "报纸",
+            "pinyin": "bào zhǐ",
+            "meaning": "báo; giấy in báo",
+            "isPunctuation": false
+        },
+        {
+            "word": "。",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        },
+        {
+            "word": "妈妈",
+            "pinyin": "mā ma",
+            "meaning": "mẹ; mẹ",
+            "isPunctuation": false
+        },
+        {
+            "word": "在",
+            "pinyin": "zài",
+            "meaning": "(nằm) tại; (sẽ) trong",
+            "isPunctuation": false
+        },
+        {
+            "word": "做",
+            "pinyin": "zuò",
+            "meaning": "làm; thực hiện",
+            "isPunctuation": false
+        },
+        {
+            "word": "晚",
+            "pinyin": "wǎn",
+            "meaning": "muộn, tối; buổi tối",
+            "isPunctuation": false
+        },
+        {
+            "word": "饭",
+            "pinyin": "fàn",
+            "meaning": "cơm, bữa cơm",
+            "isPunctuation": false
+        },
+        {
+            "word": "，",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        },
+        {
+            "word": "有",
+            "pinyin": "yǒu",
+            "meaning": "có; có",
+            "isPunctuation": false
+        },
+        {
+            "word": "鱼",
+            "pinyin": "yú",
+            "meaning": "cá",
+            "isPunctuation": false
+        },
+        {
+            "word": "和",
+            "pinyin": "hé",
+            "meaning": "và; cùng với",
+            "isPunctuation": false
+        },
+        {
+            "word": "羊肉",
+            "pinyin": "yáng ròu",
+            "meaning": "thịt cừu",
+            "isPunctuation": false
+        },
+        {
+            "word": "。",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        }
+    ],
+    [
+        {
+            "word": "吃",
+            "pinyin": "chī",
+            "meaning": "ăn; tiêu thụ",
+            "isPunctuation": false
+        },
+        {
+            "word": "完",
+            "pinyin": "wán",
+            "meaning": "kết thúc; kết thúc",
+            "isPunctuation": false
+        },
+        {
+            "word": "晚",
+            "pinyin": "wǎn",
+            "meaning": "muộn, tối; buổi tối",
+            "isPunctuation": false
+        },
+        {
+            "word": "饭",
+            "pinyin": "fàn",
+            "meaning": "cơm, bữa cơm",
+            "isPunctuation": false
+        },
+        {
+            "word": "，",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        },
+        {
+            "word": "我",
+            "pinyin": "wǒ",
+            "meaning": "Tôi... tôi sao?",
+            "isPunctuation": false
+        },
+        {
+            "word": "帮",
+            "pinyin": "bāng",
+            "meaning": "giúp; nhóm, bang hội",
+            "isPunctuation": false
+        },
+        {
+            "word": "妈妈",
+            "pinyin": "mā ma",
+            "meaning": "mẹ; mẹ",
+            "isPunctuation": false
+        },
+        {
+            "word": "洗",
+            "pinyin": "xǐ",
+            "meaning": "tắm rửa; tắm rửa",
+            "isPunctuation": false
+        },
+        {
+            "word": "碗",
+            "pinyin": "wǎn",
+            "meaning": "cái bát",
+            "isPunctuation": false
+        },
+        {
+            "word": "。",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        },
+        {
+            "word": "然",
+            "pinyin": "rán",
+            "meaning": "như vậy; đúng vậy",
+            "isPunctuation": false
+        },
+        {
+            "word": "后",
+            "pinyin": "hòu",
+            "meaning": "sau, phía sau",
+            "isPunctuation": false
+        },
+        {
+            "word": "，",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        },
+        {
+            "word": "我",
+            "pinyin": "wǒ",
+            "meaning": "Tôi... tôi sao?",
+            "isPunctuation": false
+        },
+        {
+            "word": "回",
+            "pinyin": "huí",
+            "meaning": "cong; quay trở lại",
+            "isPunctuation": false
+        },
+        {
+            "word": "房间",
+            "pinyin": "fáng jiān",
+            "meaning": "phòng",
+            "isPunctuation": false
+        },
+        {
+            "word": "做",
+            "pinyin": "zuò",
+            "meaning": "làm; thực hiện",
+            "isPunctuation": false
+        },
+        {
+            "word": "作",
+            "pinyin": "zuò",
+            "meaning": "làm, tạo ra",
+            "isPunctuation": false
+        },
+        {
+            "word": "业",
+            "pinyin": "yè",
+            "meaning": "nghề, nghiệp, sự nghiệp",
+            "isPunctuation": false
+        },
+        {
+            "word": "。",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        }
+    ],
+    [
+        {
+            "word": "我",
+            "pinyin": "wǒ",
+            "meaning": "Tôi... tôi sao?",
+            "isPunctuation": false
+        },
+        {
+            "word": "正在",
+            "pinyin": "zhèng zài",
+            "meaning": "đang",
+            "isPunctuation": false
+        },
+        {
+            "word": "准备",
+            "pinyin": "zhǔn bèi",
+            "meaning": "Chuẩn bị",
+            "isPunctuation": false
+        },
+        {
+            "word": "明天",
+            "pinyin": "míng tiān",
+            "meaning": "ngày mai",
+            "isPunctuation": false
+        },
+        {
+            "word": "的",
+            "pinyin": "de",
+            "meaning": "của; ~'s (hạt sở hữu)",
+            "isPunctuation": false
+        },
+        {
+            "word": "考试",
+            "pinyin": "kǎo shì",
+            "meaning": "làm bài kiểm tra; thi",
+            "isPunctuation": false
+        },
+        {
+            "word": "。",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        },
+        {
+            "word": "希望",
+            "pinyin": "xī wàng",
+            "meaning": "ao ước; ao ước",
+            "isPunctuation": false
+        },
+        {
+            "word": "我",
+            "pinyin": "wǒ",
+            "meaning": "Tôi... tôi sao?",
+            "isPunctuation": false
+        },
+        {
+            "word": "能",
+            "pinyin": "néng",
+            "meaning": "có khả năng; có khả năng",
+            "isPunctuation": false
+        },
+        {
+            "word": "考",
+            "pinyin": "kǎo",
+            "meaning": "thi, khảo sát; kiểm tra",
+            "isPunctuation": false
+        },
+        {
+            "word": "得",
+            "pinyin": "děi",
+            "meaning": "phải; phải",
+            "isPunctuation": false
+        },
+        {
+            "word": "很",
+            "pinyin": "hěn",
+            "meaning": "(trạng từ chỉ mức độ); khá",
+            "isPunctuation": false
+        },
+        {
+            "word": "好",
+            "pinyin": "hǎo",
+            "meaning": "Dạ.",
+            "isPunctuation": false
+        },
+        {
+            "word": "！",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        }
+    ],
+    [
+        {
+            "word": "十",
+            "pinyin": "shí",
+            "meaning": "mười; 10",
+            "isPunctuation": false
+        },
+        {
+            "word": "一",
+            "pinyin": "yī",
+            "meaning": "MỘT (1)",
+            "isPunctuation": false
+        },
+        {
+            "word": "点",
+            "pinyin": "diǎn",
+            "meaning": "điểm; chấm",
+            "isPunctuation": false
+        },
+        {
+            "word": "半",
+            "pinyin": "bàn",
+            "meaning": "nửa, một nửa",
+            "isPunctuation": false
+        },
+        {
+            "word": "，",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        },
+        {
+            "word": "我",
+            "pinyin": "wǒ",
+            "meaning": "Tôi... tôi sao?",
+            "isPunctuation": false
+        },
+        {
+            "word": "上",
+            "pinyin": "shàng",
+            "meaning": "trên đầu; trên",
+            "isPunctuation": false
+        },
+        {
+            "word": "床",
+            "pinyin": "chuáng",
+            "meaning": "cái giường",
+            "isPunctuation": false
+        },
+        {
+            "word": "睡觉",
+            "pinyin": "shuì jiào",
+            "meaning": "đi ngủ; đi ngủ",
+            "isPunctuation": false
+        },
+        {
+            "word": "。",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        },
+        {
+            "word": "这",
+            "pinyin": "zhè",
+            "meaning": "này; những",
+            "isPunctuation": false
+        },
+        {
+            "word": "真",
+            "pinyin": "zhēn",
+            "meaning": "thật",
+            "isPunctuation": false
+        },
+        {
+            "word": "是",
+            "pinyin": "shì",
+            "meaning": "là,à",
+            "isPunctuation": false
+        },
+        {
+            "word": "非常",
+            "pinyin": "fēi cháng",
+            "meaning": "bất thường; khác thường",
+            "isPunctuation": false
+        },
+        {
+            "word": "忙",
+            "pinyin": "máng",
+            "meaning": "bận rộn; vội vàng",
+            "isPunctuation": false
+        },
+        {
+            "word": "碌",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": false
+        },
+        {
+            "word": "的",
+            "pinyin": "de",
+            "meaning": "của; ~'s (hạt sở hữu)",
+            "isPunctuation": false
+        },
+        {
+            "word": "一",
+            "pinyin": "yī",
+            "meaning": "MỘT (1)",
+            "isPunctuation": false
+        },
+        {
+            "word": "天",
+            "pinyin": "tiān",
+            "meaning": "trời, bầu trời; ngày",
+            "isPunctuation": false
+        },
+        {
+            "word": "！",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        }
+    ]
+]

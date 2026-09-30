@@ -1,0 +1,1682 @@
+[
+    [
+        {
+            "word": "今天",
+            "pinyin": "Jīntiān",
+            "meaning": "Hôm nay",
+            "isPunctuation": false
+        },
+        {
+            "word": "早上",
+            "pinyin": "zǎoshang",
+            "meaning": "buổi sáng",
+            "isPunctuation": false
+        },
+        {
+            "word": "，",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        },
+        {
+            "word": "老板",
+            "pinyin": "lǎobǎn",
+            "meaning": "sếp",
+            "isPunctuation": false
+        },
+        {
+            "word": "在",
+            "pinyin": "zài",
+            "meaning": "ở",
+            "isPunctuation": false
+        },
+        {
+            "word": "办公室",
+            "pinyin": "bàngōngshì",
+            "meaning": "văn phòng",
+            "isPunctuation": false
+        },
+        {
+            "word": "开会",
+            "pinyin": "kāihuì",
+            "meaning": "họp",
+            "isPunctuation": false
+        },
+        {
+            "word": "，",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        },
+        {
+            "word": "经理",
+            "pinyin": "jīnglǐ",
+            "meaning": "quản lý",
+            "isPunctuation": false
+        },
+        {
+            "word": "、",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        },
+        {
+            "word": "主任",
+            "pinyin": "zhǔrèn",
+            "meaning": "chủ nhiệm",
+            "isPunctuation": false
+        },
+        {
+            "word": "和",
+            "pinyin": "hé",
+            "meaning": "và",
+            "isPunctuation": false
+        },
+        {
+            "word": "主管",
+            "pinyin": "zhǔguǎn",
+            "meaning": "giám sát",
+            "isPunctuation": false
+        },
+        {
+            "word": "都",
+            "pinyin": "dōu",
+            "meaning": "đều",
+            "isPunctuation": false
+        },
+        {
+            "word": "参加",
+            "pinyin": "cānjiā",
+            "meaning": "tham gia",
+            "isPunctuation": false
+        },
+        {
+            "word": "了",
+            "pinyin": "le",
+            "meaning": "rồi",
+            "isPunctuation": false
+        },
+        {
+            "word": "。",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        },
+        {
+            "word": "公司",
+            "pinyin": "Gōngsī",
+            "meaning": "Công ty",
+            "isPunctuation": false
+        },
+        {
+            "word": "决定",
+            "pinyin": "juédìng",
+            "meaning": "quyết định",
+            "isPunctuation": false
+        },
+        {
+            "word": "开始",
+            "pinyin": "kāishǐ",
+            "meaning": "bắt đầu",
+            "isPunctuation": false
+        },
+        {
+            "word": "一个",
+            "pinyin": "yí gè",
+            "meaning": "một",
+            "isPunctuation": false
+        },
+        {
+            "word": "新的",
+            "pinyin": "xīn de",
+            "meaning": "mới",
+            "isPunctuation": false
+        },
+        {
+            "word": "计划",
+            "pinyin": "jìhuà",
+            "meaning": "kế hoạch",
+            "isPunctuation": false
+        },
+        {
+            "word": "，",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        },
+        {
+            "word": "安排",
+            "pinyin": "ānpái",
+            "meaning": "sắp xếp",
+            "isPunctuation": false
+        },
+        {
+            "word": "工程师",
+            "pinyin": "gōngchéngshī",
+            "meaning": "kỹ sư",
+            "isPunctuation": false
+        },
+        {
+            "word": "和",
+            "pinyin": "hé",
+            "meaning": "và",
+            "isPunctuation": false
+        },
+        {
+            "word": "技术员",
+            "pinyin": "jìshùyuán",
+            "meaning": "kỹ thuật viên",
+            "isPunctuation": false
+        },
+        {
+            "word": "去",
+            "pinyin": "qù",
+            "meaning": "đến",
+            "isPunctuation": false
+        },
+        {
+            "word": "工厂",
+            "pinyin": "gōngchǎng",
+            "meaning": "nhà máy",
+            "isPunctuation": false
+        },
+        {
+            "word": "的",
+            "pinyin": "de",
+            "meaning": "của",
+            "isPunctuation": false
+        },
+        {
+            "word": "生产线",
+            "pinyin": "shēngchǎn xiàn",
+            "meaning": "dây chuyền sản xuất",
+            "isPunctuation": false
+        },
+        {
+            "word": "进行",
+            "pinyin": "jìnxíng",
+            "meaning": "tiến hành",
+            "isPunctuation": false
+        },
+        {
+            "word": "培训",
+            "pinyin": "péixùn",
+            "meaning": "đào tạo",
+            "isPunctuation": false
+        },
+        {
+            "word": "和",
+            "pinyin": "hé",
+            "meaning": "và",
+            "isPunctuation": false
+        },
+        {
+            "word": "学习",
+            "pinyin": "xuéxí",
+            "meaning": "học tập",
+            "isPunctuation": false
+        },
+        {
+            "word": "。",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        },
+        {
+            "word": "作为",
+            "pinyin": "Zuòwéi",
+            "meaning": "Với tư cách là",
+            "isPunctuation": false
+        },
+        {
+            "word": "组长",
+            "pinyin": "zǔzhǎng",
+            "meaning": "tổ trưởng",
+            "isPunctuation": false
+        },
+        {
+            "word": "，",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        },
+        {
+            "word": "我",
+            "pinyin": "wǒ",
+            "meaning": "tôi",
+            "isPunctuation": false
+        },
+        {
+            "word": "每天",
+            "pinyin": "měitiān",
+            "meaning": "mỗi ngày",
+            "isPunctuation": false
+        },
+        {
+            "word": "要",
+            "pinyin": "yào",
+            "meaning": "phải",
+            "isPunctuation": false
+        },
+        {
+            "word": "带",
+            "pinyin": "dài",
+            "meaning": "dẫn dắt",
+            "isPunctuation": false
+        },
+        {
+            "word": "员工",
+            "pinyin": "yuángōng",
+            "meaning": "nhân viên",
+            "isPunctuation": false
+        },
+        {
+            "word": "和",
+            "pinyin": "hé",
+            "meaning": "và",
+            "isPunctuation": false
+        },
+        {
+            "word": "同事",
+            "pinyin": "tóngshì",
+            "meaning": "đồng nghiệp",
+            "isPunctuation": false
+        },
+        {
+            "word": "们",
+            "pinyin": "men",
+            "meaning": "các",
+            "isPunctuation": false
+        },
+        {
+            "word": "上班",
+            "pinyin": "shàngbān",
+            "meaning": "đi làm",
+            "isPunctuation": false
+        },
+        {
+            "word": "，",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        },
+        {
+            "word": "处理",
+            "pinyin": "chǔlǐ",
+            "meaning": "xử lý",
+            "isPunctuation": false
+        },
+        {
+            "word": "日常",
+            "pinyin": "rìcháng",
+            "meaning": "hàng ngày",
+            "isPunctuation": false
+        },
+        {
+            "word": "工作",
+            "pinyin": "gōngzuò",
+            "meaning": "công việc",
+            "isPunctuation": false
+        },
+        {
+            "word": "。",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        },
+        {
+            "word": "有些",
+            "pinyin": "Yǒuxiē",
+            "meaning": "Một số",
+            "isPunctuation": false
+        },
+        {
+            "word": "客户",
+            "pinyin": "kèhù",
+            "meaning": "khách hàng",
+            "isPunctuation": false
+        },
+        {
+            "word": "发",
+            "pinyin": "fā",
+            "meaning": "gửi",
+            "isPunctuation": false
+        },
+        {
+            "word": "来",
+            "pinyin": "lái",
+            "meaning": "đến",
+            "isPunctuation": false
+        },
+        {
+            "word": "邮件",
+            "pinyin": "yóujiàn",
+            "meaning": "email",
+            "isPunctuation": false
+        },
+        {
+            "word": "催问",
+            "pinyin": "cuī wèn",
+            "meaning": "giục hỏi",
+            "isPunctuation": false
+        },
+        {
+            "word": "订单",
+            "pinyin": "dìngdān",
+            "meaning": "đơn hàng",
+            "isPunctuation": false
+        },
+        {
+            "word": "和",
+            "pinyin": "hé",
+            "meaning": "và",
+            "isPunctuation": false
+        },
+        {
+            "word": "交期",
+            "pinyin": "jiāoqī",
+            "meaning": "thời hạn giao hàng",
+            "isPunctuation": false
+        },
+        {
+            "word": "，",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        },
+        {
+            "word": "我们",
+            "pinyin": "wǒmen",
+            "meaning": "chúng tôi",
+            "isPunctuation": false
+        },
+        {
+            "word": "必须",
+            "pinyin": "bìxū",
+            "meaning": "phải",
+            "isPunctuation": false
+        },
+        {
+            "word": "确认",
+            "pinyin": "quèrèn",
+            "meaning": "xác nhận",
+            "isPunctuation": false
+        },
+        {
+            "word": "数据",
+            "pinyin": "shùjù",
+            "meaning": "dữ liệu",
+            "isPunctuation": false
+        },
+        {
+            "word": "并",
+            "pinyin": "bìng",
+            "meaning": "rồi / và",
+            "isPunctuation": false
+        },
+        {
+            "word": "发货",
+            "pinyin": "fāhuò",
+            "meaning": "giao hàng",
+            "isPunctuation": false
+        },
+        {
+            "word": "。",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        },
+        {
+            "word": "如果",
+            "pinyin": "Rúguǒ",
+            "meaning": "Nếu",
+            "isPunctuation": false
+        },
+        {
+            "word": "需要",
+            "pinyin": "xūyào",
+            "meaning": "cần",
+            "isPunctuation": false
+        },
+        {
+            "word": "加班",
+            "pinyin": "jiābān",
+            "meaning": "tăng ca",
+            "isPunctuation": false
+        },
+        {
+            "word": "或者",
+            "pinyin": "huòzhě",
+            "meaning": "hoặc",
+            "isPunctuation": false
+        },
+        {
+            "word": "出差",
+            "pinyin": "chūchāi",
+            "meaning": "đi công tác",
+            "isPunctuation": false
+        },
+        {
+            "word": "，",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        },
+        {
+            "word": "我们",
+            "pinyin": "wǒmen",
+            "meaning": "chúng tôi",
+            "isPunctuation": false
+        },
+        {
+            "word": "要",
+            "pinyin": "yào",
+            "meaning": "phải",
+            "isPunctuation": false
+        },
+        {
+            "word": "提前",
+            "pinyin": "tíqián",
+            "meaning": "trước",
+            "isPunctuation": false
+        },
+        {
+            "word": "向",
+            "pinyin": "xiàng",
+            "meaning": "với / hướng tới",
+            "isPunctuation": false
+        },
+        {
+            "word": "老板",
+            "pinyin": "lǎobǎn",
+            "meaning": "sếp",
+            "isPunctuation": false
+        },
+        {
+            "word": "申请",
+            "pinyin": "shēnqǐng",
+            "meaning": "đăng ký / xin phép",
+            "isPunctuation": false
+        },
+        {
+            "word": "。",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        }
+    ],
+    [
+        {
+            "word": "在",
+            "pinyin": "Zài",
+            "meaning": "Trong / ở",
+            "isPunctuation": false
+        },
+        {
+            "word": "办公室",
+            "pinyin": "bàngōngshì",
+            "meaning": "văn phòng",
+            "isPunctuation": false
+        },
+        {
+            "word": "里",
+            "pinyin": "lǐ",
+            "meaning": "bên trong",
+            "isPunctuation": false
+        },
+        {
+            "word": "，",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        },
+        {
+            "word": "操作员",
+            "pinyin": "cāozuòyuán",
+            "meaning": "nhân viên vận hành",
+            "isPunctuation": false
+        },
+        {
+            "word": "正在",
+            "pinyin": "zhèngzài",
+            "meaning": "đang",
+            "isPunctuation": false
+        },
+        {
+            "word": "用",
+            "pinyin": "yòng",
+            "meaning": "dùng",
+            "isPunctuation": false
+        },
+        {
+            "word": "电脑",
+            "pinyin": "diànnǎo",
+            "meaning": "máy tính",
+            "isPunctuation": false
+        },
+        {
+            "word": "、",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        },
+        {
+            "word": "打印机",
+            "pinyin": "dǎyìnjī",
+            "meaning": "máy in",
+            "isPunctuation": false
+        },
+        {
+            "word": "和",
+            "pinyin": "hé",
+            "meaning": "và",
+            "isPunctuation": false
+        },
+        {
+            "word": "扫描枪",
+            "pinyin": "sǎomiáoqiāng",
+            "meaning": "máy quét mã vạch",
+            "isPunctuation": false
+        },
+        {
+            "word": "处理",
+            "pinyin": "chǔlǐ",
+            "meaning": "xử lý",
+            "isPunctuation": false
+        },
+        {
+            "word": "文件",
+            "pinyin": "wénjiàn",
+            "meaning": "tài liệu",
+            "isPunctuation": false
+        },
+        {
+            "word": "和",
+            "pinyin": "hé",
+            "meaning": "và",
+            "isPunctuation": false
+        },
+        {
+            "word": "图纸",
+            "pinyin": "túzhǐ",
+            "meaning": "bản vẽ",
+            "isPunctuation": false
+        },
+        {
+            "word": "。",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        },
+        {
+            "word": "这",
+            "pinyin": "Zhè",
+            "meaning": "này",
+            "isPunctuation": false
+        },
+        {
+            "word": "份",
+            "pinyin": "fèn",
+            "meaning": "bản (lượng từ)",
+            "isPunctuation": false
+        },
+        {
+            "word": "合同",
+            "pinyin": "hétong",
+            "meaning": "hợp đồng",
+            "isPunctuation": false
+        },
+        {
+            "word": "需要",
+            "pinyin": "xūyào",
+            "meaning": "cần",
+            "isPunctuation": false
+        },
+        {
+            "word": "修改",
+            "pinyin": "xiūgǎi",
+            "meaning": "sửa đổi",
+            "isPunctuation": false
+        },
+        {
+            "word": "和",
+            "pinyin": "hé",
+            "meaning": "và",
+            "isPunctuation": false
+        },
+        {
+            "word": "调整",
+            "pinyin": "tiáozhěng",
+            "meaning": "điều chỉnh",
+            "isPunctuation": false
+        },
+        {
+            "word": "，",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        },
+        {
+            "word": "然后",
+            "pinyin": "ránhòu",
+            "meaning": "sau đó",
+            "isPunctuation": false
+        },
+        {
+            "word": "请",
+            "pinyin": "qǐng",
+            "meaning": "nhờ / xin",
+            "isPunctuation": false
+        },
+        {
+            "word": "经理",
+            "pinyin": "jīnglǐ",
+            "meaning": "quản lý",
+            "isPunctuation": false
+        },
+        {
+            "word": "批准",
+            "pinyin": "pīzhǔn",
+            "meaning": "phê duyệt",
+            "isPunctuation": false
+        },
+        {
+            "word": "并",
+            "pinyin": "bìng",
+            "meaning": "và",
+            "isPunctuation": false
+        },
+        {
+            "word": "签字",
+            "pinyin": "qiānzì",
+            "meaning": "ký tên",
+            "isPunctuation": false
+        },
+        {
+            "word": "。",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        },
+        {
+            "word": "技术",
+            "pinyin": "Jìshù",
+            "meaning": "Kỹ thuật",
+            "isPunctuation": false
+        },
+        {
+            "word": "部门",
+            "pinyin": "bùmén",
+            "meaning": "bộ phận",
+            "isPunctuation": false
+        },
+        {
+            "word": "正在",
+            "pinyin": "zhèngzài",
+            "meaning": "đang",
+            "isPunctuation": false
+        },
+        {
+            "word": "测试",
+            "pinyin": "cèshì",
+            "meaning": "kiểm thử",
+            "isPunctuation": false
+        },
+        {
+            "word": "新的",
+            "pinyin": "xīn de",
+            "meaning": "mới",
+            "isPunctuation": false
+        },
+        {
+            "word": "软件",
+            "pinyin": "ruǎnjiàn",
+            "meaning": "phần mềm",
+            "isPunctuation": false
+        },
+        {
+            "word": "和",
+            "pinyin": "hé",
+            "meaning": "và",
+            "isPunctuation": false
+        },
+        {
+            "word": "硬件",
+            "pinyin": "yìngjiàn",
+            "meaning": "phần cứng",
+            "isPunctuation": false
+        },
+        {
+            "word": "，",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        },
+        {
+            "word": "并且",
+            "pinyin": "bìngqiě",
+            "meaning": "đồng thời",
+            "isPunctuation": false
+        },
+        {
+            "word": "针对",
+            "pinyin": "zhēnduì",
+            "meaning": "đối với",
+            "isPunctuation": false
+        },
+        {
+            "word": "系统",
+            "pinyin": "xìtǒng",
+            "meaning": "hệ thống",
+            "isPunctuation": false
+        },
+        {
+            "word": "中",
+            "pinyin": "zhōng",
+            "meaning": "trong",
+            "isPunctuation": false
+        },
+        {
+            "word": "的",
+            "pinyin": "de",
+            "meaning": "của",
+            "isPunctuation": false
+        },
+        {
+            "word": "故障",
+            "pinyin": "gùzhàng",
+            "meaning": "sự cố",
+            "isPunctuation": false
+        },
+        {
+            "word": "进行",
+            "pinyin": "jìnxíng",
+            "meaning": "tiến hành",
+            "isPunctuation": false
+        },
+        {
+            "word": "维修",
+            "pinyin": "wéixiū",
+            "meaning": "sửa chữa",
+            "isPunctuation": false
+        },
+        {
+            "word": "和",
+            "pinyin": "hé",
+            "meaning": "và",
+            "isPunctuation": false
+        },
+        {
+            "word": "调试",
+            "pinyin": "tiáoshì",
+            "meaning": "chạy thử",
+            "isPunctuation": false
+        },
+        {
+            "word": "。",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        },
+        {
+            "word": "我们",
+            "pinyin": "Wǒmen",
+            "meaning": "Chúng tôi",
+            "isPunctuation": false
+        },
+        {
+            "word": "还",
+            "pinyin": "hái",
+            "meaning": "còn",
+            "isPunctuation": false
+        },
+        {
+            "word": "要",
+            "pinyin": "yào",
+            "meaning": "phải",
+            "isPunctuation": false
+        },
+        {
+            "word": "检查",
+            "pinyin": "jiǎnchá",
+            "meaning": "kiểm tra",
+            "isPunctuation": false
+        },
+        {
+            "word": "设备",
+            "pinyin": "shèbèi",
+            "meaning": "thiết bị",
+            "isPunctuation": false
+        },
+        {
+            "word": "的",
+            "pinyin": "de",
+            "meaning": "của",
+            "isPunctuation": false
+        },
+        {
+            "word": "参数",
+            "pinyin": "cānshù",
+            "meaning": "tham số",
+            "isPunctuation": false
+        },
+        {
+            "word": "，",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        },
+        {
+            "word": "设置",
+            "pinyin": "shèzhì",
+            "meaning": "cài đặt",
+            "isPunctuation": false
+        },
+        {
+            "word": "好",
+            "pinyin": "hǎo",
+            "meaning": "tốt / xong",
+            "isPunctuation": false
+        },
+        {
+            "word": "权限",
+            "pinyin": "quánxiàn",
+            "meaning": "quyền hạn",
+            "isPunctuation": false
+        },
+        {
+            "word": "、",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        },
+        {
+            "word": "账号",
+            "pinyin": "zhànghào",
+            "meaning": "tài khoản",
+            "isPunctuation": false
+        },
+        {
+            "word": "和",
+            "pinyin": "hé",
+            "meaning": "và",
+            "isPunctuation": false
+        },
+        {
+            "word": "密码",
+            "pinyin": "mìmǎ",
+            "meaning": "mật khẩu",
+            "isPunctuation": false
+        },
+        {
+            "word": "，",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        },
+        {
+            "word": "确保",
+            "pinyin": "quèbǎo",
+            "meaning": "đảm bảo",
+            "isPunctuation": false
+        },
+        {
+            "word": "网络",
+            "pinyin": "wǎngluò",
+            "meaning": "mạng",
+            "isPunctuation": false
+        },
+        {
+            "word": "和",
+            "pinyin": "hé",
+            "meaning": "và",
+            "isPunctuation": false
+        },
+        {
+            "word": "数据库",
+            "pinyin": "shùjùkù",
+            "meaning": "cơ sở dữ liệu",
+            "isPunctuation": false
+        },
+        {
+            "word": "安全",
+            "pinyin": "ānquán",
+            "meaning": "an toàn",
+            "isPunctuation": false
+        },
+        {
+            "word": "。",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        },
+        {
+            "word": "所有",
+            "pinyin": "Suǒyǒu",
+            "meaning": "Toàn bộ",
+            "isPunctuation": false
+        },
+        {
+            "word": "程序",
+            "pinyin": "chéngxù",
+            "meaning": "chương trình",
+            "isPunctuation": false
+        },
+        {
+            "word": "完成",
+            "pinyin": "wánchéng",
+            "meaning": "hoàn thành",
+            "isPunctuation": false
+        },
+        {
+            "word": "后",
+            "pinyin": "hòu",
+            "meaning": "sau khi",
+            "isPunctuation": false
+        },
+        {
+            "word": "，",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        },
+        {
+            "word": "我们",
+            "pinyin": "wǒmen",
+            "meaning": "chúng tôi",
+            "isPunctuation": false
+        },
+        {
+            "word": "要",
+            "pinyin": "yào",
+            "meaning": "phải",
+            "isPunctuation": false
+        },
+        {
+            "word": "联系",
+            "pinyin": "liánxì",
+            "meaning": "liên hệ",
+            "isPunctuation": false
+        },
+        {
+            "word": "客户",
+            "pinyin": "kèhù",
+            "meaning": "khách hàng",
+            "isPunctuation": false
+        },
+        {
+            "word": "来",
+            "pinyin": "lái",
+            "meaning": "đến",
+            "isPunctuation": false
+        },
+        {
+            "word": "收货",
+            "pinyin": "shōuhuò",
+            "meaning": "nhận hàng",
+            "isPunctuation": false
+        },
+        {
+            "word": "。",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        }
+    ],
+    [
+        {
+            "word": "为了",
+            "pinyin": "Wèile",
+            "meaning": "Để",
+            "isPunctuation": false
+        },
+        {
+            "word": "保证",
+            "pinyin": "bǎozhèng",
+            "meaning": "đảm bảo",
+            "isPunctuation": false
+        },
+        {
+            "word": "品质",
+            "pinyin": "pǐnzhì",
+            "meaning": "chất lượng",
+            "isPunctuation": false
+        },
+        {
+            "word": "，",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        },
+        {
+            "word": "检验",
+            "pinyin": "jiǎnyàn",
+            "meaning": "kiểm tra",
+            "isPunctuation": false
+        },
+        {
+            "word": "人员",
+            "pinyin": "rényuán",
+            "meaning": "nhân viên",
+            "isPunctuation": false
+        },
+        {
+            "word": "需要",
+            "pinyin": "xūyào",
+            "meaning": "cần",
+            "isPunctuation": false
+        },
+        {
+            "word": "对",
+            "pinyin": "duì",
+            "meaning": "đối với",
+            "isPunctuation": false
+        },
+        {
+            "word": "样品",
+            "pinyin": "yàngpǐn",
+            "meaning": "mẫu thử",
+            "isPunctuation": false
+        },
+        {
+            "word": "、",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        },
+        {
+            "word": "材料",
+            "pinyin": "cáiliào",
+            "meaning": "vật liệu",
+            "isPunctuation": false
+        },
+        {
+            "word": "和",
+            "pinyin": "hé",
+            "meaning": "và",
+            "isPunctuation": false
+        },
+        {
+            "word": "零件",
+            "pinyin": "língjiàn",
+            "meaning": "linh kiện",
+            "isPunctuation": false
+        },
+        {
+            "word": "进行",
+            "pinyin": "jìnxíng",
+            "meaning": "tiến hành",
+            "isPunctuation": false
+        },
+        {
+            "word": "严格",
+            "pinyin": "yángé",
+            "meaning": "nghiêm ngặt",
+            "isPunctuation": false
+        },
+        {
+            "word": "检查",
+            "pinyin": "jiǎnchá",
+            "meaning": "kiểm tra",
+            "isPunctuation": false
+        },
+        {
+            "word": "。",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        },
+        {
+            "word": "如果",
+            "pinyin": "Rúguǒ",
+            "meaning": "Nếu",
+            "isPunctuation": false
+        },
+        {
+            "word": "模具",
+            "pinyin": "mújù",
+            "meaning": "khuôn",
+            "isPunctuation": false
+        },
+        {
+            "word": "有",
+            "pinyin": "yǒu",
+            "meaning": "có",
+            "isPunctuation": false
+        },
+        {
+            "word": "问题",
+            "pinyin": "wèntí",
+            "meaning": "vấn đề",
+            "isPunctuation": false
+        },
+        {
+            "word": "，",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        },
+        {
+            "word": "我们",
+            "pinyin": "wǒmen",
+            "meaning": "chúng tôi",
+            "isPunctuation": false
+        },
+        {
+            "word": "要",
+            "pinyin": "yào",
+            "meaning": "phải",
+            "isPunctuation": false
+        },
+        {
+            "word": "分析",
+            "pinyin": "fēnxī",
+            "meaning": "phân tích",
+            "isPunctuation": false
+        },
+        {
+            "word": "原因",
+            "pinyin": "yuányīn",
+            "meaning": "nguyên nhân",
+            "isPunctuation": false
+        },
+        {
+            "word": "并",
+            "pinyin": "bìng",
+            "meaning": "và",
+            "isPunctuation": false
+        },
+        {
+            "word": "解决",
+            "pinyin": "jiějué",
+            "meaning": "giải quyết",
+            "isPunctuation": false
+        },
+        {
+            "word": "它",
+            "pinyin": "tā",
+            "meaning": "nó",
+            "isPunctuation": false
+        },
+        {
+            "word": "。",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        },
+        {
+            "word": "在",
+            "pinyin": "Zài",
+            "meaning": "Về mặt / ở",
+            "isPunctuation": false
+        },
+        {
+            "word": "工艺",
+            "pinyin": "gōngyì",
+            "meaning": "quy trình công nghệ",
+            "isPunctuation": false
+        },
+        {
+            "word": "和",
+            "pinyin": "hé",
+            "meaning": "và",
+            "isPunctuation": false
+        },
+        {
+            "word": "流程",
+            "pinyin": "liúchéng",
+            "meaning": "quy trình",
+            "isPunctuation": false
+        },
+        {
+            "word": "方面",
+            "pinyin": "fāngmiàn",
+            "meaning": "phương diện / mặt",
+            "isPunctuation": false
+        },
+        {
+            "word": "，",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        },
+        {
+            "word": "我们",
+            "pinyin": "wǒmen",
+            "meaning": "chúng tôi",
+            "isPunctuation": false
+        },
+        {
+            "word": "必须",
+            "pinyin": "bìxū",
+            "meaning": "phải",
+            "isPunctuation": false
+        },
+        {
+            "word": "注意",
+            "pinyin": "zhùyì",
+            "meaning": "chú ý",
+            "isPunctuation": false
+        },
+        {
+            "word": "安全",
+            "pinyin": "ānquán",
+            "meaning": "an toàn",
+            "isPunctuation": false
+        },
+        {
+            "word": "，",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        },
+        {
+            "word": "防止",
+            "pinyin": "fángzhǐ",
+            "meaning": "phòng ngừa",
+            "isPunctuation": false
+        },
+        {
+            "word": "风险",
+            "pinyin": "fēngxiǎn",
+            "meaning": "rủi ro",
+            "isPunctuation": false
+        },
+        {
+            "word": "。",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        },
+        {
+            "word": "同时",
+            "pinyin": "Tóngshí",
+            "meaning": "Đồng thời",
+            "isPunctuation": false
+        },
+        {
+            "word": "，",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        },
+        {
+            "word": "仓库",
+            "pinyin": "cāngkù",
+            "meaning": "kho",
+            "isPunctuation": false
+        },
+        {
+            "word": "里",
+            "pinyin": "lǐ",
+            "meaning": "trong",
+            "isPunctuation": false
+        },
+        {
+            "word": "的",
+            "pinyin": "de",
+            "meaning": "của",
+            "isPunctuation": false
+        },
+        {
+            "word": "库存",
+            "pinyin": "kùcún",
+            "meaning": "tồn kho",
+            "isPunctuation": false
+        },
+        {
+            "word": "、",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        },
+        {
+            "word": "包装",
+            "pinyin": "bāozhuāng",
+            "meaning": "đóng gói",
+            "isPunctuation": false
+        },
+        {
+            "word": "、",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        },
+        {
+            "word": "标签",
+            "pinyin": "biāoqiān",
+            "meaning": "nhãn",
+            "isPunctuation": false
+        },
+        {
+            "word": "和",
+            "pinyin": "hé",
+            "meaning": "và",
+            "isPunctuation": false
+        },
+        {
+            "word": "条码",
+            "pinyin": "tiáomǎ",
+            "meaning": "mã vạch",
+            "isPunctuation": false
+        },
+        {
+            "word": "也",
+            "pinyin": "yě",
+            "meaning": "cũng",
+            "isPunctuation": false
+        },
+        {
+            "word": "要",
+            "pinyin": "yào",
+            "meaning": "phải",
+            "isPunctuation": false
+        },
+        {
+            "word": "核对",
+            "pinyin": "héduì",
+            "meaning": "đối chiếu",
+            "isPunctuation": false
+        },
+        {
+            "word": "清楚",
+            "pinyin": "qīngchǔ",
+            "meaning": "rõ ràng",
+            "isPunctuation": false
+        },
+        {
+            "word": "。",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        },
+        {
+            "word": "财务",
+            "pinyin": "Cáiwù",
+            "meaning": "Tài chính",
+            "isPunctuation": false
+        },
+        {
+            "word": "部门",
+            "pinyin": "bùmén",
+            "meaning": "bộ phận",
+            "isPunctuation": false
+        },
+        {
+            "word": "每个月",
+            "pinyin": "měi gè yuè",
+            "meaning": "hàng tháng",
+            "isPunctuation": false
+        },
+        {
+            "word": "要",
+            "pinyin": "yào",
+            "meaning": "phải",
+            "isPunctuation": false
+        },
+        {
+            "word": "计算",
+            "pinyin": "jìsuàn",
+            "meaning": "tính toán",
+            "isPunctuation": false
+        },
+        {
+            "word": "成本",
+            "pinyin": "chéngběn",
+            "meaning": "chi phí",
+            "isPunctuation": false
+        },
+        {
+            "word": "、",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        },
+        {
+            "word": "利润",
+            "pinyin": "lìrùn",
+            "meaning": "lợi nhuận",
+            "isPunctuation": false
+        },
+        {
+            "word": "、",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        },
+        {
+            "word": "工资",
+            "pinyin": "gōngzī",
+            "meaning": "tiền lương",
+            "isPunctuation": false
+        },
+        {
+            "word": "和",
+            "pinyin": "hé",
+            "meaning": "và",
+            "isPunctuation": false
+        },
+        {
+            "word": "奖金",
+            "pinyin": "jiǎngjīn",
+            "meaning": "tiền thưởng",
+            "isPunctuation": false
+        },
+        {
+            "word": "，",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        },
+        {
+            "word": "还",
+            "pinyin": "hái",
+            "meaning": "lại còn",
+            "isPunctuation": false
+        },
+        {
+            "word": "要",
+            "pinyin": "yào",
+            "meaning": "phải",
+            "isPunctuation": false
+        },
+        {
+            "word": "处理",
+            "pinyin": "chǔlǐ",
+            "meaning": "xử lý",
+            "isPunctuation": false
+        },
+        {
+            "word": "报销",
+            "pinyin": "bàoxiāo",
+            "meaning": "thanh toán chi phí",
+            "isPunctuation": false
+        },
+        {
+            "word": "、",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        },
+        {
+            "word": "发票",
+            "pinyin": "fāpiào",
+            "meaning": "hóa đơn GTGT",
+            "isPunctuation": false
+        },
+        {
+            "word": "和",
+            "pinyin": "hé",
+            "meaning": "và",
+            "isPunctuation": false
+        },
+        {
+            "word": "税",
+            "pinyin": "shuì",
+            "meaning": "thuế",
+            "isPunctuation": false
+        },
+        {
+            "word": "。",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        },
+        {
+            "word": "工作",
+            "pinyin": "Gōngzuò",
+            "meaning": "Công việc",
+            "isPunctuation": false
+        },
+        {
+            "word": "虽然",
+            "pinyin": "suīrán",
+            "meaning": "tuy nhiên / tuy",
+            "isPunctuation": false
+        },
+        {
+            "word": "忙碌",
+            "pinyin": "mánglù",
+            "meaning": "bận rộn",
+            "isPunctuation": false
+        },
+        {
+            "word": "，",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        },
+        {
+            "word": "但",
+            "pinyin": "dàn",
+            "meaning": "nhưng",
+            "isPunctuation": false
+        },
+        {
+            "word": "只要",
+            "pinyin": "zhǐyào",
+            "meaning": "chỉ cần",
+            "isPunctuation": false
+        },
+        {
+            "word": "协助",
+            "pinyin": "xiézhù",
+            "meaning": "hỗ trợ",
+            "isPunctuation": false
+        },
+        {
+            "word": "配合",
+            "pinyin": "pèihé",
+            "meaning": "phối hợp",
+            "isPunctuation": false
+        },
+        {
+            "word": "，",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        },
+        {
+            "word": "大家",
+            "pinyin": "dàjiā",
+            "meaning": "mọi người",
+            "isPunctuation": false
+        },
+        {
+            "word": "就",
+            "pinyin": "jiù",
+            "meaning": "đều / thì",
+            "isPunctuation": false
+        },
+        {
+            "word": "能",
+            "pinyin": "néng",
+            "meaning": "có thể",
+            "isPunctuation": false
+        },
+        {
+            "word": "把",
+            "pinyin": "bǎ",
+            "meaning": "đem",
+            "isPunctuation": false
+        },
+        {
+            "word": "问题",
+            "pinyin": "wèntí",
+            "meaning": "vấn đề",
+            "isPunctuation": false
+        },
+        {
+            "word": "解决",
+            "pinyin": "jiějué",
+            "meaning": "giải quyết",
+            "isPunctuation": false
+        },
+        {
+            "word": "，",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        },
+        {
+            "word": "顺利",
+            "pinyin": "shùnlì",
+            "meaning": "thuận lợi",
+            "isPunctuation": false
+        },
+        {
+            "word": "结束",
+            "pinyin": "jiéshù",
+            "meaning": "kết thúc",
+            "isPunctuation": false
+        },
+        {
+            "word": "一天",
+            "pinyin": "yì tiān",
+            "meaning": "một ngày",
+            "isPunctuation": false
+        },
+        {
+            "word": "的",
+            "pinyin": "de",
+            "meaning": "của",
+            "isPunctuation": false
+        },
+        {
+            "word": "工作",
+            "pinyin": "gōngzuò",
+            "meaning": "công việc",
+            "isPunctuation": false
+        },
+        {
+            "word": "，",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        },
+        {
+            "word": "开开心心",
+            "pinyin": "kāi kāixīn xīn",
+            "meaning": "vui vẻ",
+            "isPunctuation": false
+        },
+        {
+            "word": "地",
+            "pinyin": "de",
+            "meaning": "trợ từ (một cách)",
+            "isPunctuation": false
+        },
+        {
+            "word": "下班",
+            "pinyin": "xiàbān",
+            "meaning": "tan làm",
+            "isPunctuation": false
+        },
+        {
+            "word": "。",
+            "pinyin": "",
+            "meaning": "",
+            "isPunctuation": true
+        }
+    ]
+]

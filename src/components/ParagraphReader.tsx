@@ -160,33 +160,62 @@ const ParagraphReader: React.FC<ParagraphReaderProps> = ({ fileUrl, onClose }) =
       if (isCancelled) return;
       const list = listToPlayRef.current;
       
-      // Skip checked items if they are at the bottom, or just play them all? Let's play all.
-      // Or maybe stop if it's checked? We'll play all.
       if (currentIndex >= list.length) {
         setIsAutoPlaying(false);
         return;
       }
       
       const item = list[currentIndex];
-      const text = item.chinese || item.term || '';
       
-      const utterance = new SpeechSynthesisUtterance(text);
-      utterance.lang = 'zh-CN';
-      utterance.rate = 0.8;
+      const parts: { text: string; lang: string; rate: number; delay: number }[] = [];
+      const cnText = item.chinese || item.term || '';
+      const viText = item.vietnamese || item.meaning || '';
       
-      // Lưu reference để tránh Chrome garbage collection bug
-      (window as any)._currentUtterance = utterance;
+      // Main term
+      if (cnText) parts.push({ text: cnText, lang: 'zh-CN', rate: 0.8, delay: 600 });
+      if (viText) parts.push({ text: viText, lang: 'vi-VN', rate: 1.0, delay: 1200 });
       
-      utterance.onend = () => {
-        if (!isCancelled) {
+      // Breakdown terms
+      if (item.vocabulary_breakdown && item.vocabulary_breakdown.length > 0) {
+        item.vocabulary_breakdown.forEach(vb => {
+          if (vb.word) parts.push({ text: vb.word, lang: 'zh-CN', rate: 0.8, delay: 400 });
+          if (vb.meaning) parts.push({ text: vb.meaning, lang: 'vi-VN', rate: 1.0, delay: 800 });
+        });
+      }
+      
+      let partIndex = 0;
+      
+      const playPart = () => {
+        if (isCancelled) return;
+        if (partIndex >= parts.length) {
           currentIndex++;
-          setTimeout(playNext, 1200); // 1.2s pause between sentences
+          setTimeout(playNext, 1500); // 1.5s pause between vocab items
+          return;
         }
+        
+        const part = parts[partIndex];
+        const utterance = new SpeechSynthesisUtterance(part.text);
+        utterance.lang = part.lang;
+        utterance.rate = part.rate;
+        
+        // Lưu reference để tránh Chrome garbage collection bug
+        (window as any)._currentUtterance = utterance;
+        
+        utterance.onend = () => {
+          if (!isCancelled) {
+            partIndex++;
+            setTimeout(playPart, part.delay);
+          }
+        };
+        
+        utterance.onerror = () => {
+          if (!isCancelled) setIsAutoPlaying(false);
+        };
+        
+        window.speechSynthesis.speak(utterance);
       };
-      utterance.onerror = () => {
-        if (!isCancelled) setIsAutoPlaying(false);
-      };
-      window.speechSynthesis.speak(utterance);
+      
+      playPart();
     };
 
     window.speechSynthesis.cancel();

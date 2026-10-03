@@ -169,7 +169,7 @@ const ParagraphReader: React.FC<ParagraphReaderProps> = ({ fileUrl, onClose }) =
       
       const parts: { text: string; lang: string; rate: number; delay: number }[] = [];
       const cnText = item.chinese || item.term || '';
-      const viText = item.vietnamese || item.meaning || '';
+      const viText = (item.vietnamese || item.meaning || '').replace(/\//g, ', ');
       
       // Main term
       if (cnText) parts.push({ text: cnText, lang: 'zh-CN', rate: 0.8, delay: 600 });
@@ -179,7 +179,10 @@ const ParagraphReader: React.FC<ParagraphReaderProps> = ({ fileUrl, onClose }) =
       if (item.vocabulary_breakdown && item.vocabulary_breakdown.length > 0) {
         item.vocabulary_breakdown.forEach(vb => {
           if (vb.word) parts.push({ text: vb.word, lang: 'zh-CN', rate: 0.8, delay: 400 });
-          if (vb.meaning) parts.push({ text: vb.meaning, lang: 'vi-VN', rate: 1.0, delay: 800 });
+          if (vb.meaning) {
+            const safeMeaning = vb.meaning.replace(/\//g, ', ');
+            parts.push({ text: safeMeaning, lang: 'vi-VN', rate: 1.0, delay: 800 });
+          }
         });
       }
       

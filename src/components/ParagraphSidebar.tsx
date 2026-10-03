@@ -12,6 +12,7 @@ const vocabFiles = [
   { name: 'Đoạn văn HSK 1', url: '/vocab/hsk1-paragraph.json' },
   { name: 'Từ vựng HSK 2', url: '/vocab/hsk2-vocab.json' },
   { name: 'Đoạn văn HSK 2', url: '/vocab/hsk2-paragraph.json' },
+  { name: 'Giao tiếp 178', url: '/vocab/conversational178.json' },
 ];
 
 const ParagraphSidebar: React.FC<ParagraphSidebarProps> = ({ onSelectFile }) => {
@@ -57,18 +58,18 @@ const ParagraphSidebar: React.FC<ParagraphSidebarProps> = ({ onSelectFile }) => 
           </button>
         </div>
 
-        <div className="flex-1 overflow-y-auto p-4 bg-slate-50 space-y-2">
+        <div className="flex-1 overflow-y-auto p-4 bg-white space-y-1">
           {vocabFiles.map((file, idx) => (
             <button
               key={idx}
               onClick={() => handleSelect(file.url)}
-              className="w-full flex items-center gap-3 bg-white border border-gray-200 rounded-lg p-3 text-left hover:border-indigo-400 hover:bg-indigo-50 hover:shadow-sm transition-all"
+              className="w-full flex items-start gap-2 py-2 px-2 text-left rounded-md text-gray-600 hover:bg-indigo-50 hover:text-indigo-700 transition-colors"
             >
-              <FileText className="text-indigo-500" size={24} />
-              <span className="font-medium text-gray-700">{file.name}</span>
+              <FileText className="text-indigo-400 shrink-0 mt-0.5" size={18} />
+              <span className="text-sm leading-relaxed">{file.name}</span>
             </button>
           ))}
-          <p className="text-xs text-gray-400 mt-4 text-center">Các bài học mới sẽ được thêm vào đây trong tương lai</p>
+          <p className="text-xs text-gray-400 mt-6 pt-4 border-t border-gray-100 text-center">Các bài học mới sẽ được thêm vào đây trong tương lai</p>
         </div>
       </aside>
     </>

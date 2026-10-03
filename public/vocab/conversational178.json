@@ -1,0 +1,596 @@
+[
+  {
+    "term": "怎么挂了呀",
+    "pinyin": "zěn me guà le ya",
+    "meaning": "Sao lại cúp máy/treo rồi vậy?",
+    "notes": "",
+    "vocabulary_breakdown": []
+  },
+  {
+    "term": "却还是一直点头",
+    "pinyin": "què hái shì yìzhí diǎntóu",
+    "meaning": "...nhưng vẫn cứ liên tục gật đầu.",
+    "notes": "",
+    "vocabulary_breakdown": [
+      { "word": "却", "pinyin": "què", "meaning": "Nhưng / Lại" },
+      { "word": "还是", "pinyin": "hái shì", "meaning": "Vẫn / Vẫn cứ" },
+      { "word": "一直", "pinyin": "yìzhí", "meaning": "Liên tục / Suốt" },
+      { "word": "点头", "pinyin": "diǎntóu", "meaning": "Gật đầu (thường biểu thị sự đồng tình hoặc nhẫn nhịn)" }
+    ]
+  },
+  {
+    "term": "是不是很熟悉",
+    "pinyin": "shì bú shì hěn shú xī",
+    "meaning": "Có quen thuộc không?",
+    "notes": "",
+    "vocabulary_breakdown": []
+  },
+  {
+    "term": "明明",
+    "pinyin": "míng míng",
+    "meaning": "Rõ ràng",
+    "notes": "",
+    "vocabulary_breakdown": []
+  },
+  {
+    "term": "线上吵不过我",
+    "pinyin": "xiàn shàng chǎo bú guò wǒ",
+    "meaning": "Trên mạng cãi không lại tớ (đâu).",
+    "notes": "Cấu trúc [Động từ + 不过] biểu thị không thể thắng nổi đối phương.",
+    "vocabulary_breakdown": [
+      { "word": "线上", "pinyin": "xiàn shàng", "meaning": "Trực tuyến / Trên mạng" },
+      { "word": "吵", "pinyin": "chǎo", "meaning": "Cãi nhau / Tranh luận" },
+      { "word": "不过", "pinyin": "bú guò", "meaning": "Không lại / Không thắng được" }
+    ]
+  },
+  {
+    "term": "不跟我吵架吗",
+    "pinyin": "bù gēn wǒ chǎo jià ma",
+    "meaning": "Cậu không định cãi nhau với tớ à?",
+    "notes": "",
+    "vocabulary_breakdown": [
+      { "word": "跟", "pinyin": "gēn", "meaning": "Với / Cùng" },
+      { "word": "吵架", "pinyin": "chǎo jià", "meaning": "Cãi nhau" }
+    ]
+  },
+  {
+    "term": "我吵不动了",
+    "pinyin": "wǒ chǎo bú dòng le",
+    "meaning": "Tớ cãi không nổi nữa rồi.",
+    "notes": "Cấu trúc [Động từ + 不动] diễn tả sự cạn kiệt thể lực hoặc tinh thần.",
+    "vocabulary_breakdown": [
+      { "word": "吵", "pinyin": "chǎo", "meaning": "Cãi nhau" },
+      { "word": "不动", "pinyin": "bú dòng", "meaning": "Không nổi / Không xuể" }
+    ]
+  },
+  {
+    "term": "别提了我这刚起来没多长时间",
+    "pinyin": "bié tí le wǒ zhè gāng qǐlái méi duō cháng shíjiān",
+    "meaning": "Đừng nhắc nữa, tớ cũng vừa mới dậy cách đây không lâu đâu.",
+    "notes": "",
+    "vocabulary_breakdown": [
+      { "word": "别提了", "pinyin": "bié tí le", "meaning": "Đừng nhắc nữa / Khỏi nói nữa" },
+      { "word": "刚", "pinyin": "gāng", "meaning": "Vừa / Vừa mới" },
+      { "word": "起来", "pinyin": "qǐlái", "meaning": "Dậy / Thức dậy" },
+      { "word": "没多长时间", "pinyin": "méi duō cháng shíjiān", "meaning": "Chưa được bao lâu" }
+    ]
+  },
+  {
+    "term": "昨天看球看太晚了",
+    "pinyin": "zuótiān kàn qiú kàn tài wǎn le",
+    "meaning": "Hôm qua xem bóng đá muộn quá.",
+    "notes": "",
+    "vocabulary_breakdown": []
+  },
+  {
+    "term": "划掉",
+    "pinyin": "huá diào",
+    "meaning": "Gạch bỏ / Xoá đi",
+    "notes": "",
+    "vocabulary_breakdown": []
+  },
+  {
+    "term": "盖子",
+    "pinyin": "gài zi",
+    "meaning": "Cái nắp / Nắp đậy",
+    "notes": "",
+    "vocabulary_breakdown": []
+  },
+  {
+    "term": "后来才明白，承诺只是当下的真心。",
+    "pinyin": "hòulái cái míngbái, chéngnuò zhǐshì dāngxià de zhēnxīn.",
+    "meaning": "Sau này mới hiểu, lời hứa chỉ là sự thật lòng của khoảnh khắc đó.",
+    "notes": "",
+    "vocabulary_breakdown": [
+      { "word": "后来", "pinyin": "hòulái", "meaning": "Sau này / Về sau" },
+      { "word": "才", "pinyin": "cái", "meaning": "Mới (nhận ra muộn màng)" },
+      { "word": "明白", "pinyin": "míngbái", "meaning": "Hiểu ra / Sáng tỏ" },
+      { "word": "承诺", "pinyin": "chéngnuò", "meaning": "Lời hứa / Lời cam kết" },
+      { "word": "只是", "pinyin": "zhǐshì", "meaning": "Chỉ là" },
+      { "word": "当下", "pinyin": "dāngxià", "meaning": "Ngay lúc đó / Khoảnh khắc hiện tại" },
+      { "word": "真心", "pinyin": "zhēnxīn", "meaning": "Sự thật lòng" }
+    ]
+  },
+  {
+    "term": "奇怪",
+    "pinyin": "qíguài",
+    "meaning": "Kì lạ",
+    "notes": "",
+    "vocabulary_breakdown": []
+  },
+  {
+    "term": "我们不属于同一个部门。",
+    "pinyin": "Wǒmen bù shǔyú tóng yígè bùmén.",
+    "meaning": "Chúng tôi không cùng thuộc một bộ phận.",
+    "notes": "",
+    "vocabulary_breakdown": [
+      { "word": "属于", "pinyin": "shǔyú", "meaning": "Thuộc về" },
+      { "word": "部门", "pinyin": "bùmén", "meaning": "Bộ phận / Phòng ban" }
+    ]
+  },
+  {
+    "term": "没有什么是不可能的，关键在于愿不愿意",
+    "pinyin": "Méiyǒu shénme shì bù kěnéng de, guānjiàn zàiyú yuàn bù yuànyì",
+    "meaning": "Không có gì là không thể, quan trọng là có muốn hay không thôi.",
+    "notes": "",
+    "vocabulary_breakdown": [
+      { "word": "关键", "pinyin": "guānjiàn", "meaning": "Quan trọng / Điểm mấu chốt" },
+      { "word": "在于", "pinyin": "zàiyú", "meaning": "Nằm ở chỗ / Cốt ở" },
+      { "word": "愿意", "pinyin": "yuànyì", "meaning": "Bằng lòng / Sẵn sàng" }
+    ]
+  },
+  {
+    "term": "都够咱俩吃一顿大餐了",
+    "pinyin": "dōu gòu zán liǎ chī yí dùn dà cān le",
+    "meaning": "Đủ để hai đứa mình đi ăn một bữa thịnh soạn rồi đấy!",
+    "notes": "",
+    "vocabulary_breakdown": [
+      { "word": "够", "pinyin": "gòu", "meaning": "Đủ" },
+      { "word": "咱俩", "pinyin": "zán liǎ", "meaning": "Hai chúng mình (bao gồm cả người nói & nghe)" },
+      { "word": "一顿", "pinyin": "yí dùn", "meaning": "Một bữa (lượng từ cho bữa ăn)" },
+      { "word": "大餐", "pinyin": "dà cān", "meaning": "Bữa tiệc lớn / Bữa ăn thịnh soạn" }
+    ]
+  },
+  {
+    "term": "现在这个时代",
+    "pinyin": "xiànzài zhège shídài",
+    "meaning": "Trong thời đại này / Ở cái thời đại ngày nay",
+    "notes": "",
+    "vocabulary_breakdown": []
+  },
+  {
+    "term": "你不体验一下送外卖",
+    "pinyin": "nǐ bù tǐyàn yíxià sòng wàimài",
+    "meaning": "Cậu không thử trải nghiệm đi giao đồ ăn",
+    "notes": "",
+    "vocabulary_breakdown": [
+      { "word": "体验", "pinyin": "tǐyàn", "meaning": "Trải nghiệm" },
+      { "word": "送外卖", "pinyin": "sòng wàimài", "meaning": "Giao đồ ăn / Giao hàng" }
+    ]
+  },
+  {
+    "term": "你真的不知道钱有多难挣",
+    "pinyin": "nǐ zhēn de bù zhīdào qián yǒu duō nán zhèng",
+    "meaning": "Cậu thật sự không biết kiếm tiền khó đến mức nào đâu.",
+    "notes": "挣 (kiếm tiền bằng mồ hôi nước mắt, khác với 赚 là kiếm tiền sinh lời).",
+    "vocabulary_breakdown": [
+      { "word": "难", "pinyin": "nán", "meaning": "Khó / Gian nan" },
+      { "word": "挣", "pinyin": "zhèng", "meaning": "Kiếm (tiền bằng sức lao động)" }
+    ]
+  },
+  {
+    "term": "别的行业其实都一样吧",
+    "pinyin": "bié de háng yè qí shí dōu yí yàng ba",
+    "meaning": "Các ngành nghề khác thực ra cũng đều như nhau cả thôi nhỉ.",
+    "notes": "",
+    "vocabulary_breakdown": [
+      { "word": "别的", "pinyin": "bié de", "meaning": "Khác / Cái khác" },
+      { "word": "行业", "pinyin": "háng yè", "meaning": "Ngành nghề / Lĩnh vực" },
+      { "word": "其实", "pinyin": "qí shí", "meaning": "Thực ra / Thực chất thì" },
+      { "word": "都一样", "pinyin": "dōu yí yàng", "meaning": "Đều giống nhau" }
+    ]
+  },
+  {
+    "term": "真的很适合你",
+    "pinyin": "Zhēn de hěn shìhé nǐ",
+    "meaning": "Thật sự rất hợp với em.",
+    "notes": "",
+    "vocabulary_breakdown": []
+  },
+  {
+    "term": "我点了一份炒饭，另外还要了一杯果汁。",
+    "pinyin": "Wǒ diǎn le yī fèn chǎofàn, lìngwài hái yào le yī bēi guǒzhī.",
+    "meaning": "Tôi đã gọi một suất cơm rang, ngoài ra còn gọi thêm một cốc nước ép.",
+    "notes": "",
+    "vocabulary_breakdown": [
+      { "word": "点", "pinyin": "diǎn", "meaning": "Gọi (món ăn)" },
+      { "word": "另外", "pinyin": "lìngwài", "meaning": "Ngoài ra" }
+    ]
+  },
+  {
+    "term": "节约",
+    "pinyin": "jiéyuē",
+    "meaning": "Tiết kiệm",
+    "notes": "",
+    "vocabulary_breakdown": []
+  },
+  {
+    "term": "这事翻篇中不中",
+    "pinyin": "zhè shì fān piān zhōng bù zhōng",
+    "meaning": "Chuyện này cho qua được không.",
+    "notes": "",
+    "vocabulary_breakdown": [
+      { "word": "这事", "pinyin": "zhè shì", "meaning": "Chuyện này" },
+      { "word": "翻篇", "pinyin": "fān piān", "meaning": "Lật trang / Cho qua chuyện cũ" },
+      { "word": "中不中", "pinyin": "zhōng bù zhōng", "meaning": "Được không (khẩu ngữ)" }
+    ]
+  },
+  {
+    "term": "由于最近跟那个曾志华吵架",
+    "pinyin": "yóuyú zuìjìn gēn nàge zēng zhì huá chǎo jià",
+    "meaning": "Bởi vì dạo này cãi nhau với cái tên Tăng Chí Hoa đó",
+    "notes": "",
+    "vocabulary_breakdown": [
+      { "word": "由于", "pinyin": "yóuyú", "meaning": "Bởi vì / Do" },
+      { "word": "最近", "pinyin": "zuìjìn", "meaning": "Dạo này / Gần đây" },
+      { "word": "那个", "pinyin": "nà ge", "meaning": "Cái tên đó / Kẻ đó (biểu thị sự bực tức)" },
+      { "word": "吵架", "pinyin": "chǎo jià", "meaning": "Cãi nhau" }
+    ]
+  },
+  {
+    "term": "他都不主动来找我的",
+    "pinyin": "tā dōu bù zhǔdòng lái zhǎo wǒ de",
+    "meaning": "Anh ta chẳng thèm chủ động đến tìm tôi.",
+    "notes": "",
+    "vocabulary_breakdown": [
+      { "word": "主动", "pinyin": "zhǔdòng", "meaning": "Chủ động" }
+    ]
+  },
+  {
+    "term": "我都服了",
+    "pinyin": "wǒ dōu fú le",
+    "meaning": "Tôi cũng bó tay luôn / Tôi thực sự cạn lời rồi.",
+    "notes": "",
+    "vocabulary_breakdown": []
+  },
+  {
+    "term": "幸好我的人脉比较广",
+    "pinyin": "xìng hǎo wǒ de rén mài bǐ jiào guǎng",
+    "meaning": "May mà mạng lưới quan hệ của tôi khá rộng.",
+    "notes": "",
+    "vocabulary_breakdown": [
+      { "word": "幸好", "pinyin": "xìng hǎo", "meaning": "May mà / May mắn thay" },
+      { "word": "人脉", "pinyin": "rén mài", "meaning": "Mạng lưới quan hệ / Nhân mạch" },
+      { "word": "比较", "pinyin": "bǐ jiào", "meaning": "Khá là / Tương đối" },
+      { "word": "广", "pinyin": "guǎng", "meaning": "Rộng" }
+    ]
+  },
+  {
+    "term": "知道他在哪里打游戏",
+    "pinyin": "zhī dào tā zài nǎ lǐ dǎ yóu xì",
+    "meaning": "Biết anh ta đang chơi game ở đâu.",
+    "notes": "",
+    "vocabulary_breakdown": []
+  },
+  {
+    "term": "让他给我道歉",
+    "pinyin": "ràng tā gěi wǒ dào qiàn",
+    "meaning": "Bắt anh ta phải xin lỗi tôi.",
+    "notes": "Cấu trúc: 让 (Bắt/yêu cầu ai) + 给我道歉 (xin lỗi tôi).",
+    "vocabulary_breakdown": [
+      { "word": "让", "pinyin": "ràng", "meaning": "Bắt / Yêu cầu / Để" },
+      { "word": "给", "pinyin": "gěi", "meaning": "Cho (hướng về ai đó)" },
+      { "word": "道歉", "pinyin": "dào qiàn", "meaning": "Xin lỗi" }
+    ]
+  },
+  {
+    "term": "收到一条消息，有没有责任心？",
+    "pinyin": "shōudào yì tiáo xiāoxi, yǒu méi yǒu zérènxīn?",
+    "meaning": "Nhận được một tin nhắn, có tinh thần trách nhiệm hay không?",
+    "notes": "",
+    "vocabulary_breakdown": [
+      { "word": "责任心", "pinyin": "zérènxīn", "meaning": "Tinh thần trách nhiệm" }
+    ]
+  },
+  {
+    "term": "遇到问题的时候，他会不会逃避？",
+    "pinyin": "yùdào wèntí de shíhou, tā huì bú huì táobì?",
+    "meaning": "Khi gặp vấn đề, anh ấy có trốn tránh không?",
+    "notes": "",
+    "vocabulary_breakdown": [
+      { "word": "遇到", "pinyin": "yùdào", "meaning": "Gặp phải" },
+      { "word": "的时候", "pinyin": "de shíhou", "meaning": "Lúc / Khi" },
+      { "word": "逃避", "pinyin": "táobì", "meaning": "Trốn tránh" }
+    ]
+  },
+  {
+    "term": "我充电器回来再充，那我手机咋办？",
+    "pinyin": "wǒ chōng diàn qì huí lái zài chōng, nà wǒ shǒu jī zǎ bàn?",
+    "meaning": "Cục sạc của tôi đợi về hẵng sạc, vậy điện thoại của tôi tính sao đây?",
+    "notes": "",
+    "vocabulary_breakdown": [
+      { "word": "充电器", "pinyin": "chōng diàn qì", "meaning": "Cục sạc" },
+      { "word": "咋办", "pinyin": "zǎ bàn", "meaning": "Tính sao / Làm sao đây" }
+    ]
+  },
+  {
+    "term": "路上省点玩",
+    "pinyin": "lù shang shěng diǎn wán",
+    "meaning": "Trên đường đi chịu khó bấm ít thôi cho đỡ tốn pin.",
+    "notes": "",
+    "vocabulary_breakdown": [
+      { "word": "路上", "pinyin": "lù shang", "meaning": "Trên đường / Dọc đường" },
+      { "word": "省点", "pinyin": "shěng diǎn", "meaning": "Tiết kiệm một chút / Dè sẻn lại" }
+    ]
+  },
+  {
+    "term": "劳驾快点",
+    "pinyin": "láo jià kuài diǎn",
+    "meaning": "Phiền bác đi nhanh một chút / Làm ơn nhanh lên một chút nhé.",
+    "notes": "",
+    "vocabulary_breakdown": [
+      { "word": "劳驾", "pinyin": "láo jià", "meaning": "Làm ơn / Xin lỗi làm phiền" },
+      { "word": "快点", "pinyin": "kuài diǎn", "meaning": "Nhanh một chút" }
+    ]
+  },
+  {
+    "term": "下回早点出门就行了",
+    "pinyin": "xià huí zǎo diǎn chū mén jiù xíng le",
+    "meaning": "Lần sau ra khỏi nhà sớm một chút là được.",
+    "notes": "",
+    "vocabulary_breakdown": [
+      { "word": "下回", "pinyin": "xià huí", "meaning": "Lần sau (tương đương 下次)" },
+      { "word": "早点", "pinyin": "zǎo diǎn", "meaning": "Sớm một chút" },
+      { "word": "出门", "pinyin": "chū mén", "meaning": "Ra khỏi nhà / Đi ra ngoài" }
+    ]
+  },
+  {
+    "term": "这么小的孩子就说瞎话不是",
+    "pinyin": "zhè me xiǎo de hái zi jiù shuō xiā huà bú shì",
+    "meaning": "Trẻ con nhỏ thế này mà đã biết nói dối rồi phải không",
+    "notes": "",
+    "vocabulary_breakdown": [
+      { "word": "瞎话", "pinyin": "xiā huà", "meaning": "Lời nói dối / Nói phét (mang tính bừa bãi)" }
+    ]
+  },
+  {
+    "term": "家里停水了",
+    "pinyin": "jiā lǐ tíng shuǐ le",
+    "meaning": "Nhà bị mất nước rồi / Ở nhà cúp nước rồi.",
+    "notes": "",
+    "vocabulary_breakdown": [
+      { "word": "停水", "pinyin": "tíng shuǐ", "meaning": "Cúp nước" },
+      { "word": "停电", "pinyin": "tíng diàn", "meaning": "Cúp điện (từ vựng liên quan)" }
+    ]
+  },
+  {
+    "term": "楼梯",
+    "pinyin": "lóu tī",
+    "meaning": "Cầu thang",
+    "notes": "",
+    "vocabulary_breakdown": []
+  },
+  {
+    "term": "18岁刚成年对不对",
+    "pinyin": "shí bā suì gāng chéng nián duì bu duì",
+    "meaning": "18 tuổi là vừa mới trưởng thành, đúng không?",
+    "notes": "",
+    "vocabulary_breakdown": []
+  },
+  {
+    "term": "社会这条路根本就不好走",
+    "pinyin": "shè huì zhè tiáo lù gēn běn jiù bù hǎo zǒu",
+    "meaning": "Con đường xã hội này vốn dĩ chẳng hề dễ đi chút nào.",
+    "notes": "",
+    "vocabulary_breakdown": [
+      { "word": "社会", "pinyin": "shè huì", "meaning": "Xã hội" },
+      { "word": "条路", "pinyin": "tiáo lù", "meaning": "Con đường (条 là lượng từ)" },
+      { "word": "根本", "pinyin": "gēn běn", "meaning": "Vốn dĩ / Căn bản / Hoàn toàn" }
+    ]
+  },
+  {
+    "term": "但是这十几万根本就不好赚",
+    "pinyin": "dàn shì zhè shí jǐ wàn gēn běn jiù bù hǎo zhuàn",
+    "meaning": "Nhưng mà mười mấy vạn này vốn dĩ chẳng dễ kiếm chút nào.",
+    "notes": "",
+    "vocabulary_breakdown": [
+      { "word": "赚", "pinyin": "zhuàn", "meaning": "Kiếm lời / Kiếm được" }
+    ]
+  },
+  {
+    "term": "他用的是劳动换钱嘛",
+    "pinyin": "tā yòng de shì láo dòng huàn qián ma",
+    "meaning": "Anh ta dùng sức lao động để đổi lấy tiền mà.",
+    "notes": "",
+    "vocabulary_breakdown": [
+      { "word": "劳动", "pinyin": "láo dòng", "meaning": "Lao động" },
+      { "word": "换钱", "pinyin": "huàn qián", "meaning": "Đổi lấy tiền" }
+    ]
+  },
+  {
+    "term": "这个城市的风很大",
+    "pinyin": "zhè ge chéng shì de fēng hěn dà",
+    "meaning": "Gió ở thành phố này rất lớn.",
+    "notes": "",
+    "vocabulary_breakdown": []
+  },
+  {
+    "term": "难怪.原来",
+    "pinyin": "nán guài . yuán lái",
+    "meaning": "Thảo nào . Hóa ra",
+    "notes": "",
+    "vocabulary_breakdown": []
+  },
+  {
+    "term": "自从买了车啊",
+    "pinyin": "zì cóng mǎi le chē a",
+    "meaning": "Từ khi mua xe xong á... / Kể từ lúc sắm cái xe ấy...",
+    "notes": "",
+    "vocabulary_breakdown": [
+      { "word": "自从", "pinyin": "zì cóng", "meaning": "Từ khi / Kể từ lúc (đánh dấu một bước ngoặt)" }
+    ]
+  },
+  {
+    "term": "感觉它就像是我另一个家一样",
+    "pinyin": "gǎn jué tā jiù xiàng shì wǒ lìng yí gè jiā yí yàng",
+    "meaning": "Cảm giác nó cứ như là một ngôi nhà thứ hai của tôi vậy.",
+    "notes": "",
+    "vocabulary_breakdown": [
+      { "word": "感觉", "pinyin": "gǎn jué", "meaning": "Cảm thấy / Cảm giác" },
+      { "word": "像...一样", "pinyin": "xiàng... yí yàng", "meaning": "Giống như là..." },
+      { "word": "另一个", "pinyin": "lìng yí gè", "meaning": "Một cái khác / Thứ hai" }
+    ]
+  },
+  {
+    "term": "要是不用上班也能赚钱，多好啊。",
+    "pinyin": "Yàoshi bùyòng shàngbān yě néng zhuànqián, duō hǎo a.",
+    "meaning": "Giá như không cần đi làm mà vẫn kiếm được tiền thì tuyệt làm sao.",
+    "notes": "",
+    "vocabulary_breakdown": [
+      { "word": "要是", "pinyin": "yàoshi", "meaning": "Nếu như / Giá như" },
+      { "word": "赚钱", "pinyin": "zhuànqián", "meaning": "Kiếm tiền" }
+    ]
+  },
+  {
+    "term": "你早说呀",
+    "pinyin": "nǐ zǎo shuō ya",
+    "meaning": "Sao cậu không nói sớm!",
+    "notes": "",
+    "vocabulary_breakdown": []
+  },
+  {
+    "term": "比花差点",
+    "pinyin": "bǐ huā chà diǎn",
+    "meaning": "Kém hoa một chút / Thua bông hoa một tẹo.",
+    "notes": "",
+    "vocabulary_breakdown": []
+  },
+  {
+    "term": "哪个男的收到花能不喜欢，你放心吧",
+    "pinyin": "nǎ ge nán de shōu dào huā néng bù xǐ huān, nǐ fàng xīn ba",
+    "meaning": "Làm gì có người con trai nào nhận được hoa mà lại không thích chứ, cậu yên tâm đi!",
+    "notes": "",
+    "vocabulary_breakdown": [
+      { "word": "收到", "pinyin": "shōu dào", "meaning": "Nhận được" },
+      { "word": "放心", "pinyin": "fàng xīn", "meaning": "Yên tâm" }
+    ]
+  },
+  {
+    "term": "那肯定还是有共同点的",
+    "pinyin": "nà kěn dìng hái shì yǒu gòng tóng diǎn de",
+    "meaning": "Thế thì chắc chắn là vẫn phải có điểm chung rồi.",
+    "notes": "",
+    "vocabulary_breakdown": [
+      { "word": "肯定", "pinyin": "kěn dìng", "meaning": "Chắc chắn / Khẳng định" },
+      { "word": "共同点", "pinyin": "gòng tóng diǎn", "meaning": "Điểm chung" }
+    ]
+  },
+  {
+    "term": "要求",
+    "pinyin": "yāo qiú",
+    "meaning": "Yêu cầu",
+    "notes": "",
+    "vocabulary_breakdown": []
+  },
+  {
+    "term": "你这嘴还能吃吗",
+    "pinyin": "nǐ zhè zuǐ hái néng chī ma",
+    "meaning": "Cái miệng này của cậu còn ăn được nữa không hả (ý mỉa mai).",
+    "notes": "",
+    "vocabulary_breakdown": []
+  },
+  {
+    "term": "垃圾桶",
+    "pinyin": "lā jī tǒng",
+    "meaning": "Thùng rác.",
+    "notes": "",
+    "vocabulary_breakdown": []
+  },
+  {
+    "term": "捡垃圾",
+    "pinyin": "jiǎn lā jī",
+    "meaning": "Nhặt rác / Bới rác.",
+    "notes": "",
+    "vocabulary_breakdown": [
+      { "word": "捡", "pinyin": "jiǎn", "meaning": "Nhặt / Lượm" },
+      { "word": "垃圾", "pinyin": "lā jī", "meaning": "Rác rưởi" }
+    ]
+  },
+  {
+    "term": "15个小时的工作又结束了",
+    "pinyin": "shí wǔ gè xiǎo shí de gōng zuò yòu jié shù le",
+    "meaning": "15 tiếng đồng hồ làm việc lại kết thúc rồi.",
+    "notes": "",
+    "vocabulary_breakdown": [
+      { "word": "小时", "pinyin": "xiǎo shí", "meaning": "Tiếng đồng hồ" },
+      { "word": "结束", "pinyin": "jié shù", "meaning": "Kết thúc" }
+    ]
+  },
+  {
+    "term": "没有喜悦",
+    "pinyin": "méi yǒu xǐ yuè",
+    "meaning": "Không có niềm vui",
+    "notes": "",
+    "vocabulary_breakdown": [
+      { "word": "喜悦", "pinyin": "xǐ yuè", "meaning": "Niềm vui / Sự hân hoan" }
+    ]
+  },
+  {
+    "term": "自由",
+    "pinyin": "zì yóu",
+    "meaning": "Tự do",
+    "notes": "",
+    "vocabulary_breakdown": []
+  },
+  {
+    "term": "固定",
+    "pinyin": "gù dìng",
+    "meaning": "Cố định",
+    "notes": "",
+    "vocabulary_breakdown": []
+  },
+  {
+    "term": "不要允许自己放弃，因为父母也从未允许自己停下来休息",
+    "pinyin": "bú yào yǔnxǔ zìjǐ fàngqì, yīnwèi fùmǔ yě cóngwèi yǔnxǔ zìjǐ tíng xiàlái xiūxi.",
+    "meaning": "Đừng cho phép bản thân bỏ cuộc, bởi vì bố mẹ cũng chưa từng cho phép bản thân dừng lại để nghỉ ngơi.",
+    "notes": "",
+    "vocabulary_breakdown": [
+      { "word": "允许", "pinyin": "yǔnxǔ", "meaning": "Cho phép" },
+      { "word": "放弃", "pinyin": "fàngqì", "meaning": "Bỏ cuộc / Từ bỏ" },
+      { "word": "从未", "pinyin": "cóngwèi", "meaning": "Chưa từng / Từ trước tới nay chưa hề" },
+      { "word": "停下来", "pinyin": "tíng xiàlái", "meaning": "Dừng lại" },
+      { "word": "休息", "pinyin": "xiūxi", "meaning": "Nghỉ ngơi" }
+    ]
+  },
+  {
+    "term": "才是正确的",
+    "pinyin": "cái shì zhèng què de",
+    "meaning": "mới là 'chính xác'",
+    "notes": "",
+    "vocabulary_breakdown": [
+      { "word": "正确", "pinyin": "zhèng què", "meaning": "Chính xác / Đúng đắn" }
+    ]
+  },
+  {
+    "term": "我现在要去下载点东西了",
+    "pinyin": "wǒ xiàn zài yào qù xià zǎi diǎn dōng xi le",
+    "meaning": "Bây giờ tôi phải đi tải chút đồ/tải mấy thứ đây.",
+    "notes": "",
+    "vocabulary_breakdown": [
+      { "word": "下载", "pinyin": "xià zǎi", "meaning": "Tải xuống (download)" },
+      { "word": "东西", "pinyin": "dōng xi", "meaning": "Đồ vật / Thứ gì đó" }
+    ]
+  },
+  {
+    "term": "反正你啥也拎不动",
+    "pinyin": "fǎn zhèng nǐ shá yě līn bu dòng",
+    "meaning": "Dù sao thì cậu cũng có xách nổi cái gì đâu!",
+    "notes": "",
+    "vocabulary_breakdown": [
+      { "word": "反正", "pinyin": "fǎn zhèng", "meaning": "Dù sao thì / Đằng nào thì" },
+      { "word": "啥", "pinyin": "shá", "meaning": "Cái gì (khẩu ngữ của 什么)" },
+      { "word": "拎", "pinyin": "līn", "meaning": "Xách / Nhấc" },
+      { "word": "不动", "pinyin": "bu dòng", "meaning": "Không nổi" }
+    ]
+  }
+]

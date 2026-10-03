@@ -1,5 +1,5 @@
-import { useEffect, useState } from 'react';
-import { AlignLeft, X, BookOpen, Volume2 } from 'lucide-react';
+import { useEffect, useState, useRef, useMemo } from 'react';
+import { AlignLeft, X, BookOpen, Volume2, Play, Square } from 'lucide-react';
 import StrokeViewer from './StrokeViewer';
 
 interface Token {
@@ -10,10 +10,14 @@ interface Token {
 }
 
 interface VocabItem {
-  id: number;
-  chinese: string;
+  id?: number;
+  chinese?: string;
+  term?: string;
   pinyin: string;
-  vietnamese: string;
+  vietnamese?: string;
+  meaning?: string;
+  notes?: string;
+  vocabulary_breakdown?: { word: string; pinyin: string; meaning: string }[];
   checked?: boolean;
 }
 
@@ -34,9 +38,36 @@ const ParagraphReader: React.FC<ParagraphReaderProps> = ({ fileUrl, onClose }) =
   // Tooltip state for paragraph mode
   const [activeToken, setActiveToken] = useState<{ token: Token, rect: DOMRect } | null>(null);
 
-  // Dialog state for vocab mode
-  const [selectedVocab, setSelectedVocab] = useState<VocabItem | null>(null);
-  const [isSpeaking, setIsSpeaking] = useState(false);
+  // Speak state for vocab mode
+  const [isAutoPlaying, setIsAutoPlaying] = useState(false);
+  const listToPlayRef = useRef<VocabData>([]);
+
+  const storageKey = `vocab-checked-${fileUrl}`;
+  const [checkedItems, setCheckedItems] = useState<Record<string, boolean>>(() => {
+    try {
+      const stored = localStorage.getItem(storageKey);
+      return stored ? JSON.parse(stored) : {};
+    } catch {
+      return {};
+    }
+  });
+
+  useEffect(() => {
+    try {
+      const stored = localStorage.getItem(storageKey);
+      setCheckedItems(stored ? JSON.parse(stored) : {});
+    } catch {
+      setCheckedItems({});
+    }
+  }, [storageKey]);
+
+  const toggleCheck = (id: string) => {
+    setCheckedItems(prev => {
+      const next = { ...prev, [id]: !prev[id] };
+      localStorage.setItem(storageKey, JSON.stringify(next));
+      return next;
+    });
+  };
 
   useEffect(() => {
     const loadData = async () => {
@@ -45,7 +76,6 @@ const ParagraphReader: React.FC<ParagraphReaderProps> = ({ fileUrl, onClose }) =
       setData(null);
       setDataType(null);
       setActiveToken(null);
-      setSelectedVocab(null);
       try {
         const response = await fetch(fileUrl);
         if (!response.ok) throw new Error('Failed to load data');
@@ -90,18 +120,83 @@ const ParagraphReader: React.FC<ParagraphReaderProps> = ({ fileUrl, onClose }) =
   const handleSpeak = (text: string) => {
     if (!('speechSynthesis' in window)) return;
     window.speechSynthesis.cancel();
-    if (isSpeaking) {
-      setIsSpeaking(false);
-      return;
-    }
+    
     const utterance = new SpeechSynthesisUtterance(text);
     utterance.lang = 'zh-CN';
     utterance.rate = 0.8;
-    utterance.onend = () => setIsSpeaking(false);
-    utterance.onerror = () => setIsSpeaking(false);
-    setIsSpeaking(true);
+    
+    // Lưu reference để tránh Chrome garbage collection bug
+    (window as any)._currentUtterance = utterance;
+    
     window.speechSynthesis.speak(utterance);
   };
+
+  const sortedVocabData = useMemo(() => {
+    const vocabData = dataType === 'vocab' && data ? (data as VocabData) : [];
+    return [...vocabData].sort((a, b) => {
+      const idA = a.chinese || a.term || '';
+      const idB = b.chinese || b.term || '';
+      const isCheckedA = !!checkedItems[idA];
+      const isCheckedB = !!checkedItems[idB];
+      if (isCheckedA === isCheckedB) return 0;
+      return isCheckedA ? 1 : -1;
+    });
+  }, [data, dataType, checkedItems]);
+
+  useEffect(() => {
+    listToPlayRef.current = sortedVocabData;
+  }, [sortedVocabData]);
+
+  useEffect(() => {
+    if (!isAutoPlaying || !('speechSynthesis' in window)) {
+      window.speechSynthesis?.cancel();
+      return;
+    }
+    
+    let isCancelled = false;
+    let currentIndex = 0;
+
+    const playNext = () => {
+      if (isCancelled) return;
+      const list = listToPlayRef.current;
+      
+      // Skip checked items if they are at the bottom, or just play them all? Let's play all.
+      // Or maybe stop if it's checked? We'll play all.
+      if (currentIndex >= list.length) {
+        setIsAutoPlaying(false);
+        return;
+      }
+      
+      const item = list[currentIndex];
+      const text = item.chinese || item.term || '';
+      
+      const utterance = new SpeechSynthesisUtterance(text);
+      utterance.lang = 'zh-CN';
+      utterance.rate = 0.8;
+      
+      // Lưu reference để tránh Chrome garbage collection bug
+      (window as any)._currentUtterance = utterance;
+      
+      utterance.onend = () => {
+        if (!isCancelled) {
+          currentIndex++;
+          setTimeout(playNext, 1200); // 1.2s pause between sentences
+        }
+      };
+      utterance.onerror = () => {
+        if (!isCancelled) setIsAutoPlaying(false);
+      };
+      window.speechSynthesis.speak(utterance);
+    };
+
+    window.speechSynthesis.cancel();
+    playNext();
+
+    return () => {
+      isCancelled = true;
+      window.speechSynthesis?.cancel();
+    };
+  }, [isAutoPlaying]);
 
   return (
     <div className="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden mb-4 relative">
@@ -110,13 +205,26 @@ const ParagraphReader: React.FC<ParagraphReaderProps> = ({ fileUrl, onClose }) =
           {dataType === 'vocab' ? <BookOpen size={20} className="text-indigo-600" /> : <AlignLeft size={20} className="text-indigo-600" />}
           {dataType === 'vocab' ? 'Nguyễn Đức Thuận 阮德顺' : 'Đọc đoạn văn'}
         </h2>
-        <button
-          onClick={onClose}
-          className="p-1.5 bg-gray-200 hover:bg-gray-300 rounded-full text-gray-700 transition-colors"
-          title="Đóng"
-        >
-          <X size={18} />
-        </button>
+        
+        <div className="flex items-center gap-2">
+          {dataType === 'vocab' && (
+            <button
+              onClick={() => setIsAutoPlaying(!isAutoPlaying)}
+              className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full transition-colors text-sm font-medium ${isAutoPlaying ? 'bg-amber-100 text-amber-700 hover:bg-amber-200' : 'bg-indigo-100 text-indigo-700 hover:bg-indigo-200'}`}
+              title={isAutoPlaying ? "Dừng tự động đọc" : "Tự động đọc"}
+            >
+              {isAutoPlaying ? <Square size={16} fill="currentColor" /> : <Play size={16} fill="currentColor" />}
+              <span className="hidden sm:inline">{isAutoPlaying ? "Dừng" : "Tự đọc"}</span>
+            </button>
+          )}
+          <button
+            onClick={onClose}
+            className="p-1.5 bg-gray-200 hover:bg-gray-300 rounded-full text-gray-700 transition-colors"
+            title="Đóng"
+          >
+            <X size={18} />
+          </button>
+        </div>
       </div>
 
       <div
@@ -150,23 +258,69 @@ const ParagraphReader: React.FC<ParagraphReaderProps> = ({ fileUrl, onClose }) =
         )}
 
         {dataType === 'vocab' && data && (
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
-            {(data as VocabData).map((item) => (
-              <button
-                key={item.id || item.chinese}
-                onClick={() => {
-                  setSelectedVocab(item);
-                  setIsSpeaking(false);
-                  window.speechSynthesis?.cancel();
-                }}
-                className="bg-white border border-gray-200 rounded-lg p-3 text-center shadow-sm hover:border-indigo-400 hover:bg-indigo-50 hover:shadow-md transition-all flex flex-col justify-center cursor-pointer"
-              >
-                <p className="text-3xl font-bold text-gray-800 mb-2">{item.chinese}</p>
-                <p className="text-sm font-semibold text-indigo-600 mb-1">{item.pinyin}</p>
-                <p className="text-xs text-gray-600 truncate px-1 w-full" title={item.vietnamese}>{item.vietnamese}</p>
-              </button>
-            ))}
-          </div>
+            <div className="flex flex-col">
+              {sortedVocabData.map((item, idx) => {
+                const cn = item.chinese || item.term || '';
+                const vn = item.vietnamese || item.meaning || '';
+                const isChecked = !!checkedItems[cn];
+
+                return (
+                  <div
+                    key={item.id || cn || idx}
+                    className={`w-full text-left p-5 rounded-xl shadow-sm mb-4 flex flex-col gap-3 group transition-all duration-300 bg-white ${isChecked ? 'border-2 border-emerald-400 ring-2 ring-emerald-50' : 'border border-gray-200/60'}`}
+                  >
+                    <div>
+                      <div className="flex flex-col gap-0.5">
+                        <div className="flex items-center justify-between">
+                          <div className="flex items-center gap-3">
+                            <span className="text-2xl font-bold text-gray-800 group-hover:text-indigo-700 transition-colors">{cn}</span>
+                            <button
+                              onClick={() => handleSpeak(cn)}
+                              className="p-1.5 text-gray-400 hover:text-indigo-600 hover:bg-indigo-50 rounded-full transition-colors"
+                              title="Phát âm"
+                            >
+                              <Volume2 size={18} />
+                            </button>
+                          </div>
+                          <input
+                            type="checkbox"
+                            checked={isChecked}
+                            onChange={() => toggleCheck(cn)}
+                            className="w-5 h-5 cursor-pointer accent-emerald-500 rounded"
+                          />
+                        </div>
+                        <span className="text-sm font-medium text-indigo-600">{item.pinyin}</span>
+                      </div>
+                      <p className="text-base text-emerald-700 font-medium mt-1.5">{vn}</p>
+                    </div>
+
+                  {item.notes && (
+                    <div className="text-sm text-gray-700 bg-amber-50/50 p-3 rounded-lg border border-amber-100/50 w-full mt-1">
+                      <span className="font-semibold text-amber-600 mr-2">Ghi chú:</span>
+                      {item.notes}
+                    </div>
+                  )}
+
+                  {item.vocabulary_breakdown && item.vocabulary_breakdown.length > 0 && (
+                    <div className="w-full pt-3 border-t border-gray-100 mt-1">
+                      <p className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2">Từ vựng cấu thành</p>
+                      <div className="flex flex-col gap-2">
+                        {item.vocabulary_breakdown.map((vb, vidx) => (
+                          <div key={vidx} className="bg-slate-50/80 p-2.5 rounded-lg flex flex-col gap-1 border border-slate-100/80">
+                            <div className="flex flex-col gap-0.5">
+                              <span className="font-bold text-gray-700 text-sm">{vb.word}</span>
+                              <span className="text-indigo-400 font-medium text-xs">[{vb.pinyin}]</span>
+                            </div>
+                            <span className="text-gray-600 text-xs leading-snug">{vb.meaning}</span>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+                </div>
+                );
+              })}
+            </div>
         )}
       </div>
 
@@ -208,65 +362,7 @@ const ParagraphReader: React.FC<ParagraphReaderProps> = ({ fileUrl, onClose }) =
         );
       })()}
 
-      {/* Dialog for Vocab Mode */}
-      {selectedVocab && (
-        <div className="fixed inset-0 z-[70] flex items-center justify-center p-4">
-          <div
-            className="absolute inset-0 bg-black/40 backdrop-blur-sm"
-            onClick={() => setSelectedVocab(null)}
-          ></div>
-          <div className="bg-white rounded-2xl shadow-2xl relative z-10 w-full max-w-lg overflow-hidden flex flex-col">
-            <div className="p-4 border-b border-gray-100 flex justify-between items-center">
-              <h3 className="text-lg font-bold text-gray-800">Chi tiết từ vựng</h3>
-              <button
-                onClick={() => setSelectedVocab(null)}
-                className="p-1.5 bg-gray-100 hover:bg-gray-200 rounded-full transition-colors text-gray-600"
-              >
-                <X size={18} />
-              </button>
-            </div>
 
-            <div className="p-6">
-              <div className="flex items-center gap-3 mb-6">
-                <h4 className="text-3xl font-bold text-indigo-700">{selectedVocab.chinese}</h4>
-                <button
-                  type="button"
-                  onClick={() => handleSpeak(selectedVocab.chinese)}
-                  className={`rounded-full p-2 transition-colors ${isSpeaking ? 'bg-indigo-100 text-indigo-700' : 'bg-gray-100 text-gray-500 hover:bg-indigo-50 hover:text-indigo-600'}`}
-                  title={isSpeaking ? 'Dừng phát âm' : 'Phát âm'}
-                >
-                  <Volume2 size={20} />
-                </button>
-              </div>
-
-              <div className="space-y-2 mb-6">
-                <p className="text-lg">
-                  <span className="text-gray-500 mr-2 w-16 inline-block">Pinyin:</span>
-                  <span className="font-semibold text-gray-800">{selectedVocab.pinyin}</span>
-                </p>
-                <p className="text-lg">
-                  <span className="text-gray-500 mr-2 w-16 inline-block">Nghĩa:</span>
-                  <span className="text-emerald-700 font-medium">{selectedVocab.vietnamese}</span>
-                </p>
-              </div>
-
-              <div className="pt-4 border-t border-gray-100">
-                <p className="text-sm font-semibold text-gray-600 mb-4">Cách viết (Từng chữ)</p>
-                <div className="flex flex-wrap gap-4 justify-center">
-                  {(selectedVocab.chinese.match(/[\u4e00-\u9fa5]/g) || []).map((char, index) => (
-                    <div key={index} className="flex flex-col items-center">
-                      <div className="w-[104px] bg-slate-50 rounded-lg pt-2 border border-slate-100 shadow-sm">
-                        <StrokeViewer character={char} />
-                      </div>
-                      <span className="mt-2 text-sm text-gray-500 font-medium">{char}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      )}
     </div>
   );
 };
